@@ -39,7 +39,6 @@ text = text.replace('ხ', 'kh')
 text = text.replace('ჯ', 'j')
 text = text.replace('ჰ', 'h')
 
-import re
 rtn = re.split('([.!?\n] *)', text)
 final = ''.join([i.capitalize() for i in rtn])
 
