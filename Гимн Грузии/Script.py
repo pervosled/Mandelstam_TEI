@@ -1,0 +1,48 @@
+import re
+
+f1 = open ('Hymn_1.txt', 'r', encoding = 'utf8')
+text = f1.read()
+f2 = open ('Hymn_2.txt', 'w', encoding = 'utf8')
+
+text = text.replace('ა', 'a')
+text = text.replace('ბ', 'b')
+text = text.replace('გ', 'g')
+text = text.replace('დ', 'd')
+text = text.replace('ე', 'e')
+text = text.replace('ვ', 'v')
+text = text.replace('ზ', 'z')
+text = text.replace('თ', 't’')
+text = text.replace('ი', 'i')
+text = text.replace('კ', 'k')
+text = text.replace('ლ', 'l')
+text = text.replace('მ', 'm')
+text = text.replace('ნ', 'n')
+text = text.replace('ო', 'o')
+text = text.replace('პ', 'p')
+text = text.replace('ჟ', 'zh')
+text = text.replace('რ', 'r')
+
+text = text.replace('ს', 's')
+text = text.replace('ტ', 't')
+text = text.replace('უ', 'u')
+text = text.replace('ფ', 'p’')
+text = text.replace('ქ', 'k’')
+text = text.replace('ღ', 'gh')
+text = text.replace('ყ', 'q’')
+text = text.replace('შ', 'sh')
+text = text.replace('ჩ', 'ch')
+text = text.replace('ც', 'ts')
+text = text.replace('ძ', 'dz')
+text = text.replace('წ', 'ts’')
+text = text.replace('ჭ', 'ch’')
+text = text.replace('ხ', 'kh')
+text = text.replace('ჯ', 'j')
+text = text.replace('ჰ', 'h')
+
+import re
+rtn = re.split('([.!?\n] *)', text)
+final = ''.join([i.capitalize() for i in rtn])
+
+f2.write (final)
+f2.close()
+
