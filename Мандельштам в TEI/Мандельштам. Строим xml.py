@@ -1,9 +1,4 @@
-import xml.etree.ElementTree as etree
-from xml.etree.ElementTree import ( Element,
-                                    SubElement,
-                                    Comment,
-                                    ElementTree,
-                                    )
+import lxml.etree as etree
 import urllib.request
 import os.path
 import re
@@ -72,10 +67,31 @@ for file in os.listdir(path_1):
 
 ## СТРОИМ ФАЙЛ TEI XML               
 
-        xml_file = open(path_2+file[:-4]+'.xml', 'w', encoding = 'utf8')
-        xml_file.write('<?xml version="1.0" encoding="UTF-8"?>'+'\n'+'<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>'+'\n'+'<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>'+'\n'+'<TEI xmlns="http://www.tei-c.org/ns/1.0">'+'\n')
+##        xml_file = open(path_2+file[:-4]+'.xml', 'w', encoding = 'utf8')
+##        xml_file.write('<?xml version="1.0" encoding="UTF-8"?>'+'\n'+'<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>'+'\n'+'<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>'+'\n'+'<TEI xmlns="http://www.tei-c.org/ns/1.0">'+'\n')
 
-       
+        teiHeader = etree.Element('teiHeader')
+        fileDesc = etree.SubElement(teiHeader, 'fileDesc')
+        titleStmt = etree.SubElement(fileDesc, 'titleStmt')        
+        title = etree.SubElement(titleStmt, 'title').text = 'О.Э. Мандельштам. Cобрание сочинений в четырёх томах'
+
+        tree = etree.ElementTree(teiHeader)
+        tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, xml_declaration=True)
+
+        
+ 
+
+
+
+##<root>
+## <doc>
+##     <field1 name="blah">some value1</field1>
+##     <field2 name="asdfasd">some vlaue2</field2>
+## </doc>
+##
+##</root>
+        
+        
 
 ##  <teiHeader>
 ##      <fileDesc>
