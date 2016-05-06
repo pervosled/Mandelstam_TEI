@@ -1,43 +1,36 @@
 import urllib.request
 import os.path
 import lxml.html
-import re
 
-links = []
-
-openpage = urllib.request.urlopen('http://pravda-sevsk.ru/')
-mainpage = openpage.read().decode('cp1251')
-tree = lxml.html.fromstring(mainpage)
-
-def AddLink(tree):       
+def AddLink(links):
     for url in tree.xpath('//a/@href'):
-        if 'http' not in url:
+        if url.startswith('/'):
             url = 'http://pravda-sevsk.ru' + url  
             if url not in links: 
                 links.append(url)
-        if url not in links and 'pravda-sevsk' in url:
-            links.append(url)
+                print(url)
+            else:
+                continue                
+        else:
+            if url not in links and 'pravda-sevsk' in url:
+                links.append(url)            
+                print(url)
+            else:
+                continue
+    return links
+
+links = []
+openpage = urllib.request.urlopen('http://pravda-sevsk.ru/')
+mainpage = openpage.read().decode('cp1251')
+tree = lxml.html.fromstring(mainpage)
             
-AddLink(tree)
+AddLink(links)
 
 for link in links:
     try:
         response = urllib.request.urlopen(link)
         page = response.read().decode('cp1251')
         tree = lxml.html.fromstring(page)
-        for url in tree.xpath('//a/@href'):
-            if 'http' or 'https' not in url:
-                url = 'http://pravda-sevsk.ru' + url  
-                if url not in links: 
-                    links.append(url)
-        if url not in links and 'pravda-sevsk' in url:
-            links.append(url)            
+        AddLink(links)               
     except:
         continue
-
-
-
-file = open('Alllinks.txt', 'w', encoding = 'utf8')
-for i, line in enumerate(links):
-    file.write(line + '\n')
-file.close()
