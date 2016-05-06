@@ -20,18 +20,18 @@ for file in os.listdir(path_1):
         sourcecode = page.read()        
         tree = lxml.html.fromstring(sourcecode)
 ##        заголовок вида 'О.Э. Мандельштам. «Ни о чем не нужно говорить...»'
-##        title = tree.xpath('.//title/text()')[0]
+        title = tree.xpath('.//title/text()')[0]
 ##        print(title)        
 ##        номер произведения в томе (число без точки)
-        number = tree.xpath('.//h1/text()')
-##        print(int(number[0][:-1]))
+        t_number = tree.xpath('.//h1/text()')
+##        print(int(t_number[0][:-1]))
 ##        заголовок, который будет отображаться на странице
         title_view = tree.xpath('.//h1/text()')
 ##        for i in range(len(title_view)):
 ##            print(title_view[i])
 ##        номер текущего тома
-        volume = re.findall('Арт-Бизнес-Центр, 199[0-9]. Т. [1-4]', sourcecode)
-##        print(int(volume[-1][-1]))        
+        volume_n = re.findall('Арт-Бизнес-Центр, 199[0-9]. Т. [1-4]', sourcecode)
+##        print(int(volume_n[-1][-1]))        
 ##        источник публикации (издание, том)
         publication = re.findall('Арт-Бизнес-Центр, 199[0-9]. Т. [1-4]', sourcecode)
 ##        print(publication[0])
@@ -72,40 +72,53 @@ for file in os.listdir(path_1):
 
         teiHeader = etree.Element('teiHeader')
         fileDesc = etree.SubElement(teiHeader, 'fileDesc')
-        titleStmt = etree.SubElement(fileDesc, 'titleStmt')        
+        titleStmt = etree.SubElement(fileDesc, 'titleStmt')
         title = etree.SubElement(titleStmt, 'title').text = 'О.Э. Мандельштам. Cобрание сочинений в четырёх томах'
+        publicationStmt = etree.SubElement(fileDesc, 'publicationStmt')
+        p = etree.SubElement(publicationStmt, 'p').text = 'АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993'        
+        sourceDesc = etree.SubElement(fileDesc, 'sourceDesc')
+        p = etree.SubElement(sourceDesc, 'p').text = 'Издание подготовлено Мандельштамовским обществом'
 
-        tree = etree.ElementTree(teiHeader)
-        tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, xml_declaration=True)
-
+        text = etree.Element('text')
+        body = etree.SubElement(text, 'body')
+        div = etree.SubElement(body, 'div', type = 'volume', n = volume_n[-1][-1])
+        div = etree.SubElement(div, 'div', type = 'part', n = t_number[0][:-1])
+        
+        
+        
         
  
 
+        tree = etree.ElementTree(teiHeader)
+        tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, xml_declaration = True)
 
-
-##<root>
-## <doc>
-##     <field1 name="blah">some value1</field1>
-##     <field2 name="asdfasd">some vlaue2</field2>
-## </doc>
-##
-##</root>
         
+       
         
+##  <text>
+##      <body>
+##         <div type="volume" n="1">
+##            <div type="part" n="31">
+##            <lg type="quatrain">
+##               <l> Ни о чем не нужно говорить, </l>
+##               <l> Ничему не следует учить, </l>
+##               <l> И печальна так и хороша </l>
+##               <l>Темная звериная душа:</l>
+##            </lg>
+##            <pb n="44"/>
+##            <lg type="quatrain">
+##               <l>Ничему не хочет научить,</l>
+##               <l>Не умеет вовсе говорить</l>
+##               <l>И плывет дельфином молодым</l>
+##               <l>По седым пучинам мировым.</l>
+##            </lg>
+##            <p><date when="1909-12">Декабрь 1909</date>, <rs type="place">Гейдельберг</rs></p>
+##         </div>
+##         </div>
+##      </body>
+##  </text>
+##</TEI>
 
-##  <teiHeader>
-##      <fileDesc>
-##         <titleStmt>
-##            <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах </title>
-##         </titleStmt>
-##         <publicationStmt>
-##            <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
-##         </publicationStmt>
-##         <sourceDesc>
-##            <p>Издание подготовлено Мандельштамовским обществом </p>
-##         </sourceDesc>
-##      </fileDesc>
-##  </teiHeader>
 
                  
 
