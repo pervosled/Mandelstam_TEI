@@ -81,66 +81,38 @@ for file in os.listdir(path_1):
         paragraph = tree.xpath('.//p[@class="text"]/text()')
 ##        print(paragraph)
 
-##
-#### СТРОИМ ФАЙЛ TEI XML               
-##
-####        xml_file = open(path_2+file[:-4]+'.xml', 'w', encoding = 'utf8')
-####        xml_file.write('<?xml version="1.0" encoding="UTF-8"?>'+'\n'+'<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>'+'\n'+'<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>'+'\n'+'<TEI xmlns="http://www.tei-c.org/ns/1.0">'+'\n')
-##
-##        tei = etree.Element('TEI', xmlns = "http://www.tei-c.org/ns/1.0")
-##        teiHeader = etree.SubElement(tei, 'teiHeader')
-##        fileDesc = etree.SubElement(teiHeader, 'fileDesc')
-##        titleStmt = etree.SubElement(fileDesc, 'titleStmt')        
-##        title = etree.SubElement(titleStmt, 'title').text = 'О.Э. Мандельштам. Cобрание сочинений в четырёх томах'
-##        publicationStmt = etree.SubElement(fileDesc, 'publicationStmt')
-##        p = etree.SubElement(publicationStmt, 'p').text = 'АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993'        
-##        sourceDesc = etree.SubElement(fileDesc, 'sourceDesc')
-##        p = etree.SubElement(sourceDesc, 'p').text = 'Издание подготовлено Мандельштамовским обществом'
-##
-##        text = etree.SubElement(tei, 'text')
-##        body = etree.SubElement(text, 'body')
-##        div = etree.SubElement (body, 'div', type = 'volume', n = volume_n[-1][-1])
-##        div = etree.SubElement(div, 'div', type = 'part', n = t_number[0][:-1])
-##                            
-## 
-##
-##        tree = etree.ElementTree(tei)
-##        tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, xml_declaration = True)
-##
-##        
-##       
-##        
-####  <text>
-####      <body>
-####         <div type="volume" n="1">
-####            <div type="part" n="31">
-####            <lg type="quatrain">
-####               <l> Ни о чем не нужно говорить, </l>
-####               <l> Ничему не следует учить, </l>
-####               <l> И печальна так и хороша </l>
-####               <l>Темная звериная душа:</l>
-####            </lg>
-####            <pb n="44"/>
-####            <lg type="quatrain">
-####               <l>Ничему не хочет научить,</l>
-####               <l>Не умеет вовсе говорить</l>
-####               <l>И плывет дельфином молодым</l>
-####               <l>По седым пучинам мировым.</l>
-####            </lg>
-####            <p><date when="1909-12">Декабрь 1909</date>, <rs type="place">Гейдельберг</rs></p>
-####         </div>
-####         </div>
-####      </body>
-####  </text>
-####</TEI>
-##
-##
-##                 
-##
-##    else:
-##        continue
-##    
-##
-##
-##
-##
+
+## СТРОИМ ФАЙЛ TEI XML               
+
+##        xml_file = open(path_2+file[:-4]+'.xml', 'w', encoding = 'utf8')
+##        xml_file.write('<?xml version="1.0" encoding="UTF-8"?>'+'\n'+'<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>'+'\n'+'<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>'+'\n'+'<TEI xmlns="http://www.tei-c.org/ns/1.0">'+'\n')
+
+        tei = etree.Element('TEI', xmlns = "http://www.tei-c.org/ns/1.0")
+        teiHeader = etree.SubElement(tei, 'teiHeader')
+        fileDesc = etree.SubElement(teiHeader, 'fileDesc')
+        titleStmt = etree.SubElement(fileDesc, 'titleStmt')        
+        title = etree.SubElement(titleStmt, 'title').text = 'О.Э. Мандельштам. Cобрание сочинений в четырёх томах'
+        publicationStmt = etree.SubElement(fileDesc, 'publicationStmt')
+        p = etree.SubElement(publicationStmt, 'p').text = 'АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993'        
+        sourceDesc = etree.SubElement(fileDesc, 'sourceDesc')
+        p = etree.SubElement(sourceDesc, 'p').text = 'Издание подготовлено Мандельштамовским обществом'
+
+        text = etree.SubElement(tei, 'text')
+        body = etree.SubElement(text, 'body')
+        div = etree.SubElement (body, 'div', type = 'volume', n = volume_n[-1][-1])
+        div = etree.SubElement(div, 'div', type = 'part', n = t_number[0][:-1])
+                            
+ 
+
+        tree = etree.ElementTree(tei)
+        tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, xml_declaration = True)
+
+                  
+
+    else:
+        continue
+    
+
+
+
+
