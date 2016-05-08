@@ -21,15 +21,15 @@ for file in os.listdir(path_1):
         tree = lxml.html.fromstring(sourcecode)
 ##        заголовок вида 'О.Э. Мандельштам. «Ни о чем не нужно говорить...»'
         title = tree.xpath('.//title/text()')[0]
-##        print(title)        
+##        print(title)
+        
 ##        номер произведения в томе
-        t_number = tree.xpath('.//h1/text()')
+        t_number = tree.xpath('.//h1/text()')        
         for element in t_number:
             text_number = re.findall('\d{1,3}\.', element)
-##            try:
-##                print(text_number[0][:-1])
-##            except:
-##                continue
+            if text_number:
+                break
+##        print(text_number)                  
 ##        заголовок, который будет отображаться на странице
         title_view = tree.xpath('.//h1/text()')
 ##        for i in range(len(title_view)):
@@ -100,18 +100,46 @@ for file in os.listdir(path_1):
         text = etree.SubElement(tei, 'text')
         body = etree.SubElement(text, 'body')
         div = etree.SubElement (body, 'div', type = 'volume', n = volume_n[-1][-1])
-        div = etree.SubElement(div, 'div', type = 'part', n = t_number[0][:-1])
-                            
- 
+        div = etree.SubElement(div, 'div', type = 'part', n = text_number[0][:-1])
+
+
 
         tree = etree.ElementTree(tei)
         tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, xml_declaration = True)
 
-                  
+
+
+        
+##  <text>
+##      <body>
+##         <div type="volume" n="1">
+##            <div type="part" n="31">
+##            <lg type="quatrain">
+##               <l> Ни о чем не нужно говорить, </l>
+##               <l> Ничему не следует учить, </l>
+##               <l> И печальна так и хороша </l>
+##               <l>Темная звериная душа:</l>
+##            </lg>
+##            <pb n="44"/>
+##            <lg type="quatrain">
+##               <l>Ничему не хочет научить,</l>
+##               <l>Не умеет вовсе говорить</l>
+##               <l>И плывет дельфином молодым</l>
+##               <l>По седым пучинам мировым.</l>
+##            </lg>
+##            <p><date when="1909-12">Декабрь 1909</date>, <rs type="place">Гейдельберг</rs></p>
+##         </div>
+##         </div>
+##      </body>
+##  </text>
+##</TEI>
+
+
+                 
 
     else:
         continue
-    
+        
 
 
 
