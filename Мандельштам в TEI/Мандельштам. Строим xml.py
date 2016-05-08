@@ -8,9 +8,6 @@ path_1 = '/Volumes/Blue Hard/ТЕКСТЫ/Алёша/_ВШЭ/НИС/Мандел
     
 path_2 = '/Volumes/Blue Hard/ТЕКСТЫ/Алёша/_ВШЭ/НИС/Мандельштам/2. Конвертируем файлы в TEI/convert/'
 
-##if not os.path.exists(path_2):
-##    os.makedirs(path_2)
-
 
 ##ОТКРЫВАЕМ ИСХОДНЫЙ HTML-ФАЙЛ И ПАРСИМ ЕГО ПРИ ПОМОЩИ LXML
 
@@ -21,8 +18,7 @@ for file in os.listdir(path_1):
         tree = lxml.html.fromstring(sourcecode)
 ##        заголовок вида 'О.Э. Мандельштам. «Ни о чем не нужно говорить...»'
         title = tree.xpath('.//title/text()')[0]
-##        print(title)
-        
+##        print(title)        
 ##        номер произведения в томе
         t_number = tree.xpath('.//h1/text()')        
         for element in t_number:
@@ -48,9 +44,9 @@ for file in os.listdir(path_1):
 ##            continue        
 ##        тип текста – стихи
         poem = re.findall('<div class="versus[a-z]*[\d]', sourcecode)
-##        try:
-##            print(poem[0])
-##        except:
+##        if poem:
+##            print('это стихи')
+##        else:
 ##            print('это не стихи')
 ##        тип текста – письма
         letter = tree.xpath('.//p[@class="ltr-date"]')
@@ -71,6 +67,9 @@ for file in os.listdir(path_1):
         verse_line = tree.xpath('.//span[@class="line"]/@id | .//span[@class="line1r"]/@id')
 ##        for x in verse_line:
 ##            print(x[1:])
+##        сколько строк в стихотворении, если это стихи
+##        if verse_line:
+##            print(len(verse_line))            
 ##        дата (подпись под произведением)
 ##        date = tree.xpath('.//p[@class="date"]/text()')
 ##        print(date)
@@ -80,6 +79,8 @@ for file in os.listdir(path_1):
 ##        собственно текст, если это проза или письма (абзацы в виде списка)
         paragraph = tree.xpath('.//p[@class="text"]/text()')
 ##        print(paragraph)
+
+                
 
 
 ## СТРОИМ ФАЙЛ TEI XML               
@@ -100,7 +101,18 @@ for file in os.listdir(path_1):
         text = etree.SubElement(tei, 'text')
         body = etree.SubElement(text, 'body')
         div = etree.SubElement (body, 'div', type = 'volume', n = volume_n[-1][-1])
-        div = etree.SubElement(div, 'div', type = 'part', n = text_number[0][:-1])
+        div2 = etree.SubElement(div, 'div', type = 'part', n = text_number[0][:-1])
+        
+        if poem:
+            for i in range(len(verse_line)):                
+                l = etree.SubElement(div2, 'l').text = verse_text[i]
+                i += 1
+
+
+                
+        else:
+            continue
+
 
 
 
