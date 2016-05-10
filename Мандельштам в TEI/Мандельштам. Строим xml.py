@@ -69,9 +69,17 @@ for file in os.listdir(path_1):
 ##            print(x[1:])
 ##        сколько строк в стихотворении, если это стихи
 ##        if verse_line:
-##            print(len(verse_line))            
+##            print(len(verse_line))
+##        сколько строк в строфе, если это стихи + имена-эквиваленты в TEI
+        line_list = ['1_line', 'couplet', 'tercet', 'quatrain', 'quintet', 'sestet', 'septet', 'octet', '9_line']
+        if poem:
+            for x in range(int(verse_num[-1][-1])+1):
+                couplet_num = tree.xpath('//p[@id="st{0}"]//span[@class="line1r"]/@id | //p[@id="st{0}"]//span[@class="line"]/@id'.format(x))
+                if couplet_num:
+                    tei_couplet_num = line_list[len(couplet_num)-1]
+##                    print(tei_couplet_num)                
 ##        дата (подпись под произведением)
-##        date = tree.xpath('.//p[@class="date"]/text()')
+        date = tree.xpath('.//p[@class="date"]/text()')
 ##        print(date)
 ##        собственно текст, если это стихи (строки в виде списка)
         verse_text = tree.xpath('.//span[@class="line"]/text() | .//span[@class="line1r"]/text()')
@@ -81,6 +89,24 @@ for file in os.listdir(path_1):
 ##        print(paragraph)
 
                 
+##<h1>23.</h1>
+##<div class="versusdk3">
+##<p class="stanza" id="st1">
+##<span class="line" id="L1">Твоя веселая нежность</span><br>
+##<span class="line1r" id="L2">Смутила меня.</span><br>
+##<span class="line" id="L3">К чему печальные речи,</span><br>
+##<span class="line1r" id="L4">Когда глаза</span><br>
+##<span class="line1r" id="L5">Горят, как свечи,</span><br>
+##<span class="line1r" id="L6">Среди белого дня?</span></p>
+##<p class="stanza" id="st2">
+##<span class="line1r" id="L7">Среди белого дня...</span><br>
+##<span class="line1r" id="L8">И та — далече —</span><br>
+##<span class="line1r" id="L9">Одна слеза,</span><br>
+##<span class="line1r" id="L10">Воспоминание встречи;</span><br>
+##<span class="line1r" id="L11">И, плечи клоня,</span><br>
+##<span class="line1r" id="L12">Приподымает их нежность.</span></p>
+##</div>
+##<p class="date">‹Не позднее 22 октября› 1909</p>
 
 
 ## СТРОИМ ФАЙЛ TEI XML               
@@ -100,28 +126,22 @@ for file in os.listdir(path_1):
 
         text = etree.SubElement(tei, 'text')
         body = etree.SubElement(text, 'body')
-        div = etree.SubElement (body, 'div', type = 'volume', n = volume_n[-1][-1])
+        div = etree.SubElement(body, 'div', type = 'volume', n = volume_n[-1][-1])        
         div2 = etree.SubElement(div, 'div', type = 'part', n = text_number[0][:-1])
-        
+        lg = etree.SubElement(div, 'lg', type = '{}'.format(tei_couplet_num))
         if poem:
             for i in range(len(verse_line)):                
-                l = etree.SubElement(div2, 'l').text = verse_text[i]
+                l = etree.SubElement(lg, 'l').text = verse_text[i]
                 i += 1
-
+        
 
                 
-        else:
-            continue
-
-
-
-
         tree = etree.ElementTree(tei)
         tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, xml_declaration = True)
 
 
 
-        
+
 ##  <text>
 ##      <body>
 ##         <div type="volume" n="1">
