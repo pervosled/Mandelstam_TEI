@@ -81,7 +81,7 @@ for file in os.listdir(path_1):
 ##        дата (подпись под произведением)
         date = tree.xpath('.//p[@class="date"]/text()')
 ##        print(date)
-##        собственно текст, если это стихи (строки в виде списка)
+##        собственно текст, если это стихи (все строки в виде списка)
         verse_text = tree.xpath('.//span[@class="line"]/text() | .//span[@class="line1r"]/text()')
 ##        print(verse_text)
 ##        собственно текст, если это проза или письма (абзацы в виде списка)
@@ -128,16 +128,21 @@ for file in os.listdir(path_1):
         body = etree.SubElement(text, 'body')
         div = etree.SubElement(body, 'div', type = 'volume', n = volume_n[-1][-1])        
         div2 = etree.SubElement(div, 'div', type = 'part', n = text_number[0][:-1])
-        lg = etree.SubElement(div, 'lg', type = '{}'.format(tei_couplet_num))
+        if poem:
+            lg = etree.SubElement(div, 'lg', type = '{}'.format(tei_couplet_num))
+        else:
+            continue
         if poem:
             for i in range(len(verse_line)):                
                 l = etree.SubElement(lg, 'l').text = verse_text[i]
                 i += 1
+        else:
+            continue
         
 
                 
-        tree = etree.ElementTree(tei)
-        tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, xml_declaration = True)
+##        tree = etree.ElementTree(tei)
+##        tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, xml_declaration = True)
 
 
 
