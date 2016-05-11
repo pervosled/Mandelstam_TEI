@@ -123,7 +123,7 @@ for file in os.listdir(path_1):
                 
 ##        tree = etree.ElementTree(tei)
 ##        tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, xml_declaration = True)
-
+##
 
                
 
