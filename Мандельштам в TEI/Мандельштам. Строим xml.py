@@ -139,26 +139,6 @@ for file in os.listdir(path_1):
         paragraph = tree.xpath('.//p[@class="text"]/text()')
 ##        print(paragraph)
 
-                
-##<h1>23.</h1>
-##<div class="versusdk3">
-##<p class="stanza" id="st1">
-##<span class="line" id="L1">Твоя веселая нежность</span><br>
-##<span class="line1r" id="L2">Смутила меня.</span><br>
-##<span class="line" id="L3">К чему печальные речи,</span><br>
-##<span class="line1r" id="L4">Когда глаза</span><br>
-##<span class="line1r" id="L5">Горят, как свечи,</span><br>
-##<span class="line1r" id="L6">Среди белого дня?</span></p>
-##<p class="stanza" id="st2">
-##<span class="line1r" id="L7">Среди белого дня...</span><br>
-##<span class="line1r" id="L8">И та — далече —</span><br>
-##<span class="line1r" id="L9">Одна слеза,</span><br>
-##<span class="line1r" id="L10">Воспоминание встречи;</span><br>
-##<span class="line1r" id="L11">И, плечи клоня,</span><br>
-##<span class="line1r" id="L12">Приподымает их нежность.</span></p>
-##</div>
-##<p class="date">‹Не позднее 22 октября› 1909</p>
-
 
 ## СТРОИМ ФАЙЛ TEI XML               
 
@@ -191,34 +171,15 @@ for file in os.listdir(path_1):
                 lg = etree.SubElement(div, 'lg', type = '{}'.format(tei_coup_num[i])) ## название, например, sestet
                 for s in range(len_coup[i]):  ## число строк в строфе
                     l = etree.SubElement(lg, 'l').text = coup_text[i][s] ## сам текст: стихи
+        else:
+            continue
                     
-        tree = etree.ElementTree(tei)
-        tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, xml_declaration = True)
+
+##        tree = etree.ElementTree(tei)
+##        tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, xml_declaration = True)
 
 
-##  <text>
-##      <body>
-##         <div type="volume" n="1">
-##            <div type="part" n="31">
-##            <lg type="quatrain">
-##               <l> Ни о чем не нужно говорить, </l>
-##               <l> Ничему не следует учить, </l>
-##               <l> И печальна так и хороша </l>
-##               <l>Темная звериная душа:</l>
-##            </lg>
-##            <pb n="44"/>
-##            <lg type="quatrain">
-##               <l>Ничему не хочет научить,</l>
-##               <l>Не умеет вовсе говорить</l>
-##               <l>И плывет дельфином молодым</l>
-##               <l>По седым пучинам мировым.</l>
-##            </lg>
-##            <p><date when="1909-12">Декабрь 1909</date>, <rs type="place">Гейдельберг</rs></p>
-##         </div>
-##         </div>
-##      </body>
-##  </text>
-##</TEI>
+
             
     else:
         continue
