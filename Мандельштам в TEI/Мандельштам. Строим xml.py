@@ -19,6 +19,9 @@ for file in os.listdir(path_1):
         page = open (path_1+file, 'r', encoding='cp1251')
         sourcecode = page.read()        
         tree = lxml.html.fromstring(sourcecode)
+
+
+##Общие свойства
         
 ##        заголовок вида 'О.Э. Мандельштам. «Ни о чем не нужно говорить...»'
         title = tree.xpath('.//title/text()')[0]
@@ -51,6 +54,12 @@ for file in os.listdir(path_1):
 ##            print(int(page_number[0]))
 ##        except:
 ##            continue
+                    
+##        дата (подпись под произведением)
+        date = tree.xpath('.//p[@class="date"]/text()')
+##        print(date)
+
+##Стихи
         
 ##        тип текста – стихи
         poem = re.findall('<div class="versus[a-z]*[\d]', sourcecode)
@@ -58,24 +67,17 @@ for file in os.listdir(path_1):
 ##            print('это стихи')
 ##        else:
 ##            print('это не стихи')
-        
-##        тип текста – письма
-        letter = tree.xpath('.//p[@class="ltr-date"]')
-##        try:
-##            print(letter[0])
-##        except:
-##            print('это не письма')
-        
+
 ##        стихотворный размер и количество стоп, если это стихи
         versus = re.findall('<div class="versus[a-z]*[\d]', sourcecode)
         vers = []
-        try:
+##        try:
 ##            print(versus[0].replace('<div class="versus', ''))
-            vers.append(versus[0].replace('<div class="versus', ''))
-        except:
-            continue
+##            vers.append(versus[0].replace('<div class="versus', ''))
+##        except:
+##            continue
 ##        vers - список с одним элементом вида ['ia6']
-        
+      
 ##        число строф, если это стихи
         verse_num = tree.xpath('.//p[@class="stanza"]/@id')
 ##        print(verse_num) ## список вида ['st1', 'st2']
@@ -92,7 +94,8 @@ for file in os.listdir(path_1):
 ##        сколько строк в стихотворении, если это стихи
 ##        if verse_line:
 ##            print(len(verse_line))
-        
+
+       
 ##        информация о каждой строфе, если это стихи    
         line_list = \
         ['1_line', 'couplet', 'tercet', 'quatrain', 'quintet', 'sestet', 'septet', 'octet', '9_line']
@@ -126,19 +129,28 @@ for file in os.listdir(path_1):
                     coup_text.append(couplet_text) 
 ##                    coup_text - общий список, в который вложены подсписки по числу строф,
 ##                    элементы каждого подсписка – это отдельные стихи (в виде строк)
-                    
-##        дата (подпись под произведением)
-        date = tree.xpath('.//p[@class="date"]/text()')
-##        print(date)
-        
+                           
 ##        собственно текст, если это стихи (все строки стихотворения в виде списка)
         verse_text = tree.xpath('.//span[@class="line"]/text() | .//span[@class="line1r"]/text()')
 ##        print(verse_text)
+
+
+##Проза
                
 ##        собственно текст, если это проза или письма (абзацы в виде списка)
         paragraph = tree.xpath('.//p[@class="text"]/text()')
 ##        print(paragraph)
 
+
+##Письма
+        
+##        тип текста – письма
+        letter = tree.xpath('.//p[@class="ltr-date"]')
+##        try:
+##            print(letter[0])
+##        except:
+##            print('это не письма')
+        
 
 ## СТРОИМ ФАЙЛ TEI XML               
 
@@ -166,25 +178,19 @@ for file in os.listdir(path_1):
         body = etree.SubElement(text, 'body')
         div = etree.SubElement(body, 'div', type = 'volume', n = volume_n[-1][-1])        
         div = etree.SubElement(div, 'div', type = 'part', n = text_number[0][:-1])
+        k = 0
         if poem:
             for i in range(len(verse_num)):  ## число строф
                 lg = etree.SubElement(div, 'lg', type = '{}'.format(tei_coup_num[i])) ## название, например, sestet
                 for s in range(len_coup[i]):  ## число строк в строфе
-                    l = etree.SubElement(lg, 'l').text = coup_text[i][s] ## сам текст: стихи
-        else:
-            continue
-                    
-
-##        tree = etree.ElementTree(tei)
-##        tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, xml_declaration = True)
-
-
+                    l = etree.SubElement(lg, 'l', n = str(linelist[k])).text = coup_text[i][s] ## сам текст: стихи
+                    k += 1
+##        if letter:
+##            print('letter[0]')
+##        if prose:
+                                        
+        tree = etree.ElementTree(tei)
+        tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, xml_declaration = True)
 
             
-    else:
-        continue
         
-
-
-
-
