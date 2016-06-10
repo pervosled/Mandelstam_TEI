@@ -17,6 +17,8 @@
     <body>
       <div n="3" type="volume">
         <div n="1" type="part">
+          <head>СТИХОТВОРЕНИЯ</head>
+          <head>1.</head>
           <lg type="couplet">
             <l n="1">Куда как страшно нам с тобой,</l>
             <l n="2">Товарищ большеротый мой!</l>
@@ -32,6 +34,7 @@
           <lg type="1_line">
             <l n="7">Да, видно, нельзя никак...</l>
           </lg>
+          <date>Октябрь 1930</date>
         </div>
       </div>
     </body>
