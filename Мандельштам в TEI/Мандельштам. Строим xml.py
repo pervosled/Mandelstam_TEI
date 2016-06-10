@@ -232,20 +232,4 @@ for file in os.listdir(path_1):
         tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, \
                    xml_declaration = True)
 
-
-## ДОБАВИЛ ОТОБРАЖАЕМЫЕ ЗАГОЛОВКИ, НАДО ИЗМЕНИТЬ ТАК, ЧТОБЫ ПОЯВИЛИСЬ ТЕГИ <P> ВНУТРИ <HEAD>
-
-        
-## ПАРСИМ УЖЕ ПОСТРОЕННЫЙ XML 
-
-##for file in os.listdir(path_2):
-##    if file.endswith('.xml'):
-##        page = open (path_2+file, 'r', encoding='utf8')
-##        sourcecode = page.read()     
-##        xmltree = lxml.html.fromstring(sourcecode)
-##
-##        pbfind = xmltree.xpath('.//title')
-##        print(pbfind)
-
-
         
