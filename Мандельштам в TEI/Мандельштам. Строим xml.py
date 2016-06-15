@@ -6,9 +6,10 @@ import lxml.html
 
 path_1 = '/Volumes/Blue Hard/ТЕКСТЫ/Алёша/_ВШЭ/НИС/Мандельштам/\
 2. Конвертируем файлы в TEI/downloads/'
-    
+
 path_2 = '/Volumes/Blue Hard/ТЕКСТЫ/Алёша/_ВШЭ/НИС/Мандельштам/\
 2. Конвертируем файлы в TEI/convert/'
+
 
 
 ## ОТКРЫВАЕМ ИСХОДНЫЙ HTML-ФАЙЛ И ПАРСИМ ЕГО ПРИ ПОМОЩИ LXML
@@ -36,13 +37,16 @@ for file in os.listdir(path_1):
             
 ##        заголовок, который будет отображаться на странице
         title_list = []
-        title_view = tree.xpath('.//h1/text()')
-        for i in range(len(title_view)):
-##            print(title_view[i])
-            title_list.append(title_view[i].lstrip())
-##        print(title_list)  ## для каждого файла - список, элементы которого -
-##            собственно заголовки, все, которые есть
-        
+        title_count = tree.xpath('count(.//h1)') 
+##        print(int(title_count)) ## число заголовочных тегов <h1>       
+        for t in range(int(title_count)):
+            title_view = tree.xpath('.//h1[{0}]/text()'.format(t+1))
+##            print(title_view)
+            title_list.append(title_view)
+##        print(title_list) ## список, внутри которого подсписки
+        ## по числу пар тегов <h1></h1> в файле, например:
+        ## [['ПРОЗА', '\n1921—1929'], ['177.', '\nБАТУМ']]
+                  
 ##        номер текущего тома
         volume_n = re.findall('Арт-Бизнес-Центр, 199[0-9]. Т. [1-4]', sourcecode)
 ##        print(int(volume_n[-1][-1]))
@@ -152,7 +156,7 @@ for file in os.listdir(path_1):
                
 ##        собственно текст, если это проза или письма (каждый абзац - строка, \
 ##                все вместе в одном списке, если не проза или письма, выдаёт пустой список)
-        paragraph = tree.xpath('.//p[@class="text"]/text()')
+        paragraph = tree.xpath('.//p[@class="text"]/text() | .//p[@class="text-cont"]/text()')
 ##        print(paragraph)
 
 
@@ -166,14 +170,11 @@ for file in os.listdir(path_1):
 ##            print('это не письма')
 
 ##        текст последней нестихотворной строки перед разрывом страницы
-        proselasttxt = []
         if not poem:
             plasttxt = tree.xpath('.//div[@class="page"]/preceding::p[1]/text()')
-            for e in plasttxt:
-                proselasttxt.append(e)
-##                print(proselasttxt) ## списки соответствуют файлам, вложенные
-                ## в них строки - это абзацы, предшествующие разрыву страниц
-            
+##            print(plasttxt) ## список, элементы которого - строки -
+            ## это абзацы, предшествующие разрыву страниц
+
 
 ## СТРОИМ ФАЙЛ TEI XML               
 
@@ -201,11 +202,14 @@ for file in os.listdir(path_1):
         body = etree.SubElement(text, 'body')
         div1 = etree.SubElement(body, 'div', type = 'volume', n = volume_n[-1][-1])        
         div2 = etree.SubElement(div1, 'div', type = 'part', n = text_number[0][:-1])
-        for t in range(len(title_list)):
-            head = etree.SubElement(div2, 'head').text = title_list[t]
 
-        k = 0
+        for head in title_list:
+##            print(''.join(head))
+            head = etree.SubElement(div2, 'head').text = ''.join(head) ## заголовок
+            
         if poem:
+            k = 0
+            c = 0
             for i in range(len(verse_num)):  ## число строф
                 lg = etree.SubElement(div2, 'lg', type = '{}'.format(tei_coup_num[i])) \
                      ## название, например, sestet
@@ -213,23 +217,33 @@ for file in os.listdir(path_1):
                     l = etree.SubElement(lg, 'l', n = str(linelist[k])).text = coup_text[i][s] \
                         ## сам текст: стихи
                     k += 1
-            l = 0
-
+                    if poemlasttxt:
+                        for t in poemlasttxt:
+                            if coup_text[i][s]== t:
+                                pb = etree.SubElement(div2, 'pb').text = page[c] ## номера страниц
+                            else:
+                                continue
+                            c += 1                    
         if not poem:
+            c = 0
             for m in range(len(paragraph)):
-                p = etree.SubElement(div2, 'p', text = paragraph[m])
-                    
+                p1 = etree.SubElement(div2, 'p').text = paragraph[m] ## проза: текст
+                for z in plasttxt:
+                    if paragraph[m] == z:
+                        pb = etree.SubElement(div2, 'pb').text = page[c] ## номера страниц
+                        ## в нужном месте (проза, письма)
+                    else:
+                        continue
+                    c += 1
+        
         if date:
-            dateline = etree.SubElement(div2, 'date').text = date[0]
-        l = 0
+            dateline = etree.SubElement(div2, 'date').text = date[0] ## дата
 
-        if page:
-            for n in page: 
-                pb = etree.SubElement(body, 'pb').text = page[l]
-                l += 1
-                                                       
+
+            
+                                                
         tree = etree.ElementTree(tei)
         tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, \
                    xml_declaration = True)
 
-        
+
