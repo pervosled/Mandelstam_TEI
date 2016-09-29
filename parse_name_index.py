@@ -3,9 +3,9 @@ import urllib.request
 import os.path
 import re
 import lxml.html
+import csv
 
-path = '/Volumes/Blue Hard/ТЕКСТЫ/Алёша/_ВШЭ/НИС/Мандельштам/\
-2. Конвертируем файлы в TEI/Указатель имён/'
+path = '/Users/Alexey/Documents/Python_Projects/Mandelstam_TEI/'
 
 ## ОТКРЫВАЕМ УКАЗАТЕЛЬ ИМЁН И ПАРСИМ ЕГО ПРИ ПОМОЩИ LXML
 
@@ -70,10 +70,19 @@ for sublist in pg:
 ##print(pg) ## список, подсписки: ['459—461,639', '370', '198,402,416'], 1226
 
 ##    ИТОГ
-##print(names[-2])  ## Яхонтов, Владимир Николаевич
-##print(descr[-2])  ## [' (1899—1945), актер — ']
-##print(vol[-2])  ## ['II', 'III', 'IV']
-##print(pg[-2]) ## ['459—461,639', '370', '198,402,416']
+##print(names[-891])  ## Яхонтов, Владимир Николаевич
+##print(descr[-891])  ## [' (1899—1945), актер — ']
+##print(vol[-891])  ## ['II', 'III', 'IV']
+##print(pg[-891]) ## ['459—461,639', '370', '198,402,416']
+
+## СОЗДАЁМ CSV-ФАЙЛ С ДАННЫМИ
+
+record_file = open('name_index.csv', 'w', newline='', encoding='utf8')
+writer = csv.writer(record_file, delimiter='\t')
+for i in range(len(names)):
+    writer.writerow([names[i]]+[descr[i]]+[vol[i]]+[pg[i]])
+record_file.close()
+
 
 
 

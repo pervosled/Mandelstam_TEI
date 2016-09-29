@@ -4,11 +4,9 @@ import os.path
 import re
 import lxml.html
 
-path_1 = '/Volumes/Blue Hard/ТЕКСТЫ/Алёша/_ВШЭ/НИС/Мандельштам/\
-2. Конвертируем файлы в TEI/downloads/'
+path_1 = '/Users/Alexey/Documents/Python_Projects/Mandelstam_TEI/downloads/'
 
-path_2 = '/Volumes/Blue Hard/ТЕКСТЫ/Алёша/_ВШЭ/НИС/Мандельштам/\
-2. Конвертируем файлы в TEI/convert/'
+path_2 = '/Users/Alexey/Documents/Python_Projects/Mandelstam_TEI/convert/'
 
 
 
