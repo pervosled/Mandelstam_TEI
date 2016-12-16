@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="134" type="part">
+          <head>134.</head>
+          <lg type="quatrain">
+            <l n="1">Твой зрачок в небесной корке,</l>
+            <l n="2">Обращенный вдаль и ниц,</l>
+            <l n="3">Защищают оговорки</l>
+            <l n="4">Слабых, чующих ресниц.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Будет он обожествленный</l>
+            <l n="6">Долго жить в родной стране — </l>
+            <l n="7">Омут ока удивленный, — </l>
+            <l n="8">Кинь его вдогонку мне.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Он глядит уже охотно</l>
+            <l n="10">В мимолетные века — </l>
+            <l n="11">Светлый, радужный, бесплотный,</l>
+            <l n="12">Умоляющий пока.</l>
+          </lg>
+          <date>2 января 1937</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

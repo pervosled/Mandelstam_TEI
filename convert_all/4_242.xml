@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="4" type="volume">
+        <div n="242" type="part">
+          <head>242.
+Б. С. КУЗИНУ, </head>
+          <p>Хочу написать вам настоящее письмо — и не могу. Все на ходу. Устал. Все жду чего-то. Не гневайтесь. Пишите сами и простите мою немоту. Очень устал. Это пройдет. Скучаю по вас.</p>
+          <p>26.II. 1938</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

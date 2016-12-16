@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="211" type="part">
+          <head>211.</head>
+          <lg type="quatrain">
+            <l n="1">Не средиземною волной</l>
+            <l n="2">И не вальпургиевой жабой,</l>
+            <l n="3">Я нынче грежу сам не свой</l>
+            <l n="4">Быть арестованною бабой.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Увы, на это я готов</l>
+            <l n="6">Заране с выводами всеми,</l>
+            <l n="7">Чтоб видеть вас в любое время</l>
+            <l n="8">Под милицейский звон оков!</l>
+          </lg>
+          <date>1932</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

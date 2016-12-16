@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="57" type="part">
+          <head>57.</head>
+          <lg type="quatrain">
+            <l n="1">Есть разных хитростей у человека много,</l>
+            <l n="2">И жажда денег их влечет к себе, как вол.</l>
+            <l n="3">Кулак Пахом, чтоб не платить налога,</l>
+            <l n="4">Наложницу себе завел!</l>
+          </lg>
+          <date>‹1923 или 1924›</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

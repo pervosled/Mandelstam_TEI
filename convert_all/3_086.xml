@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="83" type="part">
+          <lg type="quatrain">
+            <l n="1">Он дирижировал кавказскими горами</l>
+            <l n="2">И машучи ступал на тесных Альп тропы,</l>
+            <l n="3">И, озираючись, пустынными брегами</l>
+            <l n="4">Шел, чуя разговор бесчисленной толпы.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Толпы умов, влияний, впечатлений</l>
+            <l n="6">Он перенес, как лишь могущий мог:</l>
+            <l n="7">Рахиль глядела в зеркало явлений,</l>
+            <l n="8">А Лия пела и плела венок.</l>
+          </lg>
+          <date>Январь 1934</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

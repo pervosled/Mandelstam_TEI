@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="99" type="part">
+          <head>99.</head>
+          <lg type="couplet">
+            <l n="1">Мне кажется, мы говорить должны</l>
+            <l n="2">О будущем советской старины,</l>
+          </lg>
+          <lg type="couplet">
+            <l n="3">Что ленинское-сталинское слово — </l>
+            <l n="4">Воздушно-океанская подкова,</l>
+          </lg>
+          <lg type="couplet">
+            <l n="5">И лучше бросить тысячу поэзий,</l>
+            <l n="6">Чем захлебнуться в родовом железе,</l>
+          </lg>
+          <lg type="couplet">
+            <l n="7">И пращуры нам больше не страшны:</l>
+            <l n="8">Они у нас в крови растворены.</l>
+          </lg>
+          <date>Апрель—май 1935</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

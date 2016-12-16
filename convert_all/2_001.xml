@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="1" type="part">
+          <head>СТИХОТВОРЕНИЯ</head>
+          <head>1.</head>
+          <lg type="quatrain">
+            <l n="1">Умывался ночью на дворе.</l>
+            <l n="2">Твердь сияла грубыми звездами.</l>
+            <l n="3">Звездный луч — как соль на топоре.</l>
+            <l n="4">Стынет бочка с полными краями.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">На замок закрыты ворота,</l>
+            <l n="6">И земля по совести сурова.</l>
+            <l n="7">Чище правды свежего холста</l>
+            <l n="8">Вряд ли где отыщется основа.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Тает в бочке, словно соль, звезда,</l>
+            <l n="10">И вода студеная чернее.</l>
+            <l n="11">Чище смерть, соленее беда,</l>
+            <l n="12">И земля правдивей и страшнее.</l>
+          </lg>
+          <date>1921</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

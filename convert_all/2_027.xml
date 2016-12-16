@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="24" type="part">
+          <lg type="quatrain">
+            <l n="1">— В самоваре, и в стакане,</l>
+            <l n="2">И в кувшине, и в графине</l>
+            <l n="3">Вся вода из крана.</l>
+            <l n="4">Не разбей стакана.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">— А водопровод</l>
+            <l n="6">Где</l>
+            <l n="7">воду</l>
+            <l n="8">берет?</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

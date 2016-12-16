@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="25" type="part">
+          <head>25.</head>
+          <lg type="quatrain">
+            <l n="1">На влажный камень возведенный,</l>
+            <l n="2">Амур, печальный и нагой,</l>
+            <l n="3">Своей младенческой ногой</l>
+            <l n="4">Переступает, удивленный</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Тому, что в мире старость есть —</l>
+            <l n="6">Зеленый мох и влажный камень.</l>
+            <l n="7">И сердца незаконный пламень —</l>
+            <l n="8">Его ребяческая месть.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">И начинает ветер грубый</l>
+            <l n="10">В наивные долины дуть:</l>
+            <l n="11">Нельзя достаточно сомкнуть</l>
+            <l n="12">Свои страдальческие губы.</l>
+          </lg>
+          <date>‹Не позднее 22 октября› 1909</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

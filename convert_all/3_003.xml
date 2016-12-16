@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="3" type="part">
+          <head>3—14.
+АРМЕНИЯ</head>
+          <lg type="quatrain">
+            <l n="1">Ты розу Гафиза колышешь</l>
+            <l n="2">И нянчишь зверушек-детей,</l>
+            <l n="3">Плечьми осьмигранными дышишь</l>
+            <l n="4">Мужицких бычачьих церквей.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Окрашена охрою хриплой,</l>
+            <l n="6">Ты вся далеко за горой,</l>
+            <l n="7">А здесь лишь картинка налипла</l>
+            <l n="8">Из чайного блюдца с водой.</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

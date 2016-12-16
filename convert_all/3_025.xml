@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="25" type="part">
+          <head>25.</head>
+          <lg type="quatrain">
+            <l n="1">После полуночи сердце ворует</l>
+            <l n="2">Прямо из рук запрещенную тишь.</l>
+            <l n="3">Тихо живет — хорошо озорует,</l>
+            <l n="4">Любишь — не любишь: ни с чем не сравнишь...</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">вюбишь — не любишь, поймешь — не поймаешь.</l>
+            <l n="6">Не потому ль, как подкидыш, молчишь,</l>
+            <l n="7">Что пополуночи сердце пирует,</l>
+            <l n="8">Взяв на прикус серебристую мышь?</l>
+          </lg>
+          <date>Март 1931</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

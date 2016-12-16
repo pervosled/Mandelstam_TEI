@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="24" type="part">
+          <head>ПРИМУС
+24—37.</head>
+          <lg type="quatrain">
+            <l n="1">Чтобы вылечить и вымыть</l>
+            <l n="2">Старый примус золотой,</l>
+            <l n="3">У него головку снимут</l>
+            <l n="4">И нальют его водой.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Медник, доктор примусиный,</l>
+            <l n="6">Примус вылечит больной:</l>
+            <l n="7">Кормит свежим керосином,</l>
+            <l n="8">Чистит тонкою иглой.</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

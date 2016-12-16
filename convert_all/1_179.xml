@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="179" type="part">
+          <head>179.
+Мадригал</head>
+          <lg type="octet">
+            <l n="1">Дочь Андроника Комнена,</l>
+            <l n="2">Византийской славы дочь!</l>
+            <l n="3">Помоги мне в эту ночь</l>
+            <l n="4">Солнце выручить из плена,</l>
+            <l n="5">Помоги мне пышность тлена</l>
+            <l n="6">Стройной песнью превозмочь,</l>
+            <l n="7">Дочь Андроника Комнена,</l>
+            <l n="8">Византийской славы дочь!</l>
+          </lg>
+          <date>1916</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

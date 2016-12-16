@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="68" type="part">
+          <head>68—78.
+ВОСЬМИСТИШИЯ</head>
+          <lg type="quatrain">
+            <l n="1">Люблю появление ткани,</l>
+            <l n="2">Когда после двух или трех,</l>
+            <l n="3">А то четырех задыханий</l>
+            <l n="4">Прийдет выпрямительный вздох.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">И дугами парусных гонок</l>
+            <l n="6">Зеленые формы чертя,</l>
+            <l n="7">Играет пространство спросонок — </l>
+            <l n="8">Не знавшее люльки дитя.</l>
+          </lg>
+          <date>Ноябрь 1933, июль 1935</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

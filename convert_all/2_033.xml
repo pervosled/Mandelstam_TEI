@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="24" type="part">
+          <lg type="couplet">
+            <l n="1">Принесли дрова на кухню,</l>
+            <l n="2">Как вязанка на пол бухнет,</l>
+          </lg>
+          <lg type="couplet">
+            <l n="3">Как рассыплется она —</l>
+            <l n="4">И береза и сосна, —</l>
+          </lg>
+          <lg type="couplet">
+            <l n="5">Чтобы жарко было в кухне,</l>
+            <l n="6">Чтоб плита была красна.</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

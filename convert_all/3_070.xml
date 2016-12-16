@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="68" type="part">
+          <lg type="quatrain">
+            <l n="1">О бабочка, о мусульманка,</l>
+            <l n="2">В разрезанном саване вся, — </l>
+            <l n="3">Жизняночка и умиранка,</l>
+            <l n="4">Такая большая — сия!</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">С большими усами кусава</l>
+            <l n="6">Ушла с головою в бурнус.</l>
+            <l n="7">О флагом развернутый саван,</l>
+            <l n="8">Сложи свои крылья — боюсь!</l>
+          </lg>
+          <date>Ноябрь 1933 — январь 1934</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

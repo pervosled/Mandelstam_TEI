@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="67" type="part">
+          <head>67.</head>
+          <lg type="quatrain">
+            <l n="1">Татары, узбеки и ненцы,</l>
+            <l n="2">И весь украинский народ,</l>
+            <l n="3">И даже приволжские немцы</l>
+            <l n="4">К себе переводчиков ждут.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">И, может быть, в эту минуту</l>
+            <l n="6">Меня на турецкий язык</l>
+            <l n="7">Японец какой переводит</l>
+            <l n="8">И прямо мне в душу проник.</l>
+          </lg>
+          <date>Ноябрь 1933</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

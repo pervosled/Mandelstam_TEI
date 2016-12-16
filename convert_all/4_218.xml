@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="4" type="volume">
+        <div n="218" type="part">
+          <head>218.
+В редакцию журнала «ЗНАМЯ», </head>
+          <p>Посылаю стихотворение «Неизвестный солдат» в доработанном и развернутом виде.</p>
+          <p>Прилагаемым текстом </p>
+          <p>.</p>
+          <p>Прошу учесть эти изменения при обсуждении моих стихов.</p>
+          <p>11 марта 37.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

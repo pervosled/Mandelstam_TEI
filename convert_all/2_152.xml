@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="152" type="part">
+          <head>152.</head>
+          <lg type="quatrain">
+            <l n="1">На пути обратном</l>
+            <l n="2">Дня спадает зной,</l>
+            <l n="3">При звездах спадает</l>
+            <l n="4">Дня веретено.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">И мои желанья</l>
+            <l n="6">Смяты в колесе, — </l>
+            <l n="7">Из ночного лона</l>
+            <l n="8">Вызвездили все.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Я горю прозрачно,</l>
+            <l n="10">Просветлен трудом,</l>
+            <l n="11">В темной оболочке</l>
+            <l n="12">Молодым огнем.</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

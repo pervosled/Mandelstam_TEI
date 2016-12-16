@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="9" type="part">
+          <head>9.</head>
+          <lg type="quatrain">
+            <l n="1">Только детские книги читать,</l>
+            <l n="2">Только детские думы лелеять,</l>
+            <l n="3">Все большое далеко развеять,</l>
+            <l n="4">Из глубокой печали восстать.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Я от жизни смертельно устал,</l>
+            <l n="6">Ничего от нее не приемлю,</l>
+            <l n="7">Но люблю мою бедную землю,</l>
+            <l n="8">Оттого, что иной не видал.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Я качался в далеком саду</l>
+            <l n="10">На простой деревянной качели,</l>
+            <l n="11">И высокие темные ели</l>
+            <l n="12">Вспоминаю в туманном бреду.</l>
+          </lg>
+          <date>1908</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

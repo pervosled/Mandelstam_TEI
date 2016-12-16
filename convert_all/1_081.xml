@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="81" type="part">
+          <head>81.</head>
+          <lg type="quatrain">
+            <l n="1">На перламутровый челнок</l>
+            <l n="2">Натягивая шелка нити,</l>
+            <l n="3">О, пальцы гибкие, начните</l>
+            <l n="4">Очаровательный урок!</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Приливы и отливы рук...</l>
+            <l n="6">Однообразные движенья...</l>
+            <l n="7">Ты заклинаешь, без сомненья,</l>
+            <l n="8">Какой-то солнечный испуг,</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Когда широкая ладонь,</l>
+            <l n="10">Как раковина, пламенея,</l>
+            <l n="11">То гаснет, к теням тяготея,</l>
+            <l n="12">То в розовый уйдет огонь!..</l>
+          </lg>
+          <date>16 ноября 1911</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

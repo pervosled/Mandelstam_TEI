@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="124" type="part">
+          <head>124.</head>
+          <lg type="quatrain">
+            <l n="1">Мой щегол, я голову закину — </l>
+            <l n="2">Поглядим на мир вдвоем:</l>
+            <l n="3">Зимний день, колючий, как мякина,</l>
+            <l n="4">Так ли жестк в зрачке твоем?</l>
+          </lg>
+          <lg type="tercet">
+            <l n="5">Хвостик лодкой, перья черно-желты,</l>
+            <l n="6">Ниже клюва в краску влит,</l>
+            <l n="7">Сознаешь ли — до чего щегол ты,</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="8">Что за воздух у него в надлобье — </l>
+            <l n="9">Черн и красен, желт и бел!</l>
+            <l n="10">В обе стороны он в оба смотрит — в обе!— </l>
+            <l n="11">Не посмотрит — улетел!</l>
+          </lg>
+          <date>9—27 декабря 1936</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

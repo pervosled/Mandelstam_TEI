@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="101а" type="part">
+          <head>101а.</head>
+          <lg type="quatrain">
+            <l n="1">Там деготь прогудел, лазурью шевеля:</l>
+            <l n="2">— Пусть шар земной положит в сетку школьник.</l>
+            <l n="3">На Красной площади всего круглей земля,</l>
+            <l n="4">Покуда на земле последний жив невольник!</l>
+          </lg>
+          <date>Май ‹1935›</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

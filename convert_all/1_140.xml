@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="140" type="part">
+          <head>140.</head>
+          <lg type="quatrain">
+            <l n="1">Пусть имена цветущих городов</l>
+            <l n="2">Ласкают слух значительностью бренной.</l>
+            <l n="3">Не город Рим живет среди веков,</l>
+            <l n="4">А место человека во вселенной.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Им овладеть пытаются цари,</l>
+            <l n="6">Священники оправдывают войны,</l>
+            <l n="7">И без него презрения достойны,</l>
+            <l n="8">Как жалкий сор, дома и алтари.</l>
+          </lg>
+          <date>1914</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

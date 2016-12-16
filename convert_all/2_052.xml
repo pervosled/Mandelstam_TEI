@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="52" type="part">
+          <head>52.
+ВСЕ В ТРАМВАЕ</head>
+          <lg type="couplet">
+            <l n="1">Красноглазой сонной стаей</l>
+            <l n="2">Едут вечером трамваи,</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="3">С ними мальчик едет тот,</l>
+            <l n="4">Что запоvнил твердо счет;</l>
+            <l n="5">И портниха: с ней иголка,</l>
+            <l n="6">У нее в руках кошелка;</l>
+          </lg>
+          <lg type="couplet">
+            <l n="7">Мальчик с баночкой чернил —</l>
+            <l n="8">Перья новые купил;</l>
+          </lg>
+          <lg type="couplet">
+            <l n="9">Едет чистильщик с скамейкой,</l>
+            <l n="10">Полотер с мастикой клейкой;</l>
+          </lg>
+          <lg type="couplet">
+            <l n="11">Едет муха налегке,</l>
+            <l n="12">Выкупавшись в молоке;</l>
+          </lg>
+          <lg type="couplet">
+            <l n="13">С ними едут и другие,</l>
+            <l n="14">Незнакомые, чужие.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="15">Лишь настройщик опоздал:</l>
+            <l n="16">На рояле он играл.</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

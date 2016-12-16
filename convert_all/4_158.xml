@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="4" type="volume">
+        <div n="158" type="part">
+          <head>158.
+Е. Э. МАНДЕЛЬШТАМУ, </head>
+          <p>Убедительно прошу не волновать Над‹ежду› Як‹овлевну›, </p>
+          <p> и которую я вынужден был положить в спокойной и сухой комнате. В маленькой </p>
+          <p> сырость, </p>
+          <p> и не дашь заснуть больной.</p>
+          <p> остаемся последнюю ночь на старом месте, чтоб не переносить кровати.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

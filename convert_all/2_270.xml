@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="257" type="part">
+          <head>Проза</head>
+          <head>Наброски и редакции</head>
+          <head>257.
+‹Сергей Городецкий›</head>
+          <p>Вопреки всем — всему я утверждаю, что Городецкий остался верен себе. Узнаю во всем старого Городецкого времен Цеха и акмеизма и с любовью жду и прозреваю будущего Городецкого.</p>
+          <date>‹1921›</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

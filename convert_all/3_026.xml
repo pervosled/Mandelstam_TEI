@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="26" type="part">
+          <head>26.</head>
+          <lg type="quatrain">
+            <l n="1">Ночь на дворе. Барская лжа:</l>
+            <l n="2">После меня хоть потоп.</l>
+            <l n="3">Что же потом? Хрип горожан</l>
+            <l n="4">И толкотня в гардероб.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Бал-маскарад. Век-волкодав.</l>
+            <l n="6">Так затверди ж назубок:</l>
+            <l n="7">Шапку в рукав, шапкой в рукав — </l>
+            <l n="8">И да хранит тебя Бог.</l>
+          </lg>
+          <date>Март 1931</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

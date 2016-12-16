@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="89" type="part">
+          <head>89.</head>
+          <lg type="quatrain">
+            <l n="1">Образ твой, мучительный и зыбкий,</l>
+            <l n="2">Я не мог в тумане осязать.</l>
+            <l n="3">«Господи!» — сказал я по ошибке,</l>
+            <l n="4">Сам того не думая сказать.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Божье имя, как большая птица,</l>
+            <l n="6">Вылетело из моей груди!</l>
+            <l n="7">Впереди густой туман клубится,</l>
+            <l n="8">И пустая клетка позади...</l>
+          </lg>
+          <date>Апрель 1912</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="246" type="part">
+          <head>246.
+В альбом спекулянтке Розе</head>
+          <lg type="couplet">
+            <l n="1">Если грустишь, что тебе задолжал я одиннадцать тысяч,</l>
+            <l n="2">Помни, что двадцать одну мог я тебе задолжать.</l>
+          </lg>
+          <date>Зима 1920—1921</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

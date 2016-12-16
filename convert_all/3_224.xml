@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="224" type="part">
+          <head>224.</head>
+          <lg type="quatrain">
+            <l n="1">Слышу на лестнице шум быстро идущего Пяста.</l>
+            <l n="2">Вижу: торчит из пальто семьдесят пятый отрыв.</l>
+            <l n="3">Чую смущенной душой запах голландского сыра</l>
+            <l n="4">И вожделею отнять около ста папирос.</l>
+          </lg>
+          <date>‹Весна 1934›</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

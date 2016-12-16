@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="82а" type="part">
+          <head>82а.
+Кузнец</head>
+          <lg type="quatrain">
+            <l n="1">В лазури месяц новый</l>
+            <l n="2">Ясен и высок,</l>
+            <l n="3">Радуют подковы</l>
+            <l n="4">Звонкий грунт дорог.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Глубоко вздохнул я:</l>
+            <l n="6">В небе голубом</l>
+            <l n="7">Словно зачерпнул я</l>
+            <l n="8">Серебряным ковшом!</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Счастья тяжелый</l>
+            <l n="10">Я надел венец.</l>
+            <l n="11">В кузнице веселый</l>
+            <l n="12">Работает кузнец.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="13">Круглое братство</l>
+            <l n="14">Он для всех кует.</l>
+            <l n="15">Легкий месяц, здравствуй!</l>
+            <l n="16">Здравствуй, Новый Год!</l>
+          </lg>
+          <date>Ноябрь 1911, 1922(?)</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

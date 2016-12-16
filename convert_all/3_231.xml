@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="231" type="part">
+          <head>231.
+ПОДРАЖАНИЕ НОВОГРЕЧЕСКОМУ</head>
+          <lg type="couplet">
+            <l n="1">Девочку в деве щадя, с объясненьями юноша медлил</l>
+            <l n="2">И через семьдесят лет молвил старухе*: люблю.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="3">Мальчика в муже щадя, негодуя, медлила дева</l>
+            <l n="4">И через семьдесят лет плюнула старцу в лицо.</l>
+          </lg>
+          <date>‹1936—1937›</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

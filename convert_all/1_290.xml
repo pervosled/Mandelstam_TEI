@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="157а" type="part">
+          <head>157а.</head>
+          <lg type="quatrain">
+            <l n="1">Уничтожает пламень</l>
+            <l n="2">Сухую жизнь мою, —</l>
+            <l n="3">И ныне я не камень,</l>
+            <l n="4">А дерево пою.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Оно легко и грубо:</l>
+            <l n="6">Из одного куска</l>
+            <l n="7">И сердцевина дуба,</l>
+            <l n="8">И весла рыбака.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Вбивайте крепче сваи,</l>
+            <l n="10">Стучите молотки,</l>
+            <l n="11">О деревянном рае,</l>
+            <l n="12">Где вещи так легки!</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="13">Поведайте пустыне</l>
+            <l n="14">О дереве креста;</l>
+            <l n="15">В глубокой сердцевине</l>
+            <l n="16">Какая красота!</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="17">Из дерева простого</l>
+            <l n="18">Я смастерил челнок,</l>
+            <l n="19">И ничего иного</l>
+            <l n="20">Я выдумать не мог.</l>
+          </lg>
+          <date>1915</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="7" type="part">
+          <head>7.</head>
+          <lg type="quatrain">
+            <l n="1">Сусальным золотом горят</l>
+            <l n="2">В лесах рождественские елки;</l>
+            <l n="3">В кустах игрушечные волки</l>
+            <l n="4">Глазами страшными глядят.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">О, вещая моя печаль,</l>
+            <l n="6">О, тихая моя свобода</l>
+            <l n="7">И неживого небосвода</l>
+            <l n="8">Всегда смеющийся хрусталь!</l>
+          </lg>
+          <date>1908</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="17" type="part">
+          <head>17.</head>
+          <lg type="quatrain">
+            <l n="1">Колючая речь араратской долины,</l>
+            <l n="2">Дикая кошка — армянская речь,</l>
+            <l n="3">Хищный язык городов глинобитных,</l>
+            <l n="4">Речь голодающих кирпичей.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">А близорукое шахское небо — </l>
+            <l n="6">Слепорожденная бирюза — </l>
+            <l n="7">Все не прочтет пустотелую книгу</l>
+            <l n="8">Черной кровью запекшихся глин.</l>
+          </lg>
+          <date>Октябрь 1930</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

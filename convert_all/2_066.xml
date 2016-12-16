@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="66" type="part">
+          <head>66.
+ИЗ «АНТОЛОГИИ АНТИЧНОЙ ГЛУПОСТИ»</head>
+          <lg type="couplet">
+            <l n="1">Юношей Публий вступил в ряды ВКП золотые,</l>
+            <l n="2">Выбыл из партии он дряхлым — увы! — стариком.</l>
+          </lg>
+          <date>‹1925›</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

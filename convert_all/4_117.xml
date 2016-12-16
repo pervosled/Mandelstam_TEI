@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="4" type="volume">
+        <div n="117" type="part">
+          <head>117.
+В правление Ленинградского отделения Всероссийского союза поэтов, </head>
+          <p>Прошу принять меня в число членов Союза.</p>
+          <p>24 янв‹аря› 1927 г.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

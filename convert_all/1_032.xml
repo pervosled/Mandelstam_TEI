@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="32" type="part">
+          <head>32.</head>
+          <lg type="octet">
+            <l n="1">Нежнее нежного</l>
+            <l n="2">Лицо твое,</l>
+            <l n="3">Белее белого</l>
+            <l n="4">Твоя рука,</l>
+            <l n="5">От мира целого</l>
+            <l n="6">Ты далека,</l>
+            <l n="7">И все твое —</l>
+            <l n="8">От неизбежного.</l>
+          </lg>
+          <lg type="9_line">
+            <l n="9">От неизбежного</l>
+            <l n="10">Твоя печаль</l>
+            <l n="11">И пальцы рук</l>
+            <l n="12">Неостывающих,</l>
+            <l n="13">И тихий звук</l>
+            <l n="14">Неунывающих</l>
+            <l n="15">Речей,</l>
+            <l n="16">И даль</l>
+            <l n="17">Твоих очей.</l>
+          </lg>
+          <date>‹Декабрь?› 1909</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

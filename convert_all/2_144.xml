@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="144" type="part">
+          <head>144.</head>
+          <lg type="quatrain">
+            <l n="1">Мой шаг звучит</l>
+            <l n="2">Поутру рано</l>
+            <l n="3">Средь мастерских</l>
+            <l n="4">Чужого стана.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Горит звезда</l>
+            <l n="6">В ночном тумане.</l>
+            <l n="7">На ней ярма</l>
+            <l n="8">Нет и в помине!</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Звезда как пух</l>
+            <l n="10">В седое утро.</l>
+            <l n="11">Проснулся труд —</l>
+            <l n="12">Дрожите, трутни!</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="13">Кузнец кует</l>
+            <l n="14">Подкову— время;</l>
+            <l n="15">Но где же день,</l>
+            <l n="16">Желанный всеми?</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="17">Кулак, огонь</l>
+            <l n="18">Молниевидный.</l>
+            <l n="19">Ах, новых звезд</l>
+            <l n="20">Не видеть стыдно!</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

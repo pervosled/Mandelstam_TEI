@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="4" type="volume">
+        <div n="32" type="part">
+          <head>32.
+А.Л. ВОЛЫНСКОМУ, </head>
+          <p>Если только у Вас не прошла охота посетить наш скромный «Цех», приходите в пятницу 9 дек‹абря› к Адамовичу (Георгию Викторовичу) на Верейскую, 4, в 8 ч. в‹ечера›.</p>
+          <p>Все Вам будут очень рады.</p>
+          <p>До свиданья! Жму Вашу руку!</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

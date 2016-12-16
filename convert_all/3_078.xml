@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="68" type="part">
+          <lg type="quatrain">
+            <l n="1">И я выхожу из пространства</l>
+            <l n="2">В запущенный сад величин</l>
+            <l n="3">И мнимое рву постоянство</l>
+            <l n="4">И самосознанье причин.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">И твой, бесконечность, учебник</l>
+            <l n="6">Читаю один, без людей, — </l>
+            <l n="7">Безлиственный, дикий лечебник,</l>
+            <l n="8">Задачник огромных корней.</l>
+          </lg>
+          <date>Ноябрь 1933 — июль 1935</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

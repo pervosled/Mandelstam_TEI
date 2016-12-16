@@ -9,7 +9,6 @@ path_1 = '/Users/Alexey/Documents/Python_Projects/Mandelstam_TEI/downloads/'
 path_2 = '/Users/Alexey/Documents/Python_Projects/Mandelstam_TEI/convert/'
 
 
-
 ## ОТКРЫВАЕМ ИСХОДНЫЙ HTML-ФАЙЛ И ПАРСИМ ЕГО ПРИ ПОМОЩИ LXML
 
 for file in os.listdir(path_1):
@@ -28,7 +27,7 @@ for file in os.listdir(path_1):
 ##        номер произведения в томе
         t_number = tree.xpath('.//h1/text()')        
         for element in t_number:
-            text_number = re.findall('\d{1,3}\.', element)
+            text_number = re.findall('\d{1,3}\а?.', element)
             if text_number:
                 break
 ##        print(text_number)
@@ -87,12 +86,15 @@ for file in os.listdir(path_1):
       
 ##        число строф, если это стихи
         verse_num = tree.xpath('.//p[@class="stanza"]/@id')
+        if poem:
+            if not verse_num:
+                verse_num = ['st1']
 ##        print(verse_num) ## список вида ['st1', 'st2']
 ##        print(len(verse_num)) ## число строф
         
 ##        номер строки, если это стихи
 ##        (список, элементы которого – номера всех строк, например, [1, 2, 3, 4])
-        verse_line = tree.xpath('.//span[@class="line"]/@id | .//span[@class="line1r"]/@id')
+        verse_line = tree.xpath('.//span[@class]/@id')
         linelist = []
         for x in verse_line:
             linelist.append(int(x[1:]))
@@ -101,40 +103,54 @@ for file in os.listdir(path_1):
 ##        сколько строк в стихотворении, если это стихи
 ##        if verse_line:
 ##            print(len(verse_line))
+##        if poem:
+##            print(linelist[-1]) ## это и есть число строк, например, 16
+##        else:
+##            print('not poem')
        
 ##        информация о каждой строфе, если это стихи    
         line_list = \
-        ['1_line', 'couplet', 'tercet', 'quatrain', 'quintet', 'sestet', 'septet', 'octet', '9_line']
+        ['1_line', 'couplet', 'tercet', 'quatrain', 'quintet', 'sestet', 'septet', 'octet']
         coup_text = []
         tei_coup_num = []
         len_coup = []
-        if poem:
-            for x in range(int(verse_num[-1][-1])+1):
-                couplet_num = tree.xpath \
-                ('//p[@id="st{0}"]//span[@class="line1r"]/@id | \
-                //p[@id="st{0}"]//span[@class="line"]/@id'.format(x))
 
+##        if poem:
+##            print(len(verse_num)) ## число строф, если это стихи
+        
+        if poem:
+            for x in range(len(verse_num)):
+                couplet_num = tree.xpath('//p[@id="st{0}"]//span/@id'.format(x+1))
+##                print(couplet_num) ## для каждой строфы – список вида ['L1', 'L2', 'L3', 'L4']
+                if not couplet_num:
+                    couplet_num = tree.xpath('//div[@class]//span[@class]/@id')
+##                print(couplet_num) ## для всего стихотворения список вида ['L1', 'L2', 'L3', 'L4']
+                
 ##                информация о каждой строфе: название в TEI (например, quatrain)
-                if couplet_num:                    
+                try:
                     tei_couplet_num = line_list[len(couplet_num)-1]
-                    tei_coup_num.append(tei_couplet_num)
-##                    tei_coup_num - для одного стихотворения список вида
-##                    ['quatrain', 'quatrain', 'quatrain', 'quatrain', 'couplet']
+                except IndexError:
+                    tei_couplet_num = str(len(couplet_num))+'_line'
+                tei_coup_num.append(tei_couplet_num)
+##            print(tei_coup_num) ## tei_coup_num - для одного стихотворения список вида
+                    ## ['quatrain', 'quatrain', 'quatrain', 'quatrain', 'couplet']
 
 ##                    информация о каждой строфе: число строк
 ##                    print(len(couplet_num)) ## количество строк в строфе, например, 4
-                    len_coup.append(len(couplet_num))
-##                    len_coup для стихотворения - список чисел, соответствующих
-##                    числу строк в каждой строфе, например [4, 4, 4, 4, 2]
-
+                len_coup.append(len(couplet_num)) 
+##            print(len_coup) ## len_coup для стихотворения - список чисел, соответствующих
+                ## числу строк в каждой строфе, например [4, 4, 4, 4, 2] OK
+##
 ##                    информация о каждой строфе: собственно стихи в виде списка                  
+                if int(verse_num[-1][-1])>1:
                     couplet_text = tree.xpath \
-                    ('//p[@id="st{0}"]//span[@class="line"]/text() | \
-                    //p[@id="st{0}"]//span[@class="line1r"]/text()'.format(x))
+                    ('//p[@id="st{0}"]//span[@class]/text()'.format(x+1))
+                else:
+                    couplet_text = tree.xpath('//span[@class]/text()')
 ##                    print(couplet_text)                    
-                    coup_text.append(couplet_text) 
-##                    coup_text - общий список, в который вложены подсписки по числу строф,
-##                    элементы каждого подсписка – это отдельные стихи (в виде строк)
+                coup_text.append(couplet_text)
+##            print(coup_text) ## coup_text - общий список, в который вложены подсписки по числу строф,
+                    ## элементы каждого подсписка – это отдельные стихи (в виде строк)
                            
 ##        собственно текст, если это стихи (все строки стихотворения в виде списка)
         verse_text = tree.xpath('.//span[@class="line"]/text() | .//span[@class="line1r"]/text()')
@@ -148,7 +164,6 @@ for file in os.listdir(path_1):
                 poemlasttxt.append(n)
 ##            print(poemlasttxt)## списки соответствуют файлам, вложенные
             ## в них строки - это абзацы, предшествующие разрыву страниц
-
 
 ##Проза
                
@@ -199,7 +214,10 @@ for file in os.listdir(path_1):
         text = etree.SubElement(tei, 'text')
         body = etree.SubElement(text, 'body')
         div1 = etree.SubElement(body, 'div', type = 'volume', n = volume_n[-1][-1])        
-        div2 = etree.SubElement(div1, 'div', type = 'part', n = text_number[0][:-1])
+        try:
+            div2 = etree.SubElement(div1, 'div', type = 'part', n = text_number[0][:-1])
+        except IndexError:
+            div2 = etree.SubElement(div1, 'div', type = 'part', n = '')
 
         for head in title_list:
 ##            print(''.join(head))
@@ -213,35 +231,40 @@ for file in os.listdir(path_1):
                      ## название, например, sestet
                 for s in range(len_coup[i]):  ## число строк в строфе
                     l = etree.SubElement(lg, 'l', n = str(linelist[k])).text = coup_text[i][s] \
-                        ## сам текст: стихи
+                    ## сам текст: стихи
                     k += 1
-                    if poemlasttxt:
-                        for t in poemlasttxt:
-                            if coup_text[i][s]== t:
-                                pb = etree.SubElement(div2, 'pb').text = page[c] ## номера страниц
-                            else:
-                                continue
-                            c += 1                    
+##                    if poemlasttxt:
+##                        for t in poemlasttxt:
+##                            if coup_text[i][s]==t:
+##                                pb = etree.SubElement(div2, 'pb').text = page[c] ## номера страниц
+##                            else:
+##                                continue
+##                            c += 1                    
         if not poem:
             c = 0
             for m in range(len(paragraph)):
                 p1 = etree.SubElement(div2, 'p').text = paragraph[m] ## проза: текст
-                for z in plasttxt:
-                    if paragraph[m] == z:
-                        pb = etree.SubElement(div2, 'pb').text = page[c] ## номера страниц
-                        ## в нужном месте (проза, письма)
-                    else:
-                        continue
-                    c += 1
+##                for z in plasttxt:
+##                    if paragraph[m] == z:
+##                        pb = etree.SubElement(div2, 'pb').text = page[c] ## номера страниц
+##                        ## в нужном месте (проза, письма)
+##                    else:
+##                        continue
+##                    c += 1
         
         if date:
             dateline = etree.SubElement(div2, 'date').text = date[0] ## дата
-
-
-            
-                                                
+                                               
         tree = etree.ElementTree(tei)
         tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, \
                    xml_declaration = True)
+
+
+
+
+
+
+
+
 
 

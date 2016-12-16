@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="175" type="part">
+          <head>175.
+КУВШИН</head>
+          <lg type="quatrain">
+            <l n="1">Длинной жажды должник виноватый,</l>
+            <l n="2">Мудрый сводник вина и воды, — </l>
+            <l n="3">На боках твоих пляшут козлята</l>
+            <l n="4">И под музыку зреют плоды.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Флейты свищут, клевещут и злятся,</l>
+            <l n="6">Что беда на твоем ободу</l>
+            <l n="7">Черно-красном — и некому взяться</l>
+            <l n="8">За тебя, чтоб поправить беду.</l>
+          </lg>
+          <date>21 марта 1937</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

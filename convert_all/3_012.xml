@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="3" type="part">
+          <lg type="octet">
+            <l n="1">Какая роскошь в нищенском селеньи — </l>
+            <l n="2">Волосяная музыка воды!</l>
+            <l n="3">Что это? пряжа? звук? предупрежденье?</l>
+            <l n="4">Чур-чур меня! Далеко ль до беды!</l>
+            <l n="5">И в лабиринте влажного распева</l>
+            <l n="6">Такая душная стрекочет мгла,</l>
+            <l n="7">Как будто в гости водяная дева</l>
+            <l n="8">К часовщику подземному пришла.</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

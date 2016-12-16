@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="23" type="part">
+          <head>23.</head>
+          <lg type="couplet">
+            <l n="1">Мы с тобой на кухне посидим,</l>
+            <l n="2">Сладко пахнет белый керосин;</l>
+          </lg>
+          <lg type="couplet">
+            <l n="3">Острый нож да хлеба каравай...</l>
+            <l n="4">Хочешь, примус туго накачай,</l>
+          </lg>
+          <lg type="couplet">
+            <l n="5">А не то веревок собери</l>
+            <l n="6">Завязать корзину до зари,</l>
+          </lg>
+          <lg type="couplet">
+            <l n="7">Чтобы нам уехать на вокзал,</l>
+            <l n="8">Где бы нас никто не отыскал.</l>
+          </lg>
+          <date>Январь 1931</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

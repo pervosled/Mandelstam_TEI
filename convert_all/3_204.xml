@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="203" type="part">
+          <lg type="quatrain">
+            <l n="1">Скажи-ка, бабушка, — хе-хе!— </l>
+            <l n="2">И я сейчас к тебе приеду:</l>
+            <l n="3">Явиться в смокинге к обеду</l>
+            <l n="4">Или в узорчатой дохе?</l>
+          </lg>
+          <date>1931</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

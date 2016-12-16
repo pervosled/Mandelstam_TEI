@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="59" type="part">
+          <head>59.</head>
+          <lg type="quatrain">
+            <l n="1">Неумолимые слова...</l>
+            <l n="2">Окаменела Иудея,</l>
+            <l n="3">И, с каждым мигом тяжелея,</l>
+            <l n="4">Его поникла голова.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Стояли воины кругом</l>
+            <l n="6">На страже стынущего тела;</l>
+            <l n="7">Как венчик, голова висела</l>
+            <l n="8">На стебле тонком и чужом.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">И царствовал, и никнул Он,</l>
+            <l n="10">Как лилия в родимый омут,</l>
+            <l n="11">И глубина, где стебли тонут,</l>
+            <l n="12">Торжествовала свой закон.</l>
+          </lg>
+          <date>‹Август› 1910, Целендорф</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

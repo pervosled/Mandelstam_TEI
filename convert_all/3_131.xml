@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="131" type="part">
+          <head>131.</head>
+          <lg type="10_line">
+            <l n="1">Вехи дальние обоза</l>
+            <l n="2">Сквозь стекло особняка.</l>
+            <l n="3">От тепла и от мороза</l>
+            <l n="4">Близкой кажется река.</l>
+            <l n="5">И какой там лес — еловый?</l>
+            <l n="6">Не еловый, а лиловый,</l>
+            <l n="7">И какая там береза,</l>
+            <l n="8">Не скажу наверняка — </l>
+            <l n="9">Лишь чернил воздушных проза</l>
+            <l n="10">Неразборчива, легка.</l>
+          </lg>
+          <date>26 декабря 1936</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

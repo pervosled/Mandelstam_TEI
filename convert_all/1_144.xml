@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="144" type="part">
+          <head>144.</head>
+          <lg type="sestet">
+            <l n="1">...На луне не растет</l>
+            <l n="2">Ни одной былинки;</l>
+            <l n="3">На луне весь народ</l>
+            <l n="4">Делает корзинки —</l>
+            <l n="5">Из соломы плетет</l>
+            <l n="6">Легкие корзинки.</l>
+          </lg>
+          <lg type="sestet">
+            <l n="7">На луне — полутьма</l>
+            <l n="8">И дома опрятней;</l>
+            <l n="9">На луне не дома —</l>
+            <l n="10">Просто голубятни;</l>
+            <l n="11">Голубые дома —</l>
+            <l n="12">Чудо-голубятни.</l>
+          </lg>
+          <date>1914</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="123" type="part">
+          <head>123.</head>
+          <lg type="quatrain">
+            <l n="1">Детский рот жует свою мякину,</l>
+            <l n="2">Улыбается, жуя,</l>
+            <l n="3">Словно щеголь, голову закину</l>
+            <l n="4">И щегла увижу я.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Хвостик лодкой, перья черно-желты,</l>
+            <l n="6">Ниже клюва красным шит,</l>
+            <l n="7">Черно-желтый, до чего щегол ты,</l>
+            <l n="8">До чего ты щегловит!</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Подивлюсь на свет еще немного,</l>
+            <l n="10">На детей и на снега, — </l>
+            <l n="11">Но улыбка неподдельна, как дорога,</l>
+            <l n="12">Непослушна, не слуга.</l>
+          </lg>
+          <date>9—13 декабря 1936</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

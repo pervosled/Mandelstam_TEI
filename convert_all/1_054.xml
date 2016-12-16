@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="54" type="part">
+          <head>54.</head>
+          <lg type="quatrain">
+            <l n="1">Я вижу каменное небо</l>
+            <l n="2">Над тусклой паутиной вод.</l>
+            <l n="3">В тисках постылого Эреба</l>
+            <l n="4">Душа томительно живет.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Я понимаю этот ужас</l>
+            <l n="6">И постигаю эту связь:</l>
+            <l n="7">И небо падает, не рушась,</l>
+            <l n="8">И море плещет, не пенясь.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">О, крылья бледные химеры,</l>
+            <l n="10">На грубом золоте песка,</l>
+            <l n="11">И паруса трилистник серый,</l>
+            <l n="12">Распятый, как моя тоска!</l>
+          </lg>
+          <date>‹Не позднее 5 августа 1910›</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

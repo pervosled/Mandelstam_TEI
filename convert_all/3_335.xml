@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="174а" type="part">
+          <head>174а.</head>
+          <lg type="quatrain">
+            <l n="1">Украшался отборной собачиной</l>
+            <l n="2">Египтян государственный строй— </l>
+            <l n="3">Мертвецов наделял всякой всячиной</l>
+            <l n="4">И торчит пустячком пирамид.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Рядом с готикой жил озоруючи</l>
+            <l n="6">И плевал на паучьи права</l>
+            <l n="7">Наглый школьник и ангел ворующий</l>
+            <l n="8">Несравненный Виллон Франсуа.</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

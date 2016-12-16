@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="149" type="part">
+          <head>149.
+Реймс и Кельн</head>
+          <lg type="quatrain">
+            <l n="1">...Но в старом Кельне тоже есть собор,</l>
+            <l n="2">Неконченный и все-таки прекрасный,</l>
+            <l n="3">И хоть один священник беспристрастный,</l>
+            <l n="4">И в дивной целости стрельчатый бор.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Он потрясен чудовищным набатом,</l>
+            <l n="6">И в грозный час, когда густеет мгла,</l>
+            <l n="7">Немецкие поют колокола:</l>
+            <l n="8">— Что сотворили вы над реймским братом?</l>
+          </lg>
+          <date>Сентябрь 1914</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

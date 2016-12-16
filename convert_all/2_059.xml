@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="59" type="part">
+          <head>59.</head>
+          <lg type="octet">
+            <l n="1">По нашим временам куда как стали редки</l>
+            <l n="2">Любители почивших в бозе... Вот</l>
+            <l n="3">В старинный склеп, где тихо тлеют предки,</l>
+            <l n="4">Он входит. Снял сомбреро. На киот</l>
+            <l n="5">Перекрестился. Долг потомка справил,</l>
+            <l n="6">И, в меру закусив, в вагоне лег костьми.</l>
+            <l n="7">А вор его без шляпы и оставил.</l>
+            <l n="8">Читатель, не кути с случайными людьми!</l>
+          </lg>
+          <date>1924</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

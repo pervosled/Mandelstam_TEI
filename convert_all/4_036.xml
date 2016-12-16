@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="4" type="volume">
+        <div n="36" type="part">
+          <head>36.
+Н. Я. ХАЗИНОЙ, </head>
+          <p>Получил вашу записочку. Буду в Киеве через несколько дней. Не унывайте, друг милый. Подумаем, как устроить, чтоб вам не было плохо. До очень скорого свидания, дружок! У меня все готово к отъезду. </p>
+          <p>Только никуда не уезжать и спокойно ждать моего приезда!</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

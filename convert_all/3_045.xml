@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="45" type="part">
+          <head>45.</head>
+          <lg type="quatrain">
+            <l n="1">О, как мы любим лицемерить</l>
+            <l n="2">И забываем без труда</l>
+            <l n="3">То, что мы в детстве ближе к смерти,</l>
+            <l n="4">Чем в наши зрелые года.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="5">Еще обиду тянет с блюдца</l>
+            <l n="6">Невыспавшееся дитя,</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="7">Но не хочу уснуть, как рыба,</l>
+            <l n="8">В глубоком обмороке вод,</l>
+            <l n="9">И дорог мне свободный выбор</l>
+            <l n="10">Моих страданий и забот.</l>
+          </lg>
+          <date>Февраль — 14 мая 1932</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="10" type="part">
+          <head>10.
+МОСКОВСКИЙ ДОЖДИК</head>
+          <lg type="quatrain">
+            <l n="1">Он подает куда как скупо</l>
+            <l n="2">Свой воробьиный холодок —</l>
+            <l n="3">Немного нам, немного купам,</l>
+            <l n="4">Немного вишням на лоток.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">И в темноте растет кипенье —</l>
+            <l n="6">Чаинок легкая возня,</l>
+            <l n="7">Как бы воздушный муравейник</l>
+            <l n="8">Пирует в темных зеленях.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">И свежих капель виноградник</l>
+            <l n="10">Зашевелился в мураве:</l>
+            <l n="11">Как будто холода рассадник</l>
+            <l n="12">Открылся в лапчатой Москве!</l>
+          </lg>
+          <date>1922</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

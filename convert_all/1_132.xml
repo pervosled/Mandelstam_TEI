@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="132" type="part">
+          <head>132.
+Валкирии</head>
+          <lg type="quatrain">
+            <l n="1">Летают Валкирии, поют смычки —</l>
+            <l n="2">Громоздкая опера к концу идет.</l>
+            <l n="3">С тяжелыми шубами гайдуки</l>
+            <l n="4">На мраморных лестницах ждут господ.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Уж занавес наглухо упасть готов,</l>
+            <l n="6">Еще рукоплещет в райке глупец,</l>
+            <l n="7">Извозчики пляшут вокруг костров...</l>
+            <l n="8">«Карету такого-то!» — Разъезд. Конец.</l>
+          </lg>
+          <date>1914 (1913?)</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

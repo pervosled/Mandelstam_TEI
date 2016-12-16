@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="258" type="part">
+          <head>258.</head>
+          <lg type="quintet">
+            <l n="1">В оцинкованном влажном Батуме,</l>
+            <l n="2">По холерным базарам Ростова</l>
+            <l n="3">И в фисташковом хитром Тифлисе</l>
+            <l n="4">Над Курою в ущелье балконном</l>
+            <l n="5">Шили платья у тихой портнихи...</l>
+          </lg>
+          <date>Апрель 1934</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

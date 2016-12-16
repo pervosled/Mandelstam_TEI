@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="55" type="part">
+          <head>55.</head>
+          <lg type="quatrain">
+            <l n="1">Вечер нежный. Сумрак важный.</l>
+            <l n="2">Гул за гулом. Вал за валом.</l>
+            <l n="3">И в лицо нам ветер влажный</l>
+            <l n="4">Бьет соленым покрывалом.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Все погасло. Все смешалось.</l>
+            <l n="6">Волны берегом хмелели.</l>
+            <l n="7">В нас вошла слепая радость —</l>
+            <l n="8">И сердца отяжелели.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Оглушил нас хаос темный,</l>
+            <l n="10">Одурманил воздух пьяный,</l>
+            <l n="11">Убаюкал хор огромный:</l>
+            <l n="12">Флейты, лютни и тимпаны...</l>
+          </lg>
+          <date>‹Не позднее 5 августа 1910›</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

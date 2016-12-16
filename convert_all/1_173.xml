@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="172" type="part">
+          <lg type="octet">
+            <l n="1">В Петрополе прозрачном мы умрем,</l>
+            <l n="2">Где властвует над нами Прозерпина.</l>
+            <l n="3">Мы в каждом вздохе смертный воздух пьем,</l>
+            <l n="4">И каждый час нам смертная година.</l>
+            <l n="5">Богиня моря, грозная Афина,</l>
+            <l n="6">Сними могучий каменный шелом.</l>
+            <l n="7">В Петрополе прозрачном мы умрем, —</l>
+            <l n="8">Здесь царствуешь не ты, а Прозерпина.</l>
+          </lg>
+          <date>Май 1916</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

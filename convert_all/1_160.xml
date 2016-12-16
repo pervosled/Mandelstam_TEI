@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="160" type="part">
+          <head>160.
+Дворцовая площадь</head>
+          <lg type="quatrain">
+            <l n="1">Императорский виссон</l>
+            <l n="2">И моторов колесницы, —</l>
+            <l n="3">В черном омуте столицы</l>
+            <l n="4">Столпник-ангел вознесен.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">В темной арке, как пловцы,</l>
+            <l n="6">Исчезают пешеходы,</l>
+            <l n="7">И на площади, как воды,</l>
+            <l n="8">Глухо плещутся торцы.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Только там, где твердь светла,</l>
+            <l n="10">Черно-желтый лоскут злится,</l>
+            <l n="11">Словно в воздухе струится</l>
+            <l n="12">Желчь двуглавого орла.</l>
+          </lg>
+          <date>‹Июнь› 1915</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

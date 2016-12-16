@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="115" type="part">
+          <head>115.</head>
+          <lg type="quatrain">
+            <l n="1">Ты должен мной повелевать,</l>
+            <l n="2">А я обязан быть послушным.</l>
+            <l n="3">На честь, на имя наплевать,</l>
+            <l n="4">Я рос больным и стал тщедушным.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Так пробуй выдуманный метод</l>
+            <l n="6">Напропалую, напрямик — </l>
+            <l n="7">Я — беспартийный большевик,</l>
+            <l n="8">Как все друзья, как недруг этот.</l>
+          </lg>
+          <date>Май(?) 1935</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

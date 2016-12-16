@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="41" type="part">
+          <head>41.
+АВТОМОБИЛИЩЕ</head>
+          <lg type="quatrain">
+            <l n="1">— Мне, автомобилищу, чего бы не забыть еще?</l>
+            <l n="2">Вычистили, вымыли, бензином напоили.</l>
+            <l n="3">Хочется мешки возить. Хочется пыхтеть еще.</l>
+            <l n="4">Шины мои толстые — я слон автомобилий.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Что-то мне не терпится —</l>
+            <l n="6">Накопилась силища,</l>
+            <l n="7">Накопилась силища —</l>
+            <l n="8">Я автомобилище.</l>
+          </lg>
+          <lg type="1_line">
+            <l n="9">Ну-ка покатаю я охапку пионеров!</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

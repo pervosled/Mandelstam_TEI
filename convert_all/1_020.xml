@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="20" type="part">
+          <head>20.</head>
+          <lg type="quatrain">
+            <l n="1">В безветрии моих садов</l>
+            <l n="2">Искусственная никнет роза;</l>
+            <l n="3">Над ней не тяготит угроза</l>
+            <l n="4">Неизрекаемых часов.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">В юдоли дольней бытия</l>
+            <l n="6">Она участвует невольно;</l>
+            <l n="7">Над нею небо безглагольно</l>
+            <l n="8">И ясно, — и вокруг нея</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Немногое, на чем печать</l>
+            <l n="10">Моих пугливых вдохновений</l>
+            <l n="11">И трепетных прикосновений,</l>
+            <l n="12">Привыкших только отмечать.</l>
+          </lg>
+          <date>‹Октябрь?› 1909</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

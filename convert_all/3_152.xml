@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="152" type="part">
+          <head>152.</head>
+          <lg type="tercet">
+            <l n="1">Люблю морозное дыханье</l>
+            <l n="2">И пара зимнего признанье:</l>
+            <l n="3">Я — это я, явь — это явь...</l>
+          </lg>
+          <lg type="tercet">
+            <l n="4">И мальчик, красный, как фонарик,</l>
+            <l n="5">Своих салазок государик</l>
+            <l n="6">И заправила, мчится вплавь.</l>
+          </lg>
+          <lg type="tercet">
+            <l n="7">И я — в размолвке с миром, с волей — </l>
+            <l n="8">Заразе саночек мирволю — </l>
+            <l n="9">В сребристых скобках, в бахромах, — </l>
+          </lg>
+          <lg type="tercet">
+            <l n="10">И век бы падал векши легче,</l>
+            <l n="11">И легче векши к мягкой речке — </l>
+            <l n="12">Полнеба в валенках, в ногах...</l>
+          </lg>
+          <date>24 января 1937</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

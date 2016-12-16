@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="16" type="part">
+          <head>16.</head>
+          <lg type="quatrain">
+            <l n="1">Как тельце маленькое крылышком</l>
+            <l n="2">По солнцу всклянь перевернулось</l>
+            <l n="3">И зажигательное стеклышко</l>
+            <l n="4">На эмпирее загорелось.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Как комариная безделица</l>
+            <l n="6">В зените ныла и звенела</l>
+            <l n="7">И под сурдинку пеньем жужелиц</l>
+            <l n="8">В лазури мучилась заноза:</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">— Не забывай меня, казни меня,</l>
+            <l n="10">Но дай мне имя, дай мне имя!</l>
+            <l n="11">Мне будет легче с ним, пойми меня,</l>
+            <l n="12">В беременной глубокой сини.</l>
+          </lg>
+          <date>1923</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

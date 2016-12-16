@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="" type="part">
+          <head> </head>
+          <lg type="quatrain">
+            <l n="1">Голова твоя талантлива,</l>
+            <l n="2">Живо сердце, не мертво,</l>
+            <l n="3">Как убежище Мелантьево...</l>
+            <l n="4">Впрочем, это ничего.</l>
+          </lg>
+          <date>8 ноября 1923</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

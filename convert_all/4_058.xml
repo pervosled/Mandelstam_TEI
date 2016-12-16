@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="4" type="volume">
+        <div n="58" type="part">
+          <head>58.
+В издательство «ВРЕМЯ», </head>
+          <p>Настоящим доверяю брату моему Евгению Эмильевичу Мандельштаму произвести окончательный расчет по книге моей «Шум Времени».</p>
+          <p>Детское Село </p>
+          <p>3 апр‹еля› 1925.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

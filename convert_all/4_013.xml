@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="4" type="volume">
+        <div n="13" type="part">
+          <head>13.
+В. И. ИВАНОВУ, </head>
+          <p>Если вам хочется мне написать и вы не отвечаете мне по какой-нибудь внешней причине, то все-таки напишите мне.</p>
+          <p>Я хочу многое вам сказать, но не могу, не умею до этого.</p>
+          <p>Heidelberg, Anlage 30.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

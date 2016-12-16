@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="83" type="part">
+          <lg type="quatrain">
+            <l n="1">А посреди толпы, задумчивый, брадатый,</l>
+            <l n="2">Уже стоял гравер — друг меднохвойных доск,</l>
+            <l n="3">Трехъярой окисью облитых в лоск покатый,</l>
+            <l n="4">Накатом истины сияющих сквозь воск.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Как будто я повис на собственных ресницах</l>
+            <l n="6">В толпокрылатом воздухе картин</l>
+            <l n="7">Тех мастеров, что насаждают в лицах</l>
+            <l n="8">Порядок зрения и многолюдства чин.</l>
+          </lg>
+          <date>Январь 1934</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

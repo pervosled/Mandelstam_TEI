@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="62" type="part">
+          <head>62.</head>
+          <lg type="quatrain">
+            <l n="1">Из омута злого и вязкого</l>
+            <l n="2">Я вырос, тростинкой шурша, —</l>
+            <l n="3">И страстно, и томно, и ласково</l>
+            <l n="4">Запретною жизнью дыша.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">И никну, никем не замеченный,</l>
+            <l n="6">В холодный и топкий приют,</l>
+            <l n="7">Приветственным шелестом встреченный</l>
+            <l n="8">Коротких осенних минут.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Я счастлив жестокой обидою,</l>
+            <l n="10">И в жизни, похожей на сон,</l>
+            <l n="11">Я каждому тайно завидую</l>
+            <l n="12">И в каждого тайно влюблен.</l>
+          </lg>
+          <date>‹Осень› 1910, 1927</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

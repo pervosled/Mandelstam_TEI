@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="143а" type="part">
+          <head>143а.</head>
+          <lg type="octet">
+            <l n="1">Что делать нам с убитостью равнин,</l>
+            <l n="2">С протяжным голодом их чуда?</l>
+            <l n="3">Ведь то, что мы открытостью в них мним,</l>
+            <l n="4">Мы сами видим, засыпая, зрим — </l>
+            <l n="5">И все растет вопрос: куда они, откуда,</l>
+            <l n="6">И не ползет ли медленно по ним</l>
+            <l n="7">Тот, о котором мы во сне кричим, — </l>
+            <l n="8">Пространств несозданных Иуда?</l>
+          </lg>
+          <date>16 января 1937</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="87" type="part">
+          <head>87.</head>
+          <lg type="quintet">
+            <l n="1">Кто Маяковского гонитель</l>
+            <l n="2">И полномочный представитель</l>
+            <l n="3">Персидского ....... Лахути?</l>
+            <l n="4">Шенгели, господи прости,</l>
+            <l n="5">Российских ямбов керченский смотритель.</l>
+          </lg>
+          <date>‹Конец 1920-х›</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

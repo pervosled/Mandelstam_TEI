@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="60" type="part">
+          <head>60.</head>
+          <lg type="tercet">
+            <l n="1">В самом себе, как змей, таясь,</l>
+            <l n="2">Вокруг себя, как плющ, виясь, —</l>
+            <l n="3">Я подымаюсь над собою:</l>
+          </lg>
+          <lg type="tercet">
+            <l n="4">Себя хочу, к себе лечу,</l>
+            <l n="5">Крылами темными плещу,</l>
+            <l n="6">Расширенными над водою;</l>
+          </lg>
+          <lg type="tercet">
+            <l n="7">И, как испуганный орел,</l>
+            <l n="8">Вернувшись, больше не нашел</l>
+            <l n="9">Гнезда, сорвавшегося в бездну, —</l>
+          </lg>
+          <lg type="tercet">
+            <l n="10">Омоюсь молнии огнем</l>
+            <l n="11">И, заклиная тяжкий гром,</l>
+            <l n="12">В холодном облаке исчезну!</l>
+          </lg>
+          <date>Август 1910, ‹Берлин›</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

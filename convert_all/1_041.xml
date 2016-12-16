@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="41" type="part">
+          <head>41.</head>
+          <lg type="quatrain">
+            <l n="1">Листьев сочувственный шорох</l>
+            <l n="2">Угадывать сердцем привык,</l>
+            <l n="3">В темных читаю узорах</l>
+            <l n="4">Смиренного сердца язык.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Верные, четкие мысли —</l>
+            <l n="6">Прозрачная, строгая ткань...</l>
+            <l n="7">Острые листья исчисли —</l>
+            <l n="8">Словами играть перестань.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">К высям просвета какого</l>
+            <l n="10">Уходит твой лиственный шум —</l>
+            <l n="11">Темное дерево слова,</l>
+            <l n="12">Ослепшее дерево дум?</l>
+          </lg>
+          <date>Май 1910, Гельсингфорс</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="16" type="part">
+          <head>16.</head>
+          <lg type="quatrain">
+            <l n="1">Не говори никому,</l>
+            <l n="2">Все, что ты видел, забудь — </l>
+            <l n="3">Птицу, старуху, тюрьму</l>
+            <l n="4">Или еще что-нибудь.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Или охватит тебя,</l>
+            <l n="6">Только уста разомкнешь,</l>
+            <l n="7">При наступлении дня</l>
+            <l n="8">Мелкая хвойная дрожь.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Вспомнишь на даче осу,</l>
+            <l n="10">Детский чернильный пенал</l>
+            <l n="11">Или чернику в лесу,</l>
+            <l n="12">Что никогда не сбирал.</l>
+          </lg>
+          <date>Октябрь 1930</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

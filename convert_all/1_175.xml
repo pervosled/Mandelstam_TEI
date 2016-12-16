@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="175" type="part">
+          <head>175.</head>
+          <lg type="quatrain">
+            <l n="1">Эта ночь непоправима,</l>
+            <l n="2">А у вас еще светло.</l>
+            <l n="3">У ворот Ерусалима</l>
+            <l n="4">Солнце черное взошло.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Солнце желтое страшнее, —</l>
+            <l n="6">Баю-баюшки-баю, —</l>
+            <l n="7">В светлом храме иудеи</l>
+            <l n="8">Хоронили мать мою.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Благодати не имея</l>
+            <l n="10">И священства лишены,</l>
+            <l n="11">В светлом храме иудеи</l>
+            <l n="12">Отпевали прах жены.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="13">И над матерью звенели</l>
+            <l n="14">Голоса израильтян.</l>
+            <l n="15">Я проснулся в колыбели —</l>
+            <l n="16">Черным солнцем осиян.</l>
+          </lg>
+          <date>1916</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

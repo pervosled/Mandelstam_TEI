@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="151" type="part">
+          <head>151.</head>
+          <lg type="couplet">
+            <l n="1">Твоя рука тиха, легка,</l>
+            <l n="2">Когда касается виска;</l>
+          </lg>
+          <lg type="couplet">
+            <l n="3">Как слово доброе она,</l>
+            <l n="4">Не высказанное до дна;</l>
+          </lg>
+          <lg type="couplet">
+            <l n="5">И кровь течет в твоей руке</l>
+            <l n="6">Спокойно, как волна в реке.</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

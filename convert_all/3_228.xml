@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="228" type="part">
+          <head>228.</head>
+          <lg type="9_line">
+            <l n="1">Случайная небрежность иль ослышка</l>
+            <l n="2">Вредны уму, как толстяку одышка.</l>
+            <l n="3">Сейчас пример мы приведем:</l>
+            <l n="4">Один филолог,</l>
+            <l n="5">Беседуя с невеждою вдвоем,</l>
+            <l n="6">Употребил реченье «идиом».</l>
+            <l n="7">И понадергали они друг другу челок!</l>
+            <l n="8">Но виноват из двух друзей, конечно, тот,</l>
+            <l n="9">Который услыхал оплошно: «идиот».</l>
+          </lg>
+          <date>12 июня 1935</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

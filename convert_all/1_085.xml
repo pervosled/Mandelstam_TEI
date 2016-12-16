@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="85" type="part">
+          <head>85.</head>
+          <lg type="quatrain">
+            <l n="1">Тысячеструйный поток —</l>
+            <l n="2">Журчала весенняя ласка.</l>
+            <l n="3">Скользнула-мелькнула коляска,</l>
+            <l n="4">Легкая, как мотылек.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Я улыбнулся весне,</l>
+            <l n="6">Я оглянулся украдкой, —</l>
+            <l n="7">Женщина гладкой перчаткой</l>
+            <l n="8">Правила, точно во сне.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">В путь убегала она,</l>
+            <l n="10">В траурный шелк одета,</l>
+            <l n="11">Тонкая вуалета —</l>
+            <l n="12">Тоже была черна...</l>
+          </lg>
+          <date>‹1912 (1911?)›</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

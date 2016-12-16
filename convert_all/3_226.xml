@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="226" type="part">
+          <head>226.</head>
+          <lg type="sestet">
+            <l n="1">Один портной</l>
+            <l n="2">С хорошей головой</l>
+            <l n="3">Приговорен был к высшей мере.</l>
+            <l n="4">И что ж?— портновской следуя манере,</l>
+            <l n="5">С себя он мерку снял — </l>
+            <l n="6">И до сих пор живой.</l>
+          </lg>
+          <date>1 июня 1934</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="101" type="part">
+          <head>101.</head>
+          <lg type="septet">
+            <l n="1">Развеселился, наконец,</l>
+            <l n="2">Измерил духа совершенство,</l>
+            <l n="3">Уверовал в свое блаженство</l>
+            <l n="4">И успокоился, как царь,</l>
+            <l n="5">Почуяв славу за плечами —</l>
+            <l n="6">Когда первосвященник в храме</l>
+            <l n="7">И голубь залетел в алтарь.</l>
+          </lg>
+          <date>1912 (1913?)</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

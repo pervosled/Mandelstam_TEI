@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="2" type="part">
+          <lg type="octet">
+            <l n="1">Вермель в Канте был подкован,</l>
+            <l n="2">То есть был он, так сказать,</l>
+            <l n="3">Безусловно окантован,</l>
+            <l n="4">То есть Канта знал на ять.</l>
+            <l n="5">В сюртуке, при черном банте,</l>
+            <l n="6">Философ был — прямо во!</l>
+            <l n="7">Вермель съел собаку в Канте,</l>
+            <l n="8">Кант, собака, съел его.</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

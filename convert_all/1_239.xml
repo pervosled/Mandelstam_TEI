@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="239" type="part">
+          <head>239.</head>
+          <lg type="septet">
+            <l n="1">Автоматичен, вежлив и суров,</l>
+            <l n="2">На рубеже двух славных поколений,</l>
+            <l n="3">Забыл о бесхарактерном Верлэне</l>
+            <l n="4">И Теофиля принял в сонм богов...</l>
+            <l n="5">И твой картонный профиль, Гумилев,</l>
+            <l n="6">Как вырезанный для китайской тени.</l>
+            <l n="7">. . . . . . . . . . . . . . . . . .</l>
+          </lg>
+          <date>1915</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

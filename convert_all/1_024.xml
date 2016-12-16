@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="24" type="part">
+          <head>24.</head>
+          <lg type="quatrain">
+            <l n="1">Не говорите мне о вечности —</l>
+            <l n="2">Я не могу ее вместить.</l>
+            <l n="3">Но как же вечность не простить</l>
+            <l n="4">Моей любви, моей беспечности?</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Я слышу, как она растет</l>
+            <l n="6">И полуночным валом катится,</l>
+            <l n="7">Но — слишком дорого поплатится,</l>
+            <l n="8">Кто слишком близко подойдет.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">И тихим отголоскам шума я</l>
+            <l n="10">Издалека бываю рад —</l>
+            <l n="11">Ее пенящихся громад, —</l>
+            <l n="12">О милом и ничтожном думая.</l>
+          </lg>
+          <date>‹Не позднее 22 октября› 1909</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

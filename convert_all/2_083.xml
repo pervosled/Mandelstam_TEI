@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="83" type="part">
+          <head>83.</head>
+          <lg type="septet">
+            <l n="1">Помпоныч, римский гражданин,</l>
+            <l n="2">Наскучив жить в развратном изобильи,</l>
+            <l n="3">На то имея множество причин,</l>
+            <l n="4">Включая старческое слабосилье,</l>
+            <l n="5">К себе гостей однажды пригласил</l>
+            <l n="6">И сам себе разрезал скукожилья,</l>
+            <l n="7">Скукожился и дух по ванной испустил...</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

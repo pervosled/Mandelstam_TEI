@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="96" type="part">
+          <head>96.</head>
+          <lg type="sestet">
+            <l n="1">Я должен жить, хотя я дважды умер,</l>
+            <l n="2">А город от воды ополоумел:</l>
+            <l n="3">Как он хорош, как весел, как скуласт,</l>
+            <l n="4">Как на лемех приятен жирный пласт,</l>
+            <l n="5">Как степь лежит в апрельском провороте,</l>
+            <l n="6">А небо, небо — твой Буонаpроти...</l>
+          </lg>
+          <date>Апрель 1935</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

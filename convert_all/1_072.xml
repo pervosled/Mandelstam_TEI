@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="72" type="part">
+          <head>72.</head>
+          <lg type="couplet">
+            <l n="1">Ты прошла сквозь облако тумана.</l>
+            <l n="2">На ланитах нежные румяна.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="3">Светит день холодный и недужный.</l>
+            <l n="4">Я брожу свободный и ненужный...</l>
+          </lg>
+          <lg type="couplet">
+            <l n="5">Злая осень ворожит над нами,</l>
+            <l n="6">Угрожает спелыми плодами,</l>
+          </lg>
+          <lg type="couplet">
+            <l n="7">Говорит вершинами с вершиной</l>
+            <l n="8">И в глаза целует паутиной.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="9">Как застыл тревожной жизни танец!</l>
+            <l n="10">Как на всем играет твой румянец!</l>
+          </lg>
+          <lg type="couplet">
+            <l n="11">Как сквозит и в облаке тумана</l>
+            <l n="12">Ярких дней сияющая рана!</l>
+          </lg>
+          <date>4 августа 1911</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="3" type="part">
+          <lg type="sestet">
+            <l n="1">Лазурь да глина, глина да лазурь,</l>
+            <l n="2">Чего ж тебе еще? Скорей глаза сощурь,</l>
+            <l n="3">Как близорукий шах над перстнем бирюзовым,</l>
+            <l n="4">Над книгой звонких глин, над книжною землей,</l>
+            <l n="5">Над гнойной книгою, над глиной дорогой,</l>
+            <l n="6">Которой мучимся, как музыкой и словом.</l>
+          </lg>
+          <date>16 октября — 5 ноября 1930 г.</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

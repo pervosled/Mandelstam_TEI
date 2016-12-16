@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="137" type="part">
+          <head>137.</head>
+          <lg type="quatrain">
+            <l n="1">Я около Кольцова</l>
+            <l n="2">Как сокол закольцован,</l>
+            <l n="3">И нет ко мне гонца,</l>
+            <l n="4">И дом мой без крыльца.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">К ноге моей привязан</l>
+            <l n="6">Сосновый синий бор,</l>
+            <l n="7">Как вестник без указа</l>
+            <l n="8">Распахнут кругозор.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">В степи кочуют кочки,</l>
+            <l n="10">И все идут, идут</l>
+            <l n="11">Ночлеги, ночи, ночки — </l>
+            <l n="12">Как бы слепых везут.</l>
+          </lg>
+          <date>9 января 1937</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="4" type="volume">
+        <div n="183" type="part">
+          <head>183.
+В. Я. ХАЗИНОЙ и Э. В. (?) МАНДЕЛЬШТАМУ(?),</head>
+          <p>Деньги получены здоровы Нади мое самочувствие хорошее.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

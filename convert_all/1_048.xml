@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="48" type="part">
+          <head>48.</head>
+          <lg type="couplet">
+            <l n="1">Над алтарем дымящихся зыбей</l>
+            <l n="2">Приносит жертву кроткий бог морей.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="3">Глухое море, как вино, кипит.</l>
+            <l n="4">Над морем солнце, как орел, дрожит,</l>
+          </lg>
+          <lg type="couplet">
+            <l n="5">И только стелется морской туман,</l>
+            <l n="6">И раздается тишины тимпан;</l>
+          </lg>
+          <lg type="couplet">
+            <l n="7">И только небо сердцем голубым</l>
+            <l n="8">Усыновляет моря белый дым.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="9">И шире океан, когда уснул,</l>
+            <l n="10">И, сдержанный, величественней гул;</l>
+          </lg>
+          <lg type="couplet">
+            <l n="11">И в небесах, торжествен и тяжел,</l>
+            <l n="12">Как из металла вылитый орел.</l>
+          </lg>
+          <date>‹Не позднее июня› 1910</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

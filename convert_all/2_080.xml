@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="80" type="part">
+          <head>80.</head>
+          <lg type="quatrain">
+            <l n="1">Ubi bene, ibi patria*, —</l>
+            <l n="2">Но имея другом Бена</l>
+            <l n="3">Лившица, скажу обратное:</l>
+            <l n="4">Ubi patria, ibi bene**.</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

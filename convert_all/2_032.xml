@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="24" type="part">
+          <lg type="couplet">
+            <l n="1">Бушевала синица:</l>
+            <l n="2">В море негде напиться —</l>
+          </lg>
+          <lg type="couplet">
+            <l n="3">И большая волна,</l>
+            <l n="4">И вода солона;</l>
+          </lg>
+          <lg type="couplet">
+            <l n="5">А вода не простая,</l>
+            <l n="6">А всегда голубая...</l>
+          </lg>
+          <lg type="couplet">
+            <l n="7">Как-нибудь обойдусь —</l>
+            <l n="8">Лучше дома напьюсь!</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

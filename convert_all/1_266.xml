@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="31а" type="part">
+          <head>31а.</head>
+          <lg type="couplet">
+            <l n="1">Ни о чем не нужно говорить,</l>
+            <l n="2">Ничему не следует учить,</l>
+          </lg>
+          <lg type="couplet">
+            <l n="3">Ибо, если в жизни смысла нет,</l>
+            <l n="4">Говорить о жизни нам не след.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="5">Я еще довольно сердцем дик.</l>
+            <l n="6">Скучен мне понятный наш язык.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="7">И печальна так и хороша</l>
+            <l n="8">Темная звериная душа:</l>
+          </lg>
+          <lg type="couplet">
+            <l n="9">Ничему не хочет научить,</l>
+            <l n="10">Не умеет вовсе говорить</l>
+          </lg>
+          <lg type="couplet">
+            <l n="11">И плывет дельфином молодым</l>
+            <l n="12">По седым пучинам мировым.</l>
+          </lg>
+          <date>Декабрь 1909, Гейдельберг</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

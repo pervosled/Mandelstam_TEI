@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="29а" type="part">
+          <head>29а.</head>
+          <lg type="quintet">
+            <l n="1">Не табачною кровью газета плюет,</l>
+            <l n="2">Не костяшками дева стучит, — </l>
+            <l n="3">Человеческий жаркий искривленный рот</l>
+            <l n="4">Негодует, поет, говорит — </l>
+            <l n="5">Мне ‹на шею кидается век-волкодав...›</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

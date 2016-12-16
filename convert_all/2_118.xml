@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="117" type="part">
+          <lg type="quatrain">
+            <l n="1">Русские братья: рабочий, солдат, земледелец,</l>
+            <l n="2">Вы, как феникс волшебный,</l>
+            <l n="3">Из преступных выбились развалин</l>
+            <l n="4">В человечное, ясное небо.</l>
+          </lg>
+          <lg type="quintet">
+            <l n="5">Ах, мы почти захлебнулись, по горло </l>
+            <l n="6">в безвинной крови!</l>
+            <l n="7">Вам подражая, дерзнуть готовы.</l>
+            <l n="8"> — Но когда же? Когда же? —</l>
+            <l n="9">Я кричу исступленно в безлюбую ночь.</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

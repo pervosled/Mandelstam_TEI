@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="26" type="part">
+          <head>26.</head>
+          <lg type="sestet">
+            <l n="1">Бесшумное веретено</l>
+            <l n="2">Отпущено моей рукою.</l>
+            <l n="3">И — мною ли оживлено —</l>
+            <l n="4">Переливается оно</l>
+            <l n="5">Безостановочной волною —</l>
+            <l n="6">Веретено.</l>
+          </lg>
+          <lg type="septet">
+            <l n="7">Все одинаково темно;</l>
+            <l n="8">Все в мире переплетено</l>
+            <l n="9">Моею собственной рукою;</l>
+            <l n="10">И, непрерывно и одно,</l>
+            <l n="11">Обуреваемое мною</l>
+            <l n="12">Остановить мне не дано —</l>
+            <l n="13">Веретено.</l>
+          </lg>
+          <date>‹Не позднее 22 октября› 1909</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

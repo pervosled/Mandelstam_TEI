@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="24" type="part">
+          <lg type="quatrain">
+            <l n="1">— Мне, сырому, неученому,</l>
+            <l n="2">Простоквашей стать легко, —</l>
+            <l n="3">Говорило кипяченому</l>
+            <l n="4">Сырое молоко.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">А кипяченое</l>
+            <l n="6">Отвечает нежненько:</l>
+            <l n="7">— Я совсем не неженка,</l>
+            <l n="8">У меня есть пенка!</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

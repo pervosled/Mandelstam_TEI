@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="15" type="part">
+          <head>15.</head>
+          <lg type="quatrain">
+            <l n="1">Как люб мне натугой живущий,</l>
+            <l n="2">Столетьем считающий год,</l>
+            <l n="3">Рожающий, спящий, орущий,</l>
+            <l n="4">К земле пригвожденный народ.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Твое пограничное ухо — </l>
+            <l n="6">Все звуки ему хороши — </l>
+            <l n="7">Желтуха, желтуха, желтуха</l>
+            <l n="8">В проклятой горчичной глуши.</l>
+          </lg>
+          <date>Октябрь 1930</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

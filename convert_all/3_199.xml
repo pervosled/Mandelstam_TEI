@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="193" type="part">
+          <lg type="quatrain">
+            <l n="1">Старик Моргулис под сурдинку</l>
+            <l n="2">Уговорил мою жену</l>
+            <l n="3">Вступить на торную тропинку</l>
+            <l n="4">В газету гнусную одну.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Такую причинить обиду</l>
+            <l n="6">За небольшие барыши!</l>
+            <l n="7">Так отслужу ж я панихиду</l>
+            <l n="8">За ЗКП его души.</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

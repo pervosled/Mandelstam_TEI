@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="46" type="part">
+          <head>46.
+МУХА</head>
+          <lg type="couplet">
+            <l n="1">— Ты куда попала, муха?</l>
+            <l n="2">— В молоко, в молоко.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="3">— Хорошо тебе, старуха?</l>
+            <l n="4">— Нелегко, нелегко.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="5">— Ты бы вылезла немножко.</l>
+            <l n="6">— Не могу, не могу.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="7">— Я тебе столовой ложкой</l>
+            <l n="8">Помогу, помогу.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="9">— Лучше ты меня, бедняжку,</l>
+            <l n="10">Пожалей, пожалей,</l>
+          </lg>
+          <lg type="couplet">
+            <l n="11">Молоко в другую чашку</l>
+            <l n="12">Перелей, перелей.</l>
+          </lg>
+          <date>‹1925›</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

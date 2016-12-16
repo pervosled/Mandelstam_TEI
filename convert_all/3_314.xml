@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="125а" type="part">
+          <head>125а.</head>
+          <lg type="9_line">
+            <l n="1">Когда щегол в воздушной сдобе</l>
+            <l n="2">Вдруг затрясется пуховит — </l>
+            <l n="3">Он покраснел и в умной злобе</l>
+            <l n="4">Ученой степенью повит.</l>
+            <l n="5">Клевещет жердочка и планка,</l>
+            <l n="6">Клевещет клетка сотней спиц.</l>
+            <l n="7">И все на свете наизнанку,</l>
+            <l n="8">И есть лесная Саламанка</l>
+            <l n="9">Для непослушных умных птиц!</l>
+          </lg>
+          <date>Декабрь 1936</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

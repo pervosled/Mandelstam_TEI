@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="51" type="part">
+          <head>51.
+ПОРТНИХА</head>
+          <lg type="quatrain">
+            <l n="1">Утомилась портниха —</l>
+            <l n="2">Работает тихо.</l>
+            <l n="3">Потеряла иглу —</l>
+            <l n="4">Не найти на полу.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="5">А иголки все у елки,</l>
+            <l n="6">Все иголки у ежа!</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="7">Нагибается, ищет,</l>
+            <l n="8">Только песенку свищет,</l>
+            <l n="9">Потеряла иглу —</l>
+            <l n="10">Не найти на полу.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="11">— Для чего же я челку</l>
+            <l n="12">Разноцветного шелку</l>
+            <l n="13">Берегла, берегла,</l>
+            <l n="14">Раз пропала игла!</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

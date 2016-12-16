@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="2" type="part">
+          <head>‹2›</head>
+          <lg type="couplet">
+            <l n="1">Ходит Вермель, тяжело дыша,</l>
+            <l n="2">Ищет нежного зародыша.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="3">Хорошо на книгу ложится</l>
+            <l n="4">Человеческая кожица.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="5">Снегом улицы заметены,</l>
+            <l n="6">Люди в кожу переплетены — </l>
+          </lg>
+          <lg type="couplet">
+            <l n="7">Даже дети, даже женщины — </l>
+            <l n="8">Как перчатки у военщины.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="9">Дева-роза хочет дочь нести</l>
+            <l n="10">С кожею особой прочности.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="11">Душно... Вермель от эротики</l>
+            <l n="12">Задохнулся в библиотеке.</l>
+          </lg>
+          <date>Октябрь 1932</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

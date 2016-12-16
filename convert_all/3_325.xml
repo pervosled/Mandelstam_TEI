@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="151а" type="part">
+          <head>151а.</head>
+          <lg type="10_line">
+            <l n="1">Слышу, слышу ранний лед,</l>
+            <l n="2">Шелестящий под мостами,</l>
+            <l n="3">Вспоминаю, как плывет</l>
+            <l n="4">Светлый хмель над головами.</l>
+            <l n="5">Там уж скоро третий год</l>
+            <l n="6">Тень моя живет меж вами</l>
+            <l n="7">И шумит среди людей,</l>
+            <l n="8">Греясь их вином и небом,</l>
+            <l n="9">И несладким кормит хлебом</l>
+            <l n="10">Неотвязных лебедей.</l>
+          </lg>
+          <date>21 января 1937</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

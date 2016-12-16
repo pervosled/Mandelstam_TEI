@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="4" type="volume">
+        <div n="14" type="part">
+          <head>14.
+В. И. ИВАНОВУ, </head>
+          <p>Не могу не сообщить вам свои лирические искания и достижения. Насколько первыми я обязан вам — настолько вторые принадлежат вам по праву, о котором вы, быть может, и не думаете.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

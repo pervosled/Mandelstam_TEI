@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="30" type="part">
+          <head>30.</head>
+          <lg type="tercet">
+            <l n="1">Если утро зимнее темно,</l>
+            <l n="2">То — холодное твое окно</l>
+            <l n="3">Выглядит, как строгое панно:</l>
+          </lg>
+          <lg type="tercet">
+            <l n="4">Зеленеет плющ перед окном;</l>
+            <l n="5">И стоят под ледяным стеклом</l>
+            <l n="6">Тихие деревья под чехлом —</l>
+          </lg>
+          <lg type="tercet">
+            <l n="7">Ото всех ветров защищены,</l>
+            <l n="8">Ото всяких бед ограждены</l>
+            <l n="9">И ветвями переплетены.</l>
+          </lg>
+          <lg type="tercet">
+            <l n="10">Полусвет становится лучист.</l>
+            <l n="11">Перед самой рамой — шелковист —</l>
+            <l n="12">Содрогается последний лист.</l>
+          </lg>
+          <date>‹Не позднее 12 ноября› 1909</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

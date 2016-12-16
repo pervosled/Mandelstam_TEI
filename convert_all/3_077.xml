@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="68" type="part">
+          <lg type="octet">
+            <l n="1">В игольчатых чумных бокалах</l>
+            <l n="2">Мы пьем наважденье причин,</l>
+            <l n="3">Касаемся крючьями малых,</l>
+            <l n="4">Как легкая смерть, величин.</l>
+            <l n="5">И там, где сцепились бирюльки,</l>
+            <l n="6">Ребенок молчанье хранит,</l>
+            <l n="7">Большая вселенная в люльке</l>
+            <l n="8">У маленькой вечности спит.</l>
+          </lg>
+          <date>Ноябрь 1933, июль 1935</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

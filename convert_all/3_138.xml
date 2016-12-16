@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="138" type="part">
+          <head>138.</head>
+          <lg type="sestet">
+            <l n="1">Дрожжи мира дорогие:</l>
+            <l n="2">Звуки, слезы и труды — </l>
+            <l n="3">Ударенья дождевые</l>
+            <l n="4">Закипающей беды</l>
+            <l n="5">И потери звуковые — </l>
+            <l n="6">Из какой вернуть руды?</l>
+          </lg>
+          <lg type="sestet">
+            <l n="7">В нищей памяти впервые</l>
+            <l n="8">Чуешь вмятины слепые,</l>
+            <l n="9">Медной полные воды, — </l>
+            <l n="10">И идешь за ними следом,</l>
+            <l n="11">Сам себе немил, неведом — </l>
+            <l n="12">И слепой и поводырь...</l>
+          </lg>
+          <date>12—18 января 1937</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="139" type="part">
+          <head>139.</head>
+          <lg type="quatrain">
+            <l n="1">Когда держался Рим в союзе с естеством,</l>
+            <l n="2">Носились образы его гражданской мощи</l>
+            <l n="3">В прозрачном воздухе — как в цирке голубом —</l>
+            <l n="4">На форуме полей и в колоннаде рощи;</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">А ныне человек — ни раб, ни властелин,</l>
+            <l n="6">Не опьянен собой — а только отуманен;</l>
+            <l n="7">Невольно думаешь: всемирный горожанин!</l>
+            <l n="8">А хочется сказать — всемирный гражданин!</l>
+          </lg>
+          <date>1914</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

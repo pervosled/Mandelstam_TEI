@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="100" type="part">
+          <head>100.</head>
+          <lg type="quatrain">
+            <l n="1">Мир начинался страшен и велик:</l>
+            <l n="2">Зеленой ночью папоротник черный,</l>
+            <l n="3">Пластами боли поднят большевик — </l>
+            <l n="4">Единый, продолжающий, бесспорный,</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Упорствующий, дышащий в стене.</l>
+            <l n="6">Привет тебе, скрепитель добровольный</l>
+            <l n="7">Трудящихся, твой каменноугольный</l>
+            <l n="8">Могучий мозг, гори, гори стране!</l>
+          </lg>
+          <date>Апрель—май 1935</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

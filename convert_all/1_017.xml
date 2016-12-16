@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="17" type="part">
+          <head>17.</head>
+          <lg type="couplet">
+            <l n="1">Музыка твоих шагов</l>
+            <l n="2">В тишине лесных снегов,</l>
+          </lg>
+          <lg type="couplet">
+            <l n="3">И, как медленная тень,</l>
+            <l n="4">Ты сошла в морозный день.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="5">Глубока, как ночь, зима,</l>
+            <l n="6">Снег висит как бахрома.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="7">Ворон на своем суку</l>
+            <l n="8">Много видел на веку.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="9">А встающая волна</l>
+            <l n="10">Набегающего сна</l>
+          </lg>
+          <lg type="couplet">
+            <l n="11">Вдохновенно разобьет</l>
+            <l n="12">Молодой и тонкий лед,</l>
+          </lg>
+          <lg type="couplet">
+            <l n="13">Тонкий лед моей души —</l>
+            <l n="14">Созревающий в тиши.</l>
+          </lg>
+          <date>‹1909?›</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

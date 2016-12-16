@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="136" type="part">
+          <head>136.</head>
+          <lg type="quatrain">
+            <l n="1">На площадь выбежав, свободен</l>
+            <l n="2">Стал колоннады полукруг, —</l>
+            <l n="3">И распластался храм Господень,</l>
+            <l n="4">Как легкий крестовик-паук.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">А зодчий не был итальянец,</l>
+            <l n="6">Но русский в Риме, — ну так что ж!</l>
+            <l n="7">Ты каждый раз, как иностранец,</l>
+            <l n="8">Сквозь рощу портиков идешь.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">И храма маленькое тело</l>
+            <l n="10">Одушевленнее стократ</l>
+            <l n="11">Гиганта, что скалою целой</l>
+            <l n="12">К земле беспомощно прижат!</l>
+          </lg>
+          <date>1914</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

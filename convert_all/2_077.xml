@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="77" type="part">
+          <head>77.
+Писателю</head>
+          <lg type="couplet">
+            <l n="1">Как некий исполин с Синая до Фавора,</l>
+            <l n="2">От договора ты бредешь до договора.</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

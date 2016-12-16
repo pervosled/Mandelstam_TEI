@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="50" type="part">
+          <head>50.</head>
+          <lg type="quatrain">
+            <l n="1">Под грозовыми облаками</l>
+            <l n="2">Несется клекот вещих птиц:</l>
+            <l n="3">Довольно огненных страниц</l>
+            <l n="4">Уж перевернуто веками!</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">В священном страхе зверь живет —</l>
+            <l n="6">И каждый совершил душою,</l>
+            <l n="7">Как ласточка перед грозою,</l>
+            <l n="8">Неописуемый полет.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Когда же солнце вас расплавит,</l>
+            <l n="10">Серебряные облака,</l>
+            <l n="11">И будет вышина легка,</l>
+            <l n="12">И крылья тишина расправит?</l>
+          </lg>
+          <date>‹Не позднее 5 августа 1910›</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

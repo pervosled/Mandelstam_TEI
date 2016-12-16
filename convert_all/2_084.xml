@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="84" type="part">
+          <head>84.</head>
+          <lg type="sestet">
+            <l n="1">У вас в семье нашел опору я —</l>
+            <l n="2">Предупредительность, которая</l>
+            <l n="3">Меня сумела воскресить,</l>
+            <l n="4">И долго будет крыса хворая</l>
+            <l n="5">Признательна за помощь скорую,</l>
+            <l n="6">Которую нельзя забыть.</l>
+          </lg>
+          <date>Май 1927</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

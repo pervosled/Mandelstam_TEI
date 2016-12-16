@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="86" type="part">
+          <head>86.</head>
+          <lg type="quatrain">
+            <l n="1">Я ненавижу свет</l>
+            <l n="2">Однообразных звезд.</l>
+            <l n="3">Здравствуй, мой давний бред —</l>
+            <l n="4">Башни стрельчатой рост!</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Кружевом, камень, будь</l>
+            <l n="6">И паутиной стань,</l>
+            <l n="7">Неба пустую грудь</l>
+            <l n="8">Тонкой иглою рань.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Будет и мой черед —</l>
+            <l n="10">Чую размах крыла.</l>
+            <l n="11">Так — но куда уйдет</l>
+            <l n="12">Мысли живой стрела?</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="13">Или, свой путь и срок</l>
+            <l n="14">Я, исчерпав, вернусь:</l>
+            <l n="15">Там — я любить не мог,</l>
+            <l n="16">Здесь — я любить боюсь...</l>
+          </lg>
+          <date>1912</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

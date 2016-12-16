@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="240" type="part">
+          <head>240.</head>
+          <lg type="sestet">
+            <l n="1">Эта книга украдена</l>
+            <l n="2">Трошею в СХИ,</l>
+            <l n="3">И резинкою Вадиной</l>
+            <l n="4">Для Наташи она омоложена,</l>
+            <l n="5">И ей дадена</l>
+            <l n="6">В день посещения дядина.</l>
+          </lg>
+          <date>‹1937›</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

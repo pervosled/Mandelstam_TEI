@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="92" type="part">
+          <head>92.</head>
+          <lg type="quintet">
+            <l n="1">Это какая улица?</l>
+            <l n="2">Улица Мандельштама.</l>
+            <l n="3">Что за фамилия чортова — </l>
+            <l n="4">Как ее ни вывертывай,</l>
+            <l n="5">Криво звучит, а не прямо.</l>
+          </lg>
+          <lg type="sestet">
+            <l n="6">Мало в нем было линейного,</l>
+            <l n="7">Нрава он не был лилейного,</l>
+            <l n="8">И потому эта улица</l>
+            <l n="9">Или, верней, эта яма</l>
+            <l n="10">Так и зовется по имени</l>
+            <l n="11">Этого Мандельштама...</l>
+          </lg>
+          <date>Апрель 1935</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

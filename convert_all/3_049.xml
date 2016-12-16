@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="49" type="part">
+          <head>49.</head>
+          <lg type="octet">
+            <l n="1">Увы, растаяла свеча</l>
+            <l n="2">Молодчиков каленых,</l>
+            <l n="3">Что хаживали вполплеча</l>
+            <l n="4">В камзольчиках зеленых,</l>
+            <l n="5">Что пересиливали срам</l>
+            <l n="6">И чумную заразу</l>
+            <l n="7">И всевозможным господам</l>
+            <l n="8">Прислуживали сразу.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">И нет рассказчика для жен</l>
+            <l n="10">В порочных длинных платьях,</l>
+            <l n="11">Что проводили дни как сон</l>
+            <l n="12">В пленительных занятьях:</l>
+          </lg>
+          <date>22 мая 1932</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

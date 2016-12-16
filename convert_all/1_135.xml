@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="135" type="part">
+          <head>135.</head>
+          <lg type="quatrain">
+            <l n="1">О временах простых и грубых</l>
+            <l n="2">Копыта конские твердят.</l>
+            <l n="3">И дворники в тяжелых шубах</l>
+            <l n="4">На деревянных лавках спят.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">На стук в железные ворота</l>
+            <l n="6">Привратник, царственно ленив,</l>
+            <l n="7">Встал, и звериная зевота</l>
+            <l n="8">Напомнила твой образ, скиф!</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Когда, с дряхлеющей любовью</l>
+            <l n="10">Мешая в песнях Рим и снег,</l>
+            <l n="11">Овидий пел арбу воловью</l>
+            <l n="12">В походе варварских телег.</l>
+          </lg>
+          <date>1914</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="244" type="part">
+          <head>244.
+Умеревший офицер</head>
+          <lg type="couplet">
+            <l n="1">Полковнику Белавенцу</l>
+            <l n="2">Каждый дал по яйцу.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="3">Полковник Белавенец</l>
+            <l n="4">Съел много яец.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="5">Пожалейте Белавенца,</l>
+            <l n="6">Умеревшего от яйца.</l>
+          </lg>
+          <date>Конец 1920</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

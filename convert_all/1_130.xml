@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="130" type="part">
+          <head>130.
+Ахматова</head>
+          <lg type="quatrain">
+            <l n="1">Вполоборота, о печаль,</l>
+            <l n="2">На равнодушных поглядела.</l>
+            <l n="3">Спадая с плеч, окаменела</l>
+            <l n="4">Ложноклассическая шаль.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Зловещий голос — горький хмель —</l>
+            <l n="6">Души расковывает недра:</l>
+            <l n="7">Так — негодующая Федра —</l>
+            <l n="8">Стояла некогда Рашель.</l>
+          </lg>
+          <date>9 января 1914</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

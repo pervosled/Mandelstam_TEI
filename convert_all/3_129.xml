@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="129" type="part">
+          <head>129.</head>
+          <lg type="10_line">
+            <l n="1">Сосновой рощицы закон:</l>
+            <l n="2">Виол и арф семейный звон.</l>
+            <l n="3">Стволы извилисты и голы,</l>
+            <l n="4">Но все же — арфы и виолы.</l>
+            <l n="5">Растут, как будто каждый ствол</l>
+            <l n="6">На арфу начал гнуть Эол</l>
+            <l n="7">И бросил, о корнях жалея,</l>
+            <l n="8">Жалея ствол, жалея сил,</l>
+            <l n="9">Виолу с арфой пробудил</l>
+            <l n="10">Звучать в коре, коричневея.</l>
+          </lg>
+          <date>16—18 декабря 1936</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

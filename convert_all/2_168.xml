@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="168" type="part">
+          <head>АЛЬФРЕД ЛИХТЕНШТЕЙН</head>
+          <head>168.
+ПРОГУЛКА</head>
+          <lg type="couplet">
+            <l n="1">Вот вечер с лунным светом и шелковый дымок,</l>
+            <l n="2">Дороги утомились, и светлый мир широк.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="3">Китайский пряный ветер порхает на холмах,</l>
+            <l n="4">Серебряные крылья дрожат в моих зрачках.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="5">В плечах раздалось тело, в нем вес земли моей,</l>
+            <l n="6">Внизу мерцает город — сеть мощных фонарей.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="7">Сейчас затеплит небо подсвечники свои.</l>
+            <l n="8">Лик человечный ходит, огромный, вдоль земли.</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

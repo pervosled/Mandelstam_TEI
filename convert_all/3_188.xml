@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="188" type="part">
+          <head>188.</head>
+          <lg type="quatrain">
+            <l n="1">Пароходик с петухами</l>
+            <l n="2">По небу плывет,</l>
+            <l n="3">И подвода с битюгами</l>
+            <l n="4">Никуда нейдет.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">И звенит будильник сонный — </l>
+            <l n="6">Хочешь, повтори:</l>
+            <l n="7">— Полторы воздушных тонны,</l>
+            <l n="8">Тонны полторы...</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">И, паяльных звуков море</l>
+            <l n="10">В перебои взяв,</l>
+            <l n="11">Москва слышит, Москва смотрит,</l>
+            <l n="12">Зорко смотрит в явь.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="13">Только на крапивах пыльных — </l>
+            <l n="14">Вот чего боюсь — </l>
+            <l n="15">Не позволил бы в напильник</l>
+            <l n="16">Шею выжать гусь.</l>
+          </lg>
+          <date>3 июля 1937</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

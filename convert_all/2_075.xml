@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="75" type="part">
+          <head>75.</head>
+          <lg type="quatrain">
+            <l n="1">Зевес сегодня в гневе на Гермеса —</l>
+            <l n="2">В кузнечном деле ни бельмеса,</l>
+            <l n="3">Оказывается, он не понимал,</l>
+            <l n="4">Но, громовержец, ты ведь это знал!..</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

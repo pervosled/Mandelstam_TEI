@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="47а" type="part">
+          <head>47а.</head>
+          <lg type="quatrain">
+            <l n="1">Как тень внезапных облаков,</l>
+            <l n="2">Морская гостья налетела</l>
+            <l n="3">И, проскользнув, прошелестела</l>
+            <l n="4">Смущенных мимо берегов.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Огромный парус строго реет;</l>
+            <l n="6">Смертельно-бледная волна</l>
+            <l n="7">Отпрянула — и вновь она</l>
+            <l n="8">Коснуться берега не смеет;</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">И лодка, волнами шурша,</l>
+            <l n="10">Как листьями, — уже далеко,</l>
+            <l n="11">И, принимая ветер рока,</l>
+            <l n="12">Раскрыла парус свой душа.</l>
+          </lg>
+          <date>‹Не позднее 5 августа› 1910</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

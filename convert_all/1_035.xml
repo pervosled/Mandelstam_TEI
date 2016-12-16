@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="35" type="part">
+          <head>35.</head>
+          <lg type="quatrain">
+            <l n="1">На темном небе, как узор,</l>
+            <l n="2">Деревья траурные вышиты.</l>
+            <l n="3">Зачем же выше и все выше ты</l>
+            <l n="4">Возводишь изумленный взор?</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">— Вверху — такая темнота, —</l>
+            <l n="6">Ты скажешь, — время опрокинула</l>
+            <l n="7">И, словно ночь, на день нахлынула</l>
+            <l n="8">Холмов холодная черта.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Высоких, неживых дерев</l>
+            <l n="10">Темнеющее рвется кружево:</l>
+            <l n="11">О, месяц, только ты не суживай</l>
+            <l n="12">Серпа, внезапно почернев!</l>
+          </lg>
+          <date>‹Не позднее 17 декабря› 1909</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="73" type="part">
+          <head>73.</head>
+          <lg type="quatrain">
+            <l n="1">Не спрашивай: ты знаешь,</l>
+            <l n="2">Что нежность — безотчетна,</l>
+            <l n="3">И как ты называешь</l>
+            <l n="4">Мой трепет — все равно;</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">И для чего признанье,</l>
+            <l n="6">Когда бесповоротно</l>
+            <l n="7">Мое существованье</l>
+            <l n="8">Тобою решено?</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Дай руку мне. Что страсти?</l>
+            <l n="10">Танцующие змеи!</l>
+            <l n="11">И таинство их власти —</l>
+            <l n="12">Убийственный магнит!</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="13">И, змей тревожный танец</l>
+            <l n="14">Остановить не смея,</l>
+            <l n="15">Я созерцаю глянец</l>
+            <l n="16">Девических ланит.</l>
+          </lg>
+          <date>7 августа 1911</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="3" type="part">
+          <lg type="quatrain">
+            <l n="1">Орущих камней государство — </l>
+            <l n="2">Армения, Армения!</l>
+            <l n="3">Хриплые горы к оружью зовущая — </l>
+            <l n="4">Армения, Армения!</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">К трубам серебряным Азии вечно летящая — </l>
+            <l n="6">Армения, Армения!</l>
+            <l n="7">Солнца персидские деньги щедро раздаривающая — </l>
+            <l n="8">Армения, Армения!</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

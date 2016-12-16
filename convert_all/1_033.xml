@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="33" type="part">
+          <head>33.</head>
+          <lg type="quatrain">
+            <l n="1">Нету иного пути,</l>
+            <l n="2">Как через руку твою —</l>
+            <l n="3">Как же иначе найти</l>
+            <l n="4">Милую землю мою?</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Плыть к дорогим берегам,</l>
+            <l n="6">Если захочешь помочь:</l>
+            <l n="7">Руку приблизив к устам,</l>
+            <l n="8">Не отнимай ее прочь.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Тонкие пальцы дрожат;</l>
+            <l n="10">Хрупкое тело живет:</l>
+            <l n="11">Лодка, скользящая над</l>
+            <l n="12">Тихою бездною вод.</l>
+          </lg>
+          <date>‹Не позднее 13 декабря› 1909</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="207а" type="part">
+          <head>207а.</head>
+          <lg type="quatrain">
+            <l n="1">Снова ночь. Рыданье Аонид.</l>
+            <l n="2">Пустого хора черное зиянье.</l>
+            <l n="3">Где ты, слово: щит и упованье.</l>
+            <l n="4">Твой высокий лоб, твой гордый стыд.</l>
+          </lg>
+          <lg type="quintet">
+            <l n="5">[Сбрось повязку, вернись]</l>
+            <l n="6">И среди беспамятства и звона</l>
+            <l n="7">[Легкою посланницей]</l>
+            <l n="8">Нежной вестью, царской дочерью явись,</l>
+            <l n="9">Ласточка, подружка, Антигона...</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

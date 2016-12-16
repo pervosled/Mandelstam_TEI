@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="24" type="part">
+          <lg type="10_line">
+            <l n="1">Это мальчик-рисовальщик,</l>
+            <l n="2">Покраснел он до ушей,</l>
+            <l n="3">Потому что не умеет</l>
+            <l n="4">Он чинить карандашей.</l>
+            <l n="5">Искрошились.</l>
+            <l n="6">Еле-еле</l>
+            <l n="7">заострились.</l>
+            <l n="8">Похудели.</l>
+            <l n="9">И взмолилися они:</l>
+            <l n="10">— Отпусти нас, не чини!</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

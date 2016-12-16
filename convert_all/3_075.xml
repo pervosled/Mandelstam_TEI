@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="68" type="part">
+          <lg type="quatrain">
+            <l n="1">И клена зубчатая лапа</l>
+            <l n="2">Купается в круглых углах,</l>
+            <l n="3">И можно из бабочек крапа</l>
+            <l n="4">Рисунки слагать на стенах.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Бывают мечети живые — </l>
+            <l n="6">И я догадался сейчас:</l>
+            <l n="7">Быть может, мы Айя-София</l>
+            <l n="8">С бесчисленным множеством глаз.</l>
+          </lg>
+          <date>Ноябрь 1933 — январь 1934</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

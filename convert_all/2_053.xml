@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="53" type="part">
+          <head>53.
+СОННЫЙ ТРАМВАЙ</head>
+          <lg type="quatrain">
+            <l n="1">У каждого трамвая</l>
+            <l n="2">Две пары глаз-огней</l>
+            <l n="3">И впереди площадка,</l>
+            <l n="4">Нельзя стоять на ней.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Он завтракает вилкой</l>
+            <l n="6">На улицах больших.</l>
+            <l n="7">Закусывает искрой</l>
+            <l n="8">Из проволок прямых.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Я сонный, красноглазый,</l>
+            <l n="10">Как кролик молодой,</l>
+            <l n="11">Я спать хочу, вожатый:</l>
+            <l n="12">Веди меня домой.</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

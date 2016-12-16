@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="1" type="volume">
+        <div n="51" type="part">
+          <head>51.</head>
+          <lg type="quatrain">
+            <l n="1">Единственной отрадой</l>
+            <l n="2">Отныне сердцу дан,</l>
+            <l n="3">Неутомимо падай,</l>
+            <l n="4">Таинственный фонтан.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Высокими снопами</l>
+            <l n="6">Взлетай и упадай,</l>
+            <l n="7">И всеми голосами</l>
+            <l n="8">Вдруг — сразу умолкай.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Но ризой думы важной</l>
+            <l n="10">Всю душу мне одень,</l>
+            <l n="11">Как лиственницы влажно-</l>
+            <l n="12">Трепещущая сень.</l>
+          </lg>
+          <date>‹Июль› 1910</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

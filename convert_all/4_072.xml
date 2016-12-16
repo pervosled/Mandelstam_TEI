@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="4" type="volume">
+        <div n="72" type="part">
+          <head>72.
+Н. Я. МАНДЕЛЬШТАМ, </head>
+          <p>Сейчас приехал в Харьков. Завтра в Москве поезд стоит </p>
+          <p>. Ехать было очень скучно, но я встал только в</p>
+          <p>12 часов. Погода довольно теплая —5º (?) Завтра обменяюсь с Шурой шапками и погуляю. Я спокоен, весел и здоров. Целую тебя, моя радость — завтра пишу подробно.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

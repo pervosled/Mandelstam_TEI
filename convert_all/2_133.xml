@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="2" type="volume">
+        <div n="133" type="part">
+          <head>133.</head>
+          <lg type="quatrain">
+            <l n="1">На заре румяной</l>
+            <l n="2">Под росой трава шелестит;</l>
+            <l n="3">На заре туманной</l>
+            <l n="4">Рыдают птицы навзрыд.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">На заре румяной</l>
+            <l n="6">Лес, как невеста, дрожит;</l>
+            <l n="7">Голубою раной</l>
+            <l n="8">Небо сквозит.</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

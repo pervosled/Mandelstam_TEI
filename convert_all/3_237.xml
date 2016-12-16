@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="232" type="part">
+          <lg type="9_line">
+            <l n="1">Наташа спит. Зефир летает</l>
+            <l n="2">Вкруг гофрированных волос.</l>
+            <l n="3">Для девушки, как всякий знает,</l>
+            <l n="4">Сон утренний, источник слез,</l>
+            <l n="5">Головомойку означает,</l>
+            <l n="6">Но волосы ей осушает</l>
+            <l n="7">Какой-то мощный пылесос,</l>
+            <l n="8">И перманентно иссякает — </l>
+            <l n="9">И вновь кипит источник слез.</l>
+          </lg>
+          <date>24 февраля 1937</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

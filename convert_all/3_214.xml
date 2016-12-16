@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="214" type="part">
+          <head>214.</head>
+          <lg type="septet">
+            <l n="1">Однажды из далекого кишлака</l>
+            <l n="2">Пришел дехканин в кооператив,</l>
+            <l n="3">Чтобы купить себе презерватив.</l>
+            <l n="4">Откуда ни возьмись, — мулла-собака,</l>
+            <l n="5">Его нахально вдруг опередив,</l>
+            <l n="6">Купил товар и был таков.</l>
+            <l n="7">Однако!</l>
+          </lg>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

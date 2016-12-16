@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="118" type="part">
+          <head>118.</head>
+          <lg type="9_line">
+            <l n="1">Из-за домов, из-за лесов,</l>
+            <l n="2">Длинней товарных поездов,</l>
+            <l n="3">Гуди за власть ночных трудов,</l>
+            <l n="4">Садко заводов и садов.</l>
+            <l n="5">Гуди, старик, дыши сладко́.</l>
+            <l n="6">Как новгородский гость Садко</l>
+            <l n="7">Под синим морем глубоко,</l>
+            <l n="8">Гуди протяжно в глубь веков,</l>
+            <l n="9">Гудок советских городов.</l>
+          </lg>
+          <date>6— 9 декабря 1936</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

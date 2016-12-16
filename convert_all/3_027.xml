@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="27" type="part">
+          <head>27.</head>
+          <lg type="quatrain">
+            <l n="1">Я скажу тебе с последней</l>
+            <l n="2">Прямотой:</l>
+            <l n="3">Все лишь бредни — шерри-бренди, — </l>
+            <l n="4">Ангел мой.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Там, где эллину сияла</l>
+            <l n="6">Красота,</l>
+            <l n="7">Мне из черных дыр зияла</l>
+            <l n="8">Срамота.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Греки сбондили Елену</l>
+            <l n="10">По волнам,</l>
+            <l n="11">Ну, а мне — соленой пеной</l>
+            <l n="12">По губам.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="13">По губам меня помажет</l>
+            <l n="14">Пустота,</l>
+            <l n="15">Строгий кукиш мне покажет</l>
+            <l n="16">Нищета.</l>
+          </lg>
+          <lg type="couplet">
+            <l n="17">Ой ли, так ли, дуй ли, вей ли — </l>
+            <l n="18">Все равно;</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="19">Я скажу тебе с последней</l>
+            <l n="20">Прямотой:</l>
+            <l n="21">Все лишь бредни — шерри-бренди, — </l>
+            <l n="22">Ангел мой.</l>
+          </lg>
+          <date>2 марта 1931</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

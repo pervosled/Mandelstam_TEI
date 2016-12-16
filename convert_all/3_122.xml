@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="122" type="part">
+          <head>122.</head>
+          <lg type="quatrain">
+            <l n="1">Нынче день какой-то желторотый — </l>
+            <l n="2">Не могу его понять — </l>
+            <l n="3">И глядят приморские ворота</l>
+            <l n="4">В якорях, в туманах на меня...</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Тихий, тихий по воде линялой</l>
+            <l n="6">Ход военных кораблей,</l>
+            <l n="7">И каналов узкие пеналы</l>
+            <l n="8">Подо льдом еще черней.</l>
+          </lg>
+          <date>9—28 декабря 1936</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

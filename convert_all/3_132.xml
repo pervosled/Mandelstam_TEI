@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="3" type="volume">
+        <div n="132" type="part">
+          <head>132.</head>
+          <lg type="quatrain">
+            <l n="1">Как подарок запоздалый</l>
+            <l n="2">Ощутима мной зима:</l>
+            <l n="3">Я люблю ее сначала</l>
+            <l n="4">Неуверенный размах.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">Хороша она испугом,</l>
+            <l n="6">Как начало грозных дел, — </l>
+            <l n="7">Перед всем безлесным кругом</l>
+            <l n="8">Даже ворон оробел.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Но сильней всего непрочно- </l>
+            <l n="10">Выпуклых голубизна — </l>
+            <l n="11">Полукруглый лед височный</l>
+            <l n="12">Речек, бающих без сна...</l>
+          </lg>
+          <date>29—30 декабря 1936</date>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
