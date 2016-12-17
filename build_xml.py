@@ -4,9 +4,9 @@ import os.path
 import re
 import lxml.html
 
-path_1 = '/Users/Alexey/Documents/Python_Projects/Mandelstam_TEI/downloads/'
+path_1 = '/Users/Alexey/Documents/Python_Projects/Mandelstam_TEI/downloads_all/'
 
-path_2 = '/Users/Alexey/Documents/Python_Projects/Mandelstam_TEI/convert/'
+path_2 = '/Users/Alexey/Documents/Python_Projects/Mandelstam_TEI/convert_all/'
 
 
 ## ОТКРЫВАЕМ ИСХОДНЫЙ HTML-ФАЙЛ И ПАРСИМ ЕГО ПРИ ПОМОЩИ LXML
@@ -64,6 +64,10 @@ for file in os.listdir(path_1):
 ##        except:
 ##            print('no page number')
 
+##        посвящение
+        dedication = tree.xpath('//div[@class="dedication"]//text() | //p[@class="dedication"]//text()')
+##        print(dedication)
+        
 
 ##Стихи
         
@@ -222,6 +226,9 @@ for file in os.listdir(path_1):
         for head in title_list:
 ##            print(''.join(head))
             head = etree.SubElement(div2, 'head').text = ''.join(head) ## заголовок
+
+        if dedication: ## посвящение
+            dedic = etree.SubElement(div2, 'div', type = 'dedication').text = dedication[0]
             
         if poem:
             k = 0
