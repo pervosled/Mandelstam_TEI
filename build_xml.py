@@ -75,8 +75,12 @@ for file in os.listdir(path_1):
 ##        автор эпиграфа
         epigraph_src = tree.xpath('//p[@class="source"]//text()')
 ##         print(epigraph_src)
-       
+
+##        сноска
+        note = tree.xpath('//div[@class="footnote"]//text()')
+##        print(note)
         
+       
 
 ##Стихи
         
@@ -279,6 +283,9 @@ for file in os.listdir(path_1):
         
         if date:
             dateline = etree.SubElement(div2, 'date').text = date[0] ## дата
+
+        if note:
+            nte = etree.SubElement(div2, 'note').text = ''.join(note) ## ссылка
                                                
         tree = etree.ElementTree(tei)
         tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, \
