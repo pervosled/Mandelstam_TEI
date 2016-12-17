@@ -17,6 +17,9 @@
     <body>
       <div n="3" type="volume">
         <div n="79" type="part">
+          <epigraph>
+            <quote>I di miei piu leggier che nessun cervo...</quote>
+          </epigraph>
           <lg type="quatrain">
             <l n="1">Промчались дни мои — как бы оленей</l>
             <l n="2">Косящий бег. Срок счастья был короче,</l>

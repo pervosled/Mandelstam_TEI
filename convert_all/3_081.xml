@@ -17,6 +17,9 @@
     <body>
       <div n="3" type="volume">
         <div n="79" type="part">
+          <epigraph>
+            <quote>Or che ’l ciel e la terra e ’l vento tace...</quote>
+          </epigraph>
           <lg type="quatrain">
             <l n="1">Когда уснет земля и жар отпышет,</l>
             <l n="2">А на душе зверей покой лебяжий,</l>

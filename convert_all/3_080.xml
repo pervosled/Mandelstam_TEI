@@ -17,6 +17,9 @@
     <body>
       <div n="3" type="volume">
         <div n="79" type="part">
+          <epigraph>
+            <quote>Quel rosignuol che sì soave piagne...</quote>
+          </epigraph>
           <lg type="quatrain">
             <l n="1">Как соловей, сиротствующий, славит</l>
             <l n="2">Своих пернатых близких ночью синей</l>

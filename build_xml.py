@@ -67,6 +67,15 @@ for file in os.listdir(path_1):
 ##        посвящение
         dedication = tree.xpath('//div[@class="dedication"]//text() | //p[@class="dedication"]//text()')
 ##        print(dedication)
+
+##        эпиграф
+        epigraph = tree.xpath('//p[@class="epigr"]//text() | //div[@class="epigr"]//text()')
+##        print(epigraph)
+
+##        автор эпиграфа
+        epigraph_src = tree.xpath('//p[@class="source"]//text()')
+##         print(epigraph_src)
+       
         
 
 ##Стихи
@@ -228,7 +237,16 @@ for file in os.listdir(path_1):
             head = etree.SubElement(div2, 'head').text = ''.join(head) ## заголовок
 
         if dedication: ## посвящение
-            dedic = etree.SubElement(div2, 'div', type = 'dedication').text = dedication[0]
+            dedic = etree.SubElement(div2, 'div', type = 'dedication').text = ''.join(dedication)
+
+        if epigraph: ## эпиграф
+            epig = etree.SubElement(div2, 'epigraph')
+
+        if epigraph: ## эпиграф
+            epig_quot = etree.SubElement(epig, 'quote').text = ''.join(epigraph)
+
+        if epigraph_src: ## эпиграф: автор
+            epi_src = etree.SubElement(epig, 'bibl').text = ''.join(epigraph_src)
             
         if poem:
             k = 0
