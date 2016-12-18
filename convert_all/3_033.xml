@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>«Я пью за военные астры, за все, чем корили меня...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="3" type="volume">
-        <div n="33" type="part">
+      <div1 n="3" type="volume">
+        <div2 n="33" type="part">
           <head>33.</head>
           <lg type="couplet">
             <l n="1">Я пью за военные астры, за все, чем корили меня,</l>
@@ -35,8 +39,8 @@
             <l n="8">Веселое асти-спуманте иль папского замка вино.</l>
           </lg>
           <date>11 апреля 1931</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

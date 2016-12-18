@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Варианты. «Если б меня наши враги взяли...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="3" type="volume">
-        <div n="154а" type="part">
+      <div1 n="3" type="volume">
+        <div2 n="154а" type="part">
           <head>154а.</head>
           <lg type="23_line">
             <l n="1">Если б меня наши враги взяли</l>
@@ -44,8 +48,8 @@
             <l n="23">Будет губить разум и жизнь Сталин.</l>
           </lg>
           <date>Февраль 1937</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

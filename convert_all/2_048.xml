@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Мальчик в трамвае</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="2" type="volume">
-        <div n="48" type="part">
+      <div1 n="2" type="volume">
+        <div2 n="48" type="part">
           <head>ИЗ КНИГИ «ТРАМВАИ»</head>
           <head>48.
 МАЛЬЧИК В ТРАМВАЕ</head>
@@ -39,8 +43,8 @@
             <l n="16">Трамвай поехал дальше,</l>
             <l n="17">И в нем поехал мальчик.</l>
           </lg>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

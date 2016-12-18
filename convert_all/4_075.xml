@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Письма. 75. Н. Я. Мандельштам, [7 февраля] ‹1926 г.›</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,16 +13,19 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="letter"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="4" type="volume">
-        <div n="75" type="part">
+      <div1 n="4" type="volume">
+        <div2 n="75" type="part">
           <head>75.
 Н. Я. МАНДЕЛЬШТАМ, </head>
           <p>Телеграфируй здоровье температуру только правду всегда тобой Няня все благополучно писал вчера сегодня</p>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

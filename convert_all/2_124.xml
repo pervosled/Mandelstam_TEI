@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Переводы. Макс Бартель. «Любы мне глыбы больших достижений...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="2" type="volume">
-        <div n="124" type="part">
+      <div1 n="2" type="volume">
+        <div2 n="124" type="part">
           <head>124.</head>
           <lg type="quatrain">
             <l n="1">Любы мне глыбы больших достижений.</l>
@@ -42,8 +46,8 @@
             <l n="15">Кто будет медлить? Кто затрепещет,</l>
             <l n="16">Если маячит высокая цель?</l>
           </lg>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

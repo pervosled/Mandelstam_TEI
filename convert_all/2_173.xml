@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Переводы. Роберт Стивенсон. Заморские дети</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="2" type="volume">
-        <div n="173" type="part">
+      <div1 n="2" type="volume">
+        <div2 n="173" type="part">
           <head>Из английской и американской поэзии</head>
           <head>РОБЕРТ СТИВЕНСОН</head>
           <head>173.
@@ -51,8 +55,8 @@
             <l n="19">В теплых шапках маленькие чукчи, —</l>
             <l n="20">Вам хорошо, а все— таки мне лучше!</l>
           </lg>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Письма. 71. Н. Я. Мандельштам, ‹29 января 1926 г.›</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="letter"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="4" type="volume">
-        <div n="71" type="part">
+      <div1 n="4" type="volume">
+        <div2 n="71" type="part">
           <head>71.
 Н. Я. МАНДЕЛЬШТАМ, </head>
           <p>Я не хочу писать тебе открытки, потому что я хочу сказать, что ты нежняночка — милая моя в худых туфельках — как стояла на набережной ангелом родным.</p>
@@ -25,8 +29,8 @@
           <p>Все время буду писать с дороги.</p>
           <p>Сейчас без 10 </p>
           <p>.</p>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

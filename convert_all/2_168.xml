@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Переводы. Альфред Лихтенштейн. Прогулка</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="2" type="volume">
-        <div n="168" type="part">
+      <div1 n="2" type="volume">
+        <div2 n="168" type="part">
           <head>АЛЬФРЕД ЛИХТЕНШТЕЙН</head>
           <head>168.
 ПРОГУЛКА</head>
@@ -36,8 +40,8 @@
             <l n="7">Сейчас затеплит небо подсвечники свои.</l>
             <l n="8">Лик человечный ходит, огромный, вдоль земли.</l>
           </lg>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

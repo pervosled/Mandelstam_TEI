@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Соломинка. 2. «Я научился вам, блаженные слова...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="1" type="volume">
-        <div n="177" type="part">
+      <div1 n="1" type="volume">
+        <div2 n="177" type="part">
           <lg type="quatrain">
             <l n="1">Я научился вам, блаженные слова:</l>
             <l n="2">Ленор, Соломинка, Лигейя, Серафита.</l>
@@ -36,8 +40,8 @@
             <l n="12">Убита жалостью и не вернется вновь!</l>
           </lg>
           <date>Декабрь 1916</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

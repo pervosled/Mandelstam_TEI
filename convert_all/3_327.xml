@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Варианты. Стихи о неизвестном солдате</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="3" type="volume">
-        <div n="164а" type="part">
+      <div1 n="3" type="volume">
+        <div2 n="164а" type="part">
           <head>164а.</head>
           <lg type="18_line">
             <l n="1">Этот воздух пусть будет свидетелем — </l>
@@ -39,8 +43,8 @@
             <l n="18">В холодеющем Южном Кресте.</l>
           </lg>
           <date>1 марта 1937</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>«Дождик ласковый, мелкий и тонкий...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="1" type="volume">
-        <div n="74" type="part">
+      <div1 n="1" type="volume">
+        <div2 n="74" type="part">
           <head>74.</head>
           <lg type="quatrain">
             <l n="1">Дождик ласковый, мелкий и тонкий,</l>
@@ -43,8 +47,8 @@
             <l n="16">Жизни тающей сладостный плач!</l>
           </lg>
           <date>22 августа 1911</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

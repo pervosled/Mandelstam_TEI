@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Переводы. Жюль Ромэн. Кромдейр-старый</title>
+        <author>О.Э. Мандельштам</author>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <textDesc n="play in verse"/>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div1 n="4" type="volume">
+        <div2 n="2" type="part">
+          <head>Том 2 </head>
+          <head>ПЕРЕВОДЫ</head>
+          <head></head>
+          <head>ЖЮЛЬ РОМЭН</head>
+          <head>114.</head>
+          <head>КРОМДЕЙР-СТАРЫЙ</head>
+          <head>Пьеса</head>
+          <lg type="octet"/>
+        </div2>
+      </div1>
+    </body>
+  </text>
+</TEI>

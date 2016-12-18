@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>‹Стихи к Н.Штемпель›. 1. «К пустой земле невольно припадая...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="3" type="volume">
-        <div n="184" type="part">
+      <div1 n="3" type="volume">
+        <div2 n="184" type="part">
           <head>184—185.
 ‹СТИХИ К Н.ШТЕМПЕЛЬ›</head>
           <lg type="11_line">
@@ -32,8 +36,8 @@
             <l n="10">Для нас — праматерь гробового свода,</l>
             <l n="11">И это будет вечно начинаться.</l>
           </lg>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

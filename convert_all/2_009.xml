@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>«Ветер нам утешенье принес...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="2" type="volume">
-        <div n="9" type="part">
+      <div1 n="2" type="volume">
+        <div2 n="9" type="part">
           <head>9.</head>
           <lg type="quatrain">
             <l n="1">Ветер нам утешенье принес,</l>
@@ -43,8 +47,8 @@
             <l n="16">Побежденную твердь Азраил.</l>
           </lg>
           <date>1922</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Рецензии. Gustav Meyrink. Goldmachergeschichten</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="prose"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="2" type="volume">
-        <div n="279" type="part">
+      <div1 n="2" type="volume">
+        <div2 n="279" type="part">
           <head>279.
 Gustav Meyrink. Goldmachergeschichten.</head>
           <p>Три повести Густава Мейринка об алхимиках, затрагивающие эпоху курфюрста Фридриха III Бранденбургского, Марии-Терезии и Польшу начала XVII в., окрашены вялым и непоследовательным романтизмом. Стилизуя ‹сло›жные исторические отношения, автор упро‹щает› их до анекдотических интриг. Лишенный живости Дюма, он равняется по нему в изображении характеров.</p>
@@ -25,8 +29,8 @@ Gustav Meyrink. Goldmachergeschichten.</head>
           <p> Густав Мейринк. Истории об алхимиках. (</p>
           <p>).</p>
           <note>1 Густав Мейринк. Истории об алхимиках. (нем.).</note>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

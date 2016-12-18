@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>«Я живу на важных огородах...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="3" type="volume">
-        <div n="93" type="part">
+      <div1 n="3" type="volume">
+        <div2 n="93" type="part">
           <head>93.</head>
           <lg type="quatrain">
             <l n="1">Я живу на важных огородах.</l>
@@ -37,8 +41,8 @@
             <l n="12">И своя-то жизнь мне не близка.</l>
           </lg>
           <date>Апрель 1935</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

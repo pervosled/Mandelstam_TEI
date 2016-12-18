@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Письма. 24. П. Е. Щеголеву, ‹1913?›</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,16 +13,19 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="letter"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="4" type="volume">
-        <div n="24" type="part">
+      <div1 n="4" type="volume">
+        <div2 n="24" type="part">
           <head>24.
 П. Е. ЩЕГОЛЕВУ, </head>
           <p>Я слышал о Вашем желании иметь для «Современника» произведения акмеистов. Будьте добры ознакомиться с содержанием моего стихотворения, и хотел бы сегодня же узнать Ваше решение.</p>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

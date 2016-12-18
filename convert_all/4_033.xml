@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Письма. 33. А. Д. Скалдину, 8(21) января 1917 г.</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,17 +13,20 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="letter"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="4" type="volume">
-        <div n="33" type="part">
+      <div1 n="4" type="volume">
+        <div2 n="33" type="part">
           <head>33.
 А. Д. СКАЛДИНУ, </head>
           <p>Простите мою возмутительную небрежность: книга страхового общества вместе с извинением в понедельник 9 января будет отослана в секретариат общества.</p>
           <p>Звоните мне и не забывайте меня! Привет Ек‹атерине› Конст‹антиновне›!</p>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Письма. 29. Ф. О. Мандельштам, 20 июля (2 августа) 1915 г.</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,18 +13,21 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="letter"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="4" type="volume">
-        <div n="29" type="part">
+      <div1 n="4" type="volume">
+        <div2 n="29" type="part">
           <head>29.
 Ф. О. МАНДЕЛЬШТАМ, </head>
           <p>Вчера получил телеграмму о приезде Шуры, которая скрестилась с моей. Жду Шуру завтра. Очень одобряю его приезд. Август и сентябрь здесь отличные.</p>
           <p>Жить он будет на даче Волошиной.</p>
           <p>Целую папу, Женю, бабушку.</p>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Письма. 54. Б. В. Горнунгу, ‹начало 1924 г.›</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,17 +13,20 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="letter"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="4" type="volume">
-        <div n="54" type="part">
+      <div1 n="4" type="volume">
+        <div2 n="54" type="part">
           <head>54.
 Б. В. ГОРНУНГУ, </head>
           <p>Давайте все-таки возьмем следующую пятницу. У меня на плечах огромная и спешная работа; буквально каждая минута эти дни рассчитана и, физически присутствуя на своем докладе, я все равно буду неспокоен.</p>
           <p>Передайте мои извинения Л. К.</p>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

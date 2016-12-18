@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Ранние варианты. «Как пахнут тополя — мы пьяны...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="1" type="volume">
-        <div n="171а" type="part">
+      <div1 n="1" type="volume">
+        <div2 n="171а" type="part">
           <head>171а.</head>
           <lg type="quatrain">
             <l n="1">Как пахнут тополя — мы пьяны.</l>
@@ -49,8 +53,8 @@
             <l n="20">В кувшинах спрятанный огонь.</l>
           </lg>
           <date>Апрель 1916</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

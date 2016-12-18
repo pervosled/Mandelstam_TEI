@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Письма. 18. С. К. Маковскому, [27 июня(10 июля)1910 г.]</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,17 +13,20 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="letter"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="4" type="volume">
-        <div n="18" type="part">
+      <div1 n="4" type="volume">
+        <div2 n="18" type="part">
           <head>18.
 С. К. МАКОВСКОМУ, </head>
           <p>Будьте добры сообщить мне, находите ли возможным напечатать (в сентябре?) вместе с другими эти два стихотворения.</p>
           <p>Мой адрес: Helsingfors, Talbacka.</p>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

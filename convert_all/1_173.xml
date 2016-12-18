@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>‹Петрополь›. 2. «В Петрополе прозрачном мы умрем...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="1" type="volume">
-        <div n="172" type="part">
+      <div1 n="1" type="volume">
+        <div2 n="172" type="part">
           <lg type="octet">
             <l n="1">В Петрополе прозрачном мы умрем,</l>
             <l n="2">Где властвует над нами Прозерпина.</l>
@@ -28,8 +32,8 @@
             <l n="8">Здесь царствуешь не ты, а Прозерпина.</l>
           </lg>
           <date>Май 1916</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

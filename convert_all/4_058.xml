@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Письма. 58. В издательство «Время», 3 апреля 1925 г.</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,18 +13,21 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="letter"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="4" type="volume">
-        <div n="58" type="part">
+      <div1 n="4" type="volume">
+        <div2 n="58" type="part">
           <head>58.
 В издательство «ВРЕМЯ», </head>
           <p>Настоящим доверяю брату моему Евгению Эмильевичу Мандельштаму произвести окончательный расчет по книге моей «Шум Времени».</p>
           <p>Детское Село </p>
           <p>3 апр‹еля› 1925.</p>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

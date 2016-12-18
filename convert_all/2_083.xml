@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>«Помпоныч, римский гражданин...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="2" type="volume">
-        <div n="83" type="part">
+      <div1 n="2" type="volume">
+        <div2 n="83" type="part">
           <head>83.</head>
           <div type="dedication">‹Ф. Панферову›</div>
           <lg type="septet">
@@ -28,8 +32,8 @@
             <l n="6">И сам себе разрезал скукожилья,</l>
             <l n="7">Скукожился и дух по ванной испустил...</l>
           </lg>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

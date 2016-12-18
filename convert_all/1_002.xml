@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>«Тянется лесом дороженька пыльная...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="1" type="volume">
-        <div n="2" type="part">
+      <div1 n="1" type="volume">
+        <div2 n="2" type="part">
           <head>2.</head>
           <lg type="quintet">
             <l n="1">Тянется лесом дороженька пыльная,</l>
@@ -61,8 +65,8 @@
             <l n="30">И обагрятся в крови!</l>
           </lg>
           <date>‹1906›</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

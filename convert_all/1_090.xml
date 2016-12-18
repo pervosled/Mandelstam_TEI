@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>«Пусть в душной комнате, где клочья серой ваты...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="1" type="volume">
-        <div n="90" type="part">
+      <div1 n="1" type="volume">
+        <div2 n="90" type="part">
           <head>90.</head>
           <lg type="quatrain">
             <l n="1">Пусть в душной комнате, где клочья серой ваты</l>
@@ -41,8 +45,8 @@
             <l n="14">Живая карусель без музыки вращалась!</l>
           </lg>
           <date>Апрель 1912</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

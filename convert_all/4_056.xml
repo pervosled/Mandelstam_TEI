@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Письма. 56. С. З. Федорченко, 9 июля 1924 г. </title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="letter"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="4" type="volume">
-        <div n="56" type="part">
+      <div1 n="4" type="volume">
+        <div2 n="56" type="part">
           <head>56.
 С. З. ФЕДОРЧЕНКО, </head>
           <p>Вчера Вы были так добры, что в первое же мое посещение занялись моей характеристикой и в кратком очерке прибегли к выраженью «ничего, что он, т. е. я, — немного жулик...»</p>
@@ -33,8 +37,8 @@
           <p> — положение </p>
           <p>.</p>
           <p>Адр‹ес›: Б. Якиманка, 45, кв.8;</p>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

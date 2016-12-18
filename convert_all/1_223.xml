@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Антология античной глупости. ‹3›. «Лесбия, где ты была? — Я лежала в объятьях Морфея...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,17 +13,20 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="1" type="volume">
-        <div n="221" type="part">
+      <div1 n="1" type="volume">
+        <div2 n="221" type="part">
           <lg type="couplet">
             <l n="1">— Лесбия, где ты была? — Я лежала в объятьях Морфея.</l>
             <l n="2">— Женщина, ты солгала: в них я покоился сам!</l>
           </lg>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

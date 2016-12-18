@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>‹Стихи к Ю.Вермелю›. ‹6›.* «Вермель в Канте был подкован...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="3" type="volume">
-        <div n="2" type="part">
+      <div1 n="3" type="volume">
+        <div2 n="2" type="part">
           <lg type="octet">
             <l n="1">Вермель в Канте был подкован,</l>
             <l n="2">То есть был он, так сказать,</l>
@@ -27,8 +31,8 @@
             <l n="7">Вермель съел собаку в Канте,</l>
             <l n="8">Кант, собака, съел его.</l>
           </lg>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>«Генеральская»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="prose"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="2" type="volume">
-        <div n="197" type="part">
+      <div1 n="2" type="volume">
+        <div2 n="197" type="part">
           <head>197.
 «ГЕНЕРАЛЬСКАЯ»</head>
           <p>Пошли ребята в кинематограф. Долго не выбирали. Зашли наобум.</p>
@@ -55,8 +59,8 @@
           <note>
 1 Речь идет о фильме Ф. Ланга «Доктоp Мабузе» (1922).›
 </note>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

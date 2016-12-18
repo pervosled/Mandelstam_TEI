@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Примус. ‹8› «— Если хочешь, тронь...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="2" type="volume">
-        <div n="24" type="part">
+      <div1 n="2" type="volume">
+        <div2 n="24" type="part">
           <lg type="tercet">
             <l n="1">— Если хочешь, тронь —</l>
             <l n="2">Чуть тепла ладонь:</l>
@@ -27,8 +31,8 @@
             <l n="5">Волоском завит:</l>
             <l n="6">Лампочка стеклянная не греет, а горит.</l>
           </lg>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

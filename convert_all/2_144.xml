@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Переводы. Макс Бартель. «Мой шаг звучит...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="2" type="volume">
-        <div n="144" type="part">
+      <div1 n="2" type="volume">
+        <div2 n="144" type="part">
           <head>144.</head>
           <lg type="quatrain">
             <l n="1">Мой шаг звучит</l>
@@ -48,8 +52,8 @@
             <l n="19">Ах, новых звезд</l>
             <l n="20">Не видеть стыдно!</l>
           </lg>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

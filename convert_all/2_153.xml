@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Переводы. Макс Бартель. «Семь златоустовских скрипачей...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="2" type="volume">
-        <div n="153" type="part">
+      <div1 n="2" type="volume">
+        <div2 n="153" type="part">
           <head>153.</head>
           <lg type="sestet">
             <l n="1">Семь златоустовских скрипачей</l>
@@ -50,8 +54,8 @@
             <l n="23">Играют, сутулясь, без огней</l>
             <l n="24">Во славу черной работы.</l>
           </lg>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

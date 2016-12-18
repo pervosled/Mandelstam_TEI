@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Варианты. Ленинград</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="3" type="volume">
-        <div n="21а" type="part">
+      <div1 n="3" type="volume">
+        <div2 n="21а" type="part">
           <head>21а.</head>
           <lg type="couplet">
             <l n="1">— Я вернулся в мой город, знакомый до слез,</l>
@@ -42,8 +46,8 @@
             <l n="11">И всю ночь напролет жду вестей дорогих,</l>
             <l n="12">Шевеля кандалами цепочек дверных.</l>
           </lg>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

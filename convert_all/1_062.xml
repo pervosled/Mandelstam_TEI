@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>«Из омута злого и вязкого...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="1" type="volume">
-        <div n="62" type="part">
+      <div1 n="1" type="volume">
+        <div2 n="62" type="part">
           <head>62.</head>
           <lg type="quatrain">
             <l n="1">Из омута злого и вязкого</l>
@@ -37,8 +41,8 @@
             <l n="12">И в каждого тайно влюблен.</l>
           </lg>
           <date>‹Осень› 1910, 1927</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

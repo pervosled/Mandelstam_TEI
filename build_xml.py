@@ -23,6 +23,10 @@ for file in os.listdir(path_1):
 ##        заголовок вида 'О.Э. Мандельштам. «Ни о чем не нужно говорить...»'
         title = tree.xpath('.//title/text()')[0]
 ##        print(title)
+
+##        заголовок вида '«Ни о чем не нужно говорить...»'
+        short_title = title.replace('О.Э. Мандельштам. ', '')
+##        print(short_title)
         
 ##        номер произведения в томе
         t_number = tree.xpath('.//h1/text()')        
@@ -55,6 +59,12 @@ for file in os.listdir(path_1):
 ##        дата (подпись под произведением)
         date = tree.xpath('.//p[@class="date"]/text()')
 ##        print(date)
+##        if date:
+##            year_exact = re.findall('19\d{2}($|?!\(\?\)|[^?])', date[0])
+##            year_proposed = re.findall('(19\d{2})(\(\?\)|\?)', date[0])
+##            year_exact = re.findall('19\d{2}$|19\d{2}[^?(]', year_ex[0])
+##            print(year_proposed[0])
+##            print(year_exact)
 
 ##        номера страниц
         page = tree.xpath('//div[@class="page"]/text()')
@@ -85,11 +95,16 @@ for file in os.listdir(path_1):
 ##Стихи
         
 ##        тип текста – стихи
-        poem = re.findall('<div class="versus[a-z]*[\d]', sourcecode)
+        poem = re.findall('<div class="versus', sourcecode)
+        poem_1 = re.findall('<p class="versus', sourcecode)
+        if poem_1:
+            poem = 'versus'
 ##        if poem:
 ##            print('это стихи')
 ##        else:
 ##            print('это не стихи')
+        if poem:
+            genre = 'poem'
 
 ##        стихотворный размер и количество стоп, если это стихи
         versus = re.findall('<div class="versus[a-z]*[\d]', sourcecode)
@@ -182,14 +197,6 @@ for file in os.listdir(path_1):
 ##            print(poemlasttxt)## списки соответствуют файлам, вложенные
             ## в них строки - это абзацы, предшествующие разрыву страниц
 
-##Проза
-               
-##        собственно текст, если это проза или письма (каждый абзац - строка, \
-##                все вместе в одном списке, если не проза или письма, выдаёт пустой список)
-        paragraph = tree.xpath('.//p[@class="text"]/text() | .//p[@class="text-cont"]/text()')
-##        print(paragraph)
-
-
 ##Письма
         
 ##        тип текста – письма
@@ -198,6 +205,8 @@ for file in os.listdir(path_1):
 ##            print(letter[0])
 ##        except:
 ##            print('это не письма')
+        if letter:
+            genre = 'letter'
 
 ##        текст последней нестихотворной строки перед разрывом страницы
         if not poem:
@@ -205,6 +214,26 @@ for file in os.listdir(path_1):
 ##            print(plasttxt) ## список, элементы которого - строки -
             ## это абзацы, предшествующие разрыву страниц
 
+##Пьеса
+
+##        тип текста - пьеса
+        drama = tree.xpath('.//p[@class="remark"] | .//p[@class="speaker"] | \
+.//p[@class="speaker"] | .//p[@class="stage"]')
+        if drama:
+            genre = 'play'
+        if poem and drama:
+            genre = 'play in verse'
+
+##Проза
+               
+##        собственно текст, если это проза или письма (каждый абзац - строка, \
+##                все вместе в одном списке, если не проза или письма, выдаёт пустой список)
+        paragraph = tree.xpath('.//p[@class="text"]/text() | .//p[@class="text-cont"]/text()')
+##        print(paragraph)
+##        тип текста - проза
+        if paragraph and not letter and not drama:
+            genre = 'prose'
+            
 
 ## СТРОИМ ФАЙЛ TEI XML               
 
@@ -219,9 +248,11 @@ for file in os.listdir(path_1):
         tei = etree.Element('TEI', xmlns = "http://www.tei-c.org/ns/1.0")
         teiHeader = etree.SubElement(tei, 'teiHeader')
         fileDesc = etree.SubElement(teiHeader, 'fileDesc')
+        profileDesc = etree.SubElement(teiHeader, 'profileDesc')
+        textDesc = etree.SubElement(profileDesc, 'textDesc', n = genre)
         titleStmt = etree.SubElement(fileDesc, 'titleStmt')        
-        title = etree.SubElement(titleStmt, 'title').text = \
-                'О.Э. Мандельштам. Cобрание сочинений в четырёх томах'
+        title = etree.SubElement(titleStmt, 'title').text = short_title
+        author = etree.SubElement(titleStmt, 'author').text = 'О.Э. Мандельштам'
         publicationStmt = etree.SubElement(fileDesc, 'publicationStmt')
         p = etree.SubElement(publicationStmt, 'p').text = 'АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993'        
         sourceDesc = etree.SubElement(fileDesc, 'sourceDesc')
@@ -230,11 +261,11 @@ for file in os.listdir(path_1):
 
         text = etree.SubElement(tei, 'text')
         body = etree.SubElement(text, 'body')
-        div1 = etree.SubElement(body, 'div', type = 'volume', n = volume_n[-1][-1])        
+        div1 = etree.SubElement(body, 'div1', type = 'volume', n = volume_n[-1][-1])        
         try:
-            div2 = etree.SubElement(div1, 'div', type = 'part', n = text_number[0][:-1])
+            div2 = etree.SubElement(div1, 'div2', type = 'part', n = text_number[0][:-1])
         except IndexError:
-            div2 = etree.SubElement(div1, 'div', type = 'part', n = '')
+            div2 = etree.SubElement(div1, 'div2', type = 'part', n = '')        
 
         for head in title_list:
 ##            print(''.join(head))
@@ -290,11 +321,7 @@ for file in os.listdir(path_1):
         tree = etree.ElementTree(tei)
         tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, \
                    xml_declaration = True)
-
-
-
-
-
+        
 
 
 

@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Переводы. Макс Бартель. Видение Носке. 2. «На утро радостный почин...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="2" type="volume">
-        <div n="156" type="part">
+      <div1 n="2" type="volume">
+        <div2 n="156" type="part">
           <lg type="18_line">
             <l n="1">Наутро радостный почин —</l>
             <l n="2">Под баррикадами Берлин.</l>
@@ -37,8 +41,8 @@
             <l n="17">Виденье Носке. Темнота.</l>
             <l n="18">Белая пена бьет изо рта.</l>
           </lg>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

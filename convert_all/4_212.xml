@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Письма. 212. Е. Э. Мандельштаму, 8 января 193‹7› г.</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="letter"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="4" type="volume">
-        <div n="212" type="part">
+      <div1 n="4" type="volume">
+        <div2 n="212" type="part">
           <head>212.
 Е. Э. МАНДЕЛЬШТАМУ, </head>
           <p>Ты мою жизнь давно оценил и для тебя она предмет далеко не первой необходимости.</p>
@@ -28,8 +32,8 @@
           <p>. Ты понимаешь, </p>
           <p> ты делаешь?</p>
           <p>Денег я у тебя не прошу, но запрещаю тебе где бы то ни было называть себя моим братом.</p>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Рецензии. ‹La bête errante›</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="prose"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="2" type="volume">
-        <div n="265" type="part">
+      <div1 n="2" type="volume">
+        <div2 n="265" type="part">
           <head>265.
 ‹La bête errante›</head>
           <p>По типу своему «La bête errante» сильно дегенерировавший Джек Лондон. Клондайкские приключения, драки, свирепые ситуации — все это путь к обладанию эгоистической красавицей — «кинозвездой». Развязка добродетельная: женитьба на скромной служанке полярного кабачка и 1.000.000 за золотоносный участок!</p>
@@ -24,8 +28,8 @@
           <note>
 3 Бродячее животное (фр.).
 </note>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

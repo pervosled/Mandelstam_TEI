@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Варианты. «Не мучнистой бабочкою белой...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="3" type="volume">
-        <div n="94а" type="part">
+      <div1 n="3" type="volume">
+        <div2 n="94а" type="part">
           <head>94а.</head>
           <lg type="sestet">
             <l n="1">Не мучнистой бабочкою белой</l>
@@ -47,8 +51,8 @@
             <l n="20">Продолженье зорких тех двоих.</l>
           </lg>
           <date>Весна 1935</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

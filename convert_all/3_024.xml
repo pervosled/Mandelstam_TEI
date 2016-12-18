@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>«Помоги, Господь, эту ночь прожить...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="3" type="volume">
-        <div n="24" type="part">
+      <div1 n="3" type="volume">
+        <div2 n="24" type="part">
           <head>24.</head>
           <lg type="tercet">
             <l n="1">Помоги, Господь, эту ночь прожить,</l>
@@ -24,8 +28,8 @@
             <l n="3">В Петербурге жить — словно спать в гробу.</l>
           </lg>
           <date>Январь 1931</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

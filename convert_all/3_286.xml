@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Варианты. ‹Из Фр. Петрарки› ‹2›. «Как соловей, сиротствующий, славит...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="3" type="volume">
-        <div n="80а" type="part">
+      <div1 n="3" type="volume">
+        <div2 n="80а" type="part">
           <head>80а.</head>
           <lg type="quatrain">
             <l n="1">Как соловей свое несчастье славит</l>
@@ -40,8 +44,8 @@
             <l n="13">Я убедился, что вся прелесть мира</l>
             <l n="14">Ресничного не долговечней взмаха.</l>
           </lg>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

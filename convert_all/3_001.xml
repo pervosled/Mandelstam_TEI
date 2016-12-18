@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>«Куда как страшно нам с тобой...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="3" type="volume">
-        <div n="1" type="part">
+      <div1 n="3" type="volume">
+        <div2 n="1" type="part">
           <head>СТИХОТВОРЕНИЯ</head>
           <head>1.</head>
           <lg type="couplet">
@@ -35,8 +39,8 @@
             <l n="7">Да, видно, нельзя никак...</l>
           </lg>
           <date>Октябрь 1930</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

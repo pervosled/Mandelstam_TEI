@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>‹Из альбома Д.И. Шепеленко› «Поэту море по коленки...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="2" type="volume">
-        <div n="54" type="part">
+      <div1 n="2" type="volume">
+        <div2 n="54" type="part">
           <head>ШУТОЧНЫЕ СТИХИ</head>
           <head>54—56.
 ‹ИЗ АЛЬБОМА Д.И.ШЕПЕЛЕНКО›</head>
@@ -26,8 +30,8 @@
             <l n="3">Что с Аглаидой Вонифатий</l>
             <l n="4">Совокупился без объятий.</l>
           </lg>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

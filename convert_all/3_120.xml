@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>«Не у меня, не у тебя — у них...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="3" type="volume">
-        <div n="120" type="part">
+      <div1 n="3" type="volume">
+        <div2 n="120" type="part">
           <head>120.</head>
           <lg type="11_line">
             <l n="1">Не у меня, не у тебя — у них</l>
@@ -32,8 +36,8 @@
             <l n="11">И то, что мучит их, — в приливах и отливах.</l>
           </lg>
           <date>9—27 декабря 1936</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

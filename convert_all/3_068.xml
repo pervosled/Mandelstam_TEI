@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Восьмистишия. ‹1›. «Люблю появление ткани...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="3" type="volume">
-        <div n="68" type="part">
+      <div1 n="3" type="volume">
+        <div2 n="68" type="part">
           <head>68—78.
 ВОСЬМИСТИШИЯ</head>
           <lg type="quatrain">
@@ -32,8 +36,8 @@
             <l n="8">Не знавшее люльки дитя.</l>
           </lg>
           <date>Ноябрь 1933, июль 1935</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

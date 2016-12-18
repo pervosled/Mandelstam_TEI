@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>«Колют ресницы. В груди прикипела слеза...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="3" type="volume">
-        <div n="28" type="part">
+      <div1 n="3" type="volume">
+        <div2 n="28" type="part">
           <head>28.</head>
           <lg type="quatrain">
             <l n="1">Колют ресницы. В груди прикипела слеза.</l>
@@ -31,8 +35,8 @@
             <l n="8">В час, как полоской заря над острогом встает.</l>
           </lg>
           <date>2 марта 1931</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

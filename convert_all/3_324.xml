@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Варианты. «Обороняет сон мою донскую сонь...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="3" type="volume">
-        <div n="147а" type="part">
+      <div1 n="3" type="volume">
+        <div2 n="147а" type="part">
           <head>147а.</head>
           <lg type="quintet">
             <l n="1">[Грянь, боевой салют‹?›: не тронь Москвы, не тронь!]</l>
@@ -38,8 +42,8 @@
             <l n="13">В которой мир и жизнь и воздух человечества.</l>
           </lg>
           <date>3 февраля 1937</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

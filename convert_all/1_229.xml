@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>из «Антологии античной глупости». ‹4›. «Пушкин имеет проспект, пламенный Лермонтов тоже...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,19 +13,22 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="1" type="volume">
-        <div n="226" type="part">
+      <div1 n="1" type="volume">
+        <div2 n="226" type="part">
           <div type="dedication">В. Рождественскому</div>
           <lg type="tercet">
             <l n="1">Пушкин имеет проспект, пламенный Лермонтов тоже.</l>
             <l n="2">Сколь же ты будешь почтен, если при жизни твоей</l>
             <l n="3">Десять Рождественских улиц!..</l>
           </lg>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

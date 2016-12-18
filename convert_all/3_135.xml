@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>«Улыбнись, ягненок гневный c Рафаэлева холста...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="3" type="volume">
-        <div n="135" type="part">
+      <div1 n="3" type="volume">
+        <div2 n="135" type="part">
           <head>135.</head>
           <lg type="couplet">
             <l n="1">Улыбнись, ягненок гневный с Рафаэлева холста, — </l>
@@ -35,8 +39,8 @@
             <l n="8">И плывет углами неба восхитительная мощь.</l>
           </lg>
           <date>9 января 1937</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

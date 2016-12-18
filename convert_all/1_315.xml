@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Ранние варианты. «Когда Психея-жизнь спускается к теням...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="1" type="volume">
-        <div n="209а" type="part">
+      <div1 n="1" type="volume">
+        <div2 n="209а" type="part">
           <head>209а.</head>
           <lg type="quatrain">
             <l n="1">Когда Психея-жизнь спускается к теням</l>
@@ -43,8 +47,8 @@
             <l n="16">Лепешку медную хозяину парома.</l>
           </lg>
           <date>Ноябрь 1920, март 1937</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

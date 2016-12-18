@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>«Как светотени мученик Рембрандт...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="3" type="volume">
-        <div n="156" type="part">
+      <div1 n="3" type="volume">
+        <div2 n="156" type="part">
           <head>156.</head>
           <lg type="11_line">
             <l n="1">Как светотени мученик Рембрандт,</l>
@@ -32,8 +36,8 @@
             <l n="11">Мехами сумрака взволнованное племя.</l>
           </lg>
           <date>4 февраля 1937</date>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

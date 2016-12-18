@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Письма. 25. М. В. Аверьянову, ‹не позднее 29 мая (11 июня) 1914 г.›</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,16 +13,19 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="letter"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="4" type="volume">
-        <div n="25" type="part">
+      <div1 n="4" type="volume">
+        <div2 n="25" type="part">
           <head>25.
 М. В. АВЕРЬЯНОВУ, </head>
           <p>Вы мне обещали прибавить к 50 еще 25 р. с тем, чтобы считать наш расчет окончательным. Быть может, Вы сделаете это сегодня? Я уезжаю в деревню и 15 р. для меня сейчас очень важны. Надеюсь, Вы не откажете.</p>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

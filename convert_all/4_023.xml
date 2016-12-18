@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Письма. 23. Неустановленному адресату, ‹1913›</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,19 +13,22 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="letter"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="4" type="volume">
-        <div n="23" type="part">
+      <div1 n="4" type="volume">
+        <div2 n="23" type="part">
           <head>23.
 НЕУСТАНОВЛЕННОМУ АДРЕСАТУ, </head>
           <p>Я в «Записках».</p>
           <p>Напиши мне, что тебе удалось сделать. </p>
           <p>Я позвоню к тебе оттуда </p>
           <p>547 02</p>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

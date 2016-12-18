@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Письма. 32. А. Л. Волынскому, 7(20) декабря 1916 г.</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,18 +13,21 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="letter"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="4" type="volume">
-        <div n="32" type="part">
+      <div1 n="4" type="volume">
+        <div2 n="32" type="part">
           <head>32.
 А.Л. ВОЛЫНСКОМУ, </head>
           <p>Если только у Вас не прошла охота посетить наш скромный «Цех», приходите в пятницу 9 дек‹абря› к Адамовичу (Георгию Викторовичу) на Верейскую, 4, в 8 ч. в‹ечера›.</p>
           <p>Все Вам будут очень рады.</p>
           <p>До свиданья! Жму Вашу руку!</p>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

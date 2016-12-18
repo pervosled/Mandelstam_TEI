@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Кама. 1. «Как на Каме-реке глазу тёмно, когда...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="3" type="volume">
-        <div n="104" type="part">
+      <div1 n="3" type="volume">
+        <div2 n="104" type="part">
           <head>104—106.
 КАМА</head>
           <lg type="couplet">
@@ -39,8 +43,8 @@
             <l n="9">А со мною жена пять ночей не спала,</l>
             <l n="10">Пять ночей не спала, трех конвойных везла.</l>
           </lg>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

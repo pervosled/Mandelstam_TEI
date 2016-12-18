@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Моргулеты. ‹4›. «Старик Моргулис из Ростова...»</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,19 +13,22 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="3" type="volume">
-        <div n="193" type="part">
+      <div1 n="3" type="volume">
+        <div2 n="193" type="part">
           <lg type="quatrain">
             <l n="1">Старик Моргулис из Ростова</l>
             <l n="2">С рекомендацией Бубнова,</l>
             <l n="3">Друг Островера и Живова</l>
             <l n="4">И современник Козакова.</l>
           </lg>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

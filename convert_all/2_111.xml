@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Переводы. Огюст Барбье. Ирландские холмы </title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,11 +13,14 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="2" type="volume">
-        <div n="111" type="part">
+      <div1 n="2" type="volume">
+        <div2 n="111" type="part">
           <head>111.
 ИРЛАНДСКИЕ ХОЛМЫ</head>
           <lg type="41_line">
@@ -62,8 +66,8 @@
             <l n="40">И хорошо щавель и мяту собирать,</l>
             <l n="41">К ручьям Ирландии склонить свои колена...</l>
           </lg>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>

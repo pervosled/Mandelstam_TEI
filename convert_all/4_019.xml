@@ -3,7 +3,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>О.Э. Мандельштам. Cобрание сочинений в четырёх томах</title>
+        <title>Письма. 19. В. И. Иванову, ‹не позднее 24 июля (6 августа) 1910 г.›</title>
+        <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
         <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
@@ -12,16 +13,19 @@
         <p>Издание подготовлено Мандельштамовским обществом</p>
       </sourceDesc>
     </fileDesc>
+    <profileDesc>
+      <textDesc n="letter"/>
+    </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div n="4" type="volume">
-        <div n="19" type="part">
+      <div1 n="4" type="volume">
+        <div2 n="19" type="part">
           <head>19.
 В. И. ИВАНОВУ, </head>
           <p>С. П. Каблуков есть лицо, не заслуживающее доверия, и все, что он клеветал, — ложь. И та строчка из моего стихотворения, которую он цитировал в своем письме к Вам, читается без «в»:</p>
-        </div>
-      </div>
+        </div2>
+      </div1>
     </body>
   </text>
 </TEI>
