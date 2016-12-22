@@ -3,7 +3,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Переводы. Жюль Ромэн. Кромдейр-старый</title>
+        <title>«Звук осторожный и глухой...»</title>
         <author>О.Э. Мандельштам</author>
       </titleStmt>
       <publicationStmt>
@@ -14,21 +14,21 @@
       </sourceDesc>
     </fileDesc>
     <profileDesc>
-      <textDesc n="play in verse"/>
+      <textDesc n="poem"/>
     </profileDesc>
   </teiHeader>
   <text>
     <body>
-      <div1 n="4" type="volume">
-        <div2 n="2" type="part">
-          <head>Том 2 </head>
-          <head>ПЕРЕВОДЫ</head>
-          <head></head>
-          <head>ЖЮЛЬ РОМЭН</head>
-          <head>114.</head>
-          <head>КРОМДЕЙР-СТАРЫЙ</head>
-          <head>Пьеса</head>
-          <lg type="octet"/>
+      <div1 n="1" type="volume">
+        <div2 n="6" type="part">
+          <head>6.</head>
+          <lg type="quatrain">
+            <l n="1">Звук осторожный и глухой</l>
+            <l n="2">Плода, сорвавшегося с древа,</l>
+            <l n="3">Среди немолчного напева</l>
+            <l n="4">Глубокой тишины лесной...</l>
+          </lg>
+          <date when="1908">1908</date>
         </div2>
       </div1>
     </body>

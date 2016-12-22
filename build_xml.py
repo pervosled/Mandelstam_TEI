@@ -59,12 +59,17 @@ for file in os.listdir(path_1):
 ##        дата (подпись под произведением)
         date = tree.xpath('.//p[@class="date"]/text()')
 ##        print(date)
-##        if date:
-##            year_exact = re.findall('19\d{2}($|?!\(\?\)|[^?])', date[0])
-##            year_proposed = re.findall('(19\d{2})(\(\?\)|\?)', date[0])
-##            year_exact = re.findall('19\d{2}$|19\d{2}[^?(]', year_ex[0])
-##            print(year_proposed[0])
-##            print(year_exact)
+        if date:
+            year = re.findall('19\d{2}', date[0]) ## список, внутри строка (строки) с годом
+            year_exact = re.findall('19\d{2}(?!\?|\(\?)', date[0]) ## список,
+            ## внутри строка (строки) с годом, если после не идёт '?' или '(?)'
+            year_proposed = re.findall('19\d{2}\?|19\d{2}\(\?\)', date[0])
+##            print(year_proposed) ## список,
+            ## внутри строка (строки) с годом, если после идёт '?' или '(?)'
+##            full_date = re.findall('.*?\d{1,2}.*?(янв|фев|мар|апр|ма|июн|июл|авг|сент|окт|ноя|дек).*?', date[0])
+            full_date = re.findall('^.*?\d\d(янв|фев|мар|апр|ма|июн|июл|авг|сент|окт|ноя|дек)(0[1-9]|[1-2][0-9]|3[01])$', date[0])             
+##            print(full_date)
+            
 
 ##        номера страниц
         page = tree.xpath('//div[@class="page"]/text()')
@@ -313,7 +318,17 @@ for file in os.listdir(path_1):
 ##                    c += 1
         
         if date:
-            dateline = etree.SubElement(div2, 'date').text = date[0] ## дата
+            if year:
+                if year_proposed:
+                    dateline = etree.SubElement(div2, 'date', when = '#'.join(year) \
+                                            , precision = "circa").text = date[0]
+                else:
+                    dateline = etree.SubElement(div2, 'date', when = '#'.join(year)).text = date[0]
+##            if year_exact: ## точный год
+##                dateline = etree.SubElement(div2, 'date', when = ', '.join(year_exact)).text = date[0]
+                           
+
+                
 
         if note:
             nte = etree.SubElement(div2, 'note').text = ''.join(note) ## ссылка
@@ -322,8 +337,4 @@ for file in os.listdir(path_1):
         tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, \
                    xml_declaration = True)
         
-
-
-
-
 
