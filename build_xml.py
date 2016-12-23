@@ -57,20 +57,49 @@ for file in os.listdir(path_1):
 ##        print(publication[0])
                            
 ##        дата (подпись под произведением)
+        full_date_when = []
+        full_date_from = []
+        full_date_to = []
+        months = []
+        years = []
+        days = []
         date = tree.xpath('.//p[@class="date"]/text()')
-##        print(date)
+##        print(date)  ## например: ['1912 (1913?), 2 января 1937']
         if date:
-            year = re.findall('19\d{2}', date[0]) ## список, внутри строка (строки) с годом
-            year_exact = re.findall('19\d{2}(?!\?|\(\?)', date[0]) ## список,
-            ## внутри строка (строки) с годом, если после не идёт '?' или '(?)'
-            year_proposed = re.findall('19\d{2}\?|19\d{2}\(\?\)', date[0])
-##            print(year_proposed) ## список,
-            ## внутри строка (строки) с годом, если после идёт '?' или '(?)'
-##            full_date = re.findall('.*?\d{1,2}.*?(янв|фев|мар|апр|ма|июн|июл|авг|сент|окт|ноя|дек).*?', date[0])
-            full_date = re.findall('^.*?\d\d(янв|фев|мар|апр|ма|июн|июл|авг|сент|окт|ноя|дек)(0[1-9]|[1-2][0-9]|3[01])$', date[0])             
-##            print(full_date)
-            
-
+            year_split = re.findall('(.*?19\d{2})', date[0])
+##            print(year_split)  ## например: ['‹Январь — февраль› 1913', ', 1915']            
+            for u in year_split:
+                year = re.findall('19\d{2}', u) ## год, например: ['1908']
+                full_d = []
+                full_d.append(year[0])                
+##                not_after = re.findall('поздн', u)
+##                if not_after:
+##                    for z in not_after:
+##                        full_date.append(not_after)                
+                month = re.findall \
+            ('.*?(нва|евр|арт|прел|ма|Ма|июн|Июн|июл|Июл|авг|Авг|ент|окт|Окт|ояб|дек|Дек).*?', u)
+                month_dict = {'нва':'01', 'евр':'02', 'арт':'03', 'прел':'04', 'ма':'05', 'Ма':'05', 'июн':'06', 'Июн':'06', 'июл':'07', \
+                     'Июл':'07', 'авг':'08', 'Авг':'08', 'ент':'09', 'окт':'10', 'Окт':'10', 'ояб':'11', 'дек':'12', 'Дек':'12'}
+                if month:
+                    for e in month:
+                        full_d.append(month_dict[e]) ## номер месяца
+##                day = re.findall('.[^\d](\d{1,2}).[^\d]', u) ## только числа
+##                for h in day:
+##                    full_d.append(h)
+##                print(full_d)
+                ## например: ['1913', '01', '02'], что означает:  <январь - февраль 1913 года>
+                ## ['1915']                
+                if len(full_d)>2:                               
+                    full_date_from.append(full_d[0])
+                    full_date_from.append(full_d[1])
+                    full_date_to.append(full_d[0])
+                    full_date_to.append(full_d[-1])
+##                    print(full_date_from)  ## например: ['1913', '01'] "с января 1913"
+##                    print(full_date_to) ## например: ['1913', '02'] "по февраль 1913"
+                else:
+                    full_date_when.append('-'.join(full_d))
+##                    print(full_date_when) ## например: ['1912', '1913', '1937-01']
+                                     
 ##        номера страниц
         page = tree.xpath('//div[@class="page"]/text()')
 ##        print(page)
@@ -317,19 +346,16 @@ for file in os.listdir(path_1):
 ##                        continue
 ##                    c += 1
         
-        if date:
-            if year:
-                if year_proposed:
-                    dateline = etree.SubElement(div2, 'date', when = '#'.join(year) \
-                                            , precision = "circa").text = date[0]
-                else:
-                    dateline = etree.SubElement(div2, 'date', when = '#'.join(year)).text = date[0]
-##            if year_exact: ## точный год
-##                dateline = etree.SubElement(div2, 'date', when = ', '.join(year_exact)).text = date[0]
-                           
-
-                
-
+        if full_date_when:
+            dateline = etree.SubElement(div2, 'date', when = '#'.join(full_date_when)).text = date[0]
+        if full_date_from:
+            myattr = {'from':'-'.join(full_date_from), 'to': '-'.join(full_date_to)}
+            dateline = etree.SubElement(div2, 'date', attrib = myattr).text = date[0]
+##             if year:
+##                if full_date:
+##                    dateline = etree.SubElement(div2, 'date', when = '#'.join(year) \
+##                                            , precision = "circa").text = date[0]
+                                           
         if note:
             nte = etree.SubElement(div2, 'note').text = ''.join(note) ## ссылка
                                                
@@ -337,4 +363,6 @@ for file in os.listdir(path_1):
         tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, \
                    xml_declaration = True)
         
+
+
 
