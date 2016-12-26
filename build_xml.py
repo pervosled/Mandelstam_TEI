@@ -3,6 +3,8 @@ import urllib.request
 import os.path
 import re
 import lxml.html
+import csv
+
 
 path_1 = '/Users/Alexey/Documents/Python_Projects/Mandelstam_TEI/downloads_all/'
 
@@ -10,6 +12,8 @@ path_2 = '/Users/Alexey/Documents/Python_Projects/Mandelstam_TEI/convert_all/'
 
 
 ## ОТКРЫВАЕМ ИСХОДНЫЙ HTML-ФАЙЛ И ПАРСИМ ЕГО ПРИ ПОМОЩИ LXML
+
+page_n_1 = []
 
 for file in os.listdir(path_1):
     if file.endswith('.htm'):
@@ -29,11 +33,13 @@ for file in os.listdir(path_1):
 ##        print(short_title)
         
 ##        номер произведения в томе
-        t_number = tree.xpath('.//h1/text()')        
-        for element in t_number:
-            text_number = re.findall('\d{1,3}\а?.', element)
-            if text_number:
-                break
+        for a in range(9):
+            t_number = tree.xpath('.//h{0}/text()'.format(a+1))
+        
+            for element in t_number:
+                text_number = re.findall('\d{1,3}\а?.', element)
+                if text_number:
+                    break
 ##        print(text_number)
             
 ##        заголовок, который будет отображаться на странице
@@ -49,11 +55,17 @@ for file in os.listdir(path_1):
         ## [['ПРОЗА', '\n1921—1929'], ['177.', '\nБАТУМ']]
                   
 ##        номер текущего тома
-        volume_n = re.findall('Арт-Бизнес-Центр, 199[0-9]. Т. [1-4]', sourcecode)
+        volume_n = re.findall('Арт-Бизнес-Центр, 199[0-9]. Т. [1-4]', \
+                              sourcecode)
 ##        print(int(volume_n[-1][-1]))
+        vols = {1:'I', 2:'II', 3:'III', 4:'IV'}
+        volume_n_roman = (vols[(int(volume_n[-1][-1]))])
+##        print(volume_n_roman) ## номер тома римскими цифрами, напр.: 'II'
+        
         
 ##        источник публикации (издание, том)
-        publication = re.findall('Арт-Бизнес-Центр, 199[0-9]. Т. [1-4]', sourcecode)
+        publication = re.findall('Арт-Бизнес-Центр, 199[0-9]. Т. [1-4]', \
+                                 sourcecode)
 ##        print(publication[0])
                            
 ##        дата (подпись под произведением)
@@ -67,7 +79,8 @@ for file in os.listdir(path_1):
 ##        print(date)  ## например: ['1912 (1913?), 2 января 1937']
         if date:
             year_split = re.findall('(.*?19\d{2})', date[0])
-##            print(year_split)  ## например: ['‹Январь — февраль› 1913', ', 1915']            
+##            print(year_split)
+            ## например: ['‹Январь — февраль› 1913', ', 1915']            
             for u in year_split:
                 year = re.findall('19\d{2}', u) ## год, например: ['1908']
                 full_d = []
@@ -77,9 +90,11 @@ for file in os.listdir(path_1):
 ##                    for z in not_after:
 ##                        full_date.append(not_after)                
                 month = re.findall \
-            ('.*?(нва|евр|арт|прел|ма|Ма|июн|Июн|июл|Июл|авг|Авг|ент|окт|Окт|ояб|дек|Дек).*?', u)
-                month_dict = {'нва':'01', 'евр':'02', 'арт':'03', 'прел':'04', 'ма':'05', 'Ма':'05', 'июн':'06', 'Июн':'06', 'июл':'07', \
-                     'Июл':'07', 'авг':'08', 'Авг':'08', 'ент':'09', 'окт':'10', 'Окт':'10', 'ояб':'11', 'дек':'12', 'Дек':'12'}
+('.*?(нва|евр|арт|прел|ма|Ма|июн|Июн|июл|Июл|авг|Авг|ент|окт|Окт|ояб|дек|Дек).*?', u)
+                month_dict = {'нва':'01', 'евр':'02', 'арт':'03', \
+                'прел':'04', 'ма':'05', 'Ма':'05', 'июн':'06', 'Июн':'06', 'июл':'07', \
+                'Июл':'07', 'авг':'08', 'Авг':'08', 'ент':'09', 'окт':'10', 'Окт':'10', \
+                              'ояб':'11', 'дек':'12', 'Дек':'12'}
                 if month:
                     for e in month:
                         full_d.append(month_dict[e]) ## номер месяца
@@ -87,8 +102,8 @@ for file in os.listdir(path_1):
 ##                for h in day:
 ##                    full_d.append(h)
 ##                print(full_d)
-                ## например: ['1913', '01', '02'], что означает:  <январь - февраль 1913 года>
-                ## ['1915']                
+            ## например: ['1913', '01', '02'], что означает:  <январь - февраль 1913 года>
+            ## ['1915']                
                 if len(full_d)>2:                               
                     full_date_from.append(full_d[0])
                     full_date_from.append(full_d[1])
@@ -101,19 +116,24 @@ for file in os.listdir(path_1):
 ##                    print(full_date_when) ## например: ['1912', '1913', '1937-01']
                                      
 ##        номера страниц
-        page = tree.xpath('//div[@class="page"]/text()')
-##        print(page)
+        page_n = tree.xpath('//div[@class="page"]/text()')
+        if page_n:
+            page_n_1 = page_n[-1]
+##        print(page_n_1) ## если нет номера страницы, оставляем его же из предыдущего файла: ['84']
+##        print(page_n) ## например: ['84']
 ##        try:
-##            print(int(page[0]))
+##            print(int(page_n[0])) ## например: 84
 ##        except:
 ##            print('no page number')
 
 ##        посвящение
-        dedication = tree.xpath('//div[@class="dedication"]//text() | //p[@class="dedication"]//text()')
+        dedication = tree.xpath('//div[@class="dedication"]//text() | \
+//p[@class="dedication"]//text()')
 ##        print(dedication)
 
 ##        эпиграф
-        epigraph = tree.xpath('//p[@class="epigr"]//text() | //div[@class="epigr"]//text()')
+        epigraph = tree.xpath('//p[@class="epigr"]//text() | \
+//div[@class="epigr"]//text()')
 ##        print(epigraph)
 
 ##        автор эпиграфа
@@ -124,8 +144,152 @@ for file in os.listdir(path_1):
         note = tree.xpath('//div[@class="footnote"]//text()')
 ##        print(note)
         
-       
 
+## Мифологические герои
+
+        path = '/Users/Alexey/Documents/Python_Projects/Mandelstam_TEI/'
+        
+        vol_page = []
+        names = []
+        data = []
+        vol = []
+        pg = []
+        pg1 = []
+        names_2 = []
+        myth_names = []
+        myth_names1 = []
+
+
+        with open('myth_index.htm', 'r', encoding='cp1251') as page:
+            lines = page.readlines() ## построчный список вида ['str1', 'str2'...]
+            for line in lines:
+
+        ##        вся строка с данными
+                line_data = re.findall(r'(<p class="name-ind">.*?</p>)', line)
+                if line_data:
+                    if '&nbsp;' not in line_data:
+        ##                print(line_data) ## например:
+        ## ['<p class="name-ind">Юпитер — <b>II:</b> 251; <b>III:</b> 252 (см. также Зевс)</p>']
+                        for j in line_data:
+                            data.append(j) ## список, внутри строки, 158
+
+        ##    названия
+        for a in data:
+            name = re.findall(r'name-ind">(.*?) — <b>', a)
+            names.append(name) ## список, внутри списки, в каждом по строке с именем или пусто, 158            
+
+        ##    номера томов     
+            volumes = re.findall(r'[IV]+', a) ## для каждой строки - список, такой: ['IV'],
+            ## такой: ['II', 'IV'] или такой: []
+            vol.append(volumes)
+
+        ## номера страниц
+            vol_p = re.split(r'[IV]+', a) ##  часть строки между римскими цифрами
+            del vol_p[0]
+            pg = [re.findall(r'\d+[;,-]?\d+', element) for element in vol_p]
+            pg1.append(pg)
+##            print(pg) ## для каждой строки – список, такой:
+            ## ['61', '366'], если один том, или больше – по числу томов: [['270'], ['190']]
+
+
+        ##    ИТОГ
+##        print(names[-3])  ## ['Юдифь']
+##        print(vol[-3])  ## ['I', 'II']
+##        print(pg1[3]) ## [['94', '244'], ['482', '573']]       
+                       
+            if len(volumes) > 1:
+                for i in range(len(volumes)):                    
+                    if volumes[i]==volume_n_roman:
+                        if pg:
+                            for f in pg[i]:
+                                if page_n:
+                                    for u in range(len(page_n)):
+                                        if f==page_n[u]:                                    ##                                        
+                                            for y in range(len(name[0])):                                        
+                                                if name[0][:-(y+1)] in sourcecode:                                        
+                                                    tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)
+                                                    if tagged_name:
+                                                        myth_names.append(tagged_name.group())
+                                                        myth_names1.append(name[0])
+                                                        break
+                                        else:
+                                            try:
+                                                if int(f[-3:])==int(page_n_1)+1:                                         
+                                                    for y in range(len(name[0])):                                        
+                                                        if name[0][:-(y+1)] in sourcecode:                                        
+                                                            tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)                                            
+                                                            myth_names.append(tagged_name.group())
+                                                            myth_names1.append(name[0])
+                                                            break
+                                            except:
+                                                continue
+                                else:
+                                    try:
+                                        if int(f[-3:])==int(page_n_1)+1:                                         
+                                            for y in range(len(name[0])):                                        
+                                                if name[0][:-(y+1)] in sourcecode:                                        
+                                                    tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)                                            
+                                                    myth_names.append(tagged_name.group())
+                                                    myth_names1.append(name[0])
+                                                    break
+                                    except:
+                                        continue
+            
+####            print(int(page_n_1)) ## например, 67. ОК
+####            if pg:
+####                for m in pg:
+####                    for f in m:
+####                        print(int(f)) ## например, 257. ОК
+####            print(page_n_1)  ## например, 67. OK
+####            print(page_n) ## ['67']
+####            str = 'qwerty'
+####            print(str[2:-2])  ## er
+####            name = ['Аквилон']
+####            for y in range(len(name[0])):
+####                print(name[0][:-(y+1)]) ## Аквило Аквил и т.д.
+
+
+            if len(volumes)==1:
+                if volumes[0]==volume_n_roman:
+                    if pg:
+                        for m in pg:
+                            for f in m:
+                                if page_n:                                    
+                                    for u in range(len(page_n)):
+                                        if page_n[u]==f:  ## OK
+                                            for y in range(len(name[0])):                                        
+                                                if name[0][:-(y+1)] in sourcecode:                                        
+                                                    tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)
+                                                    if tagged_name:
+                                                        myth_names.append(tagged_name.group())
+                                                        myth_names1.append(name[0])
+                                                        break
+                                        else:
+                                            try:
+                                                if int(f[-3:])==int(page_n_1)+1:
+                                                    for y in range(len(name[0])):
+                                                        if name[0][:-(y+1)] in sourcecode:                                                        
+                                                            tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)
+                                                            myth_names.append(tagged_name.group())
+                                                            myth_names1.append(name[0])
+                                                            break
+                                            except:
+                                                continue
+                                else:
+                                    try:
+                                        if int(f[-3:])==int(page_n_1)+1:  ## OK
+                                            for y in range(len(name[0])):
+                                                if name[0][:-(y+1)] in sourcecode:
+                                                    tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)                                            
+                                                    myth_names.append(tagged_name.group())
+                                                    myth_names1.append(name[0])
+                                                    break
+                                    except:
+                                        continue
+                                        
+##        print(myth_names) ## например: ['Гермеса', 'Зевес']
+
+     
 ##Стихи
         
 ##        тип текста – стихи
@@ -158,8 +322,8 @@ for file in os.listdir(path_1):
 ##        print(verse_num) ## список вида ['st1', 'st2']
 ##        print(len(verse_num)) ## число строф
         
-##        номер строки, если это стихи
-##        (список, элементы которого – номера всех строк, например, [1, 2, 3, 4])
+##    номер строки, если это стихи
+##    (список, элементы которого – номера всех строк, например, [1, 2, 3, 4])
         verse_line = tree.xpath('.//span[@class]/@id')
         linelist = []
         for x in verse_line:
@@ -176,7 +340,7 @@ for file in os.listdir(path_1):
        
 ##        информация о каждой строфе, если это стихи    
         line_list = \
-        ['1_line', 'couplet', 'tercet', 'quatrain', 'quintet', 'sestet', 'septet', 'octet']
+['1_line', 'couplet', 'tercet', 'quatrain', 'quintet', 'sestet', 'septet', 'octet']
         coup_text = []
         tei_coup_num = []
         len_coup = []
@@ -187,10 +351,12 @@ for file in os.listdir(path_1):
         if poem:
             for x in range(len(verse_num)):
                 couplet_num = tree.xpath('//p[@id="st{0}"]//span/@id'.format(x+1))
-##                print(couplet_num) ## для каждой строфы – список вида ['L1', 'L2', 'L3', 'L4']
+##                print(couplet_num) ## для каждой строфы – список вида
+                ## ['L1', 'L2', 'L3', 'L4']
                 if not couplet_num:
                     couplet_num = tree.xpath('//div[@class]//span[@class]/@id')
-##                print(couplet_num) ## для всего стихотворения список вида ['L1', 'L2', 'L3', 'L4']
+##                print(couplet_num) ## для всего стихотворения список вида
+                    ## ['L1', 'L2', 'L3', 'L4']
                 
 ##                информация о каждой строфе: название в TEI (например, quatrain)
                 try:
@@ -204,22 +370,23 @@ for file in os.listdir(path_1):
 ##                    информация о каждой строфе: число строк
 ##                    print(len(couplet_num)) ## количество строк в строфе, например, 4
                 len_coup.append(len(couplet_num)) 
-##            print(len_coup) ## len_coup для стихотворения - список чисел, соответствующих
-                ## числу строк в каждой строфе, например [4, 4, 4, 4, 2] OK
+##            print(len_coup) ## len_coup для стихотворения - список чисел,
+    ## соответствующих числу строк в каждой строфе, например [4, 4, 4, 4, 2] OK
 ##
 ##                    информация о каждой строфе: собственно стихи в виде списка                  
                 if int(verse_num[-1][-1])>1:
-                    couplet_text = tree.xpath \
-                    ('//p[@id="st{0}"]//span[@class]/text()'.format(x+1))
+                    couplet_text = tree.xpath('//p[@id="st{0}"]//span[@class]/text()'.format(x+1))                    
                 else:
-                    couplet_text = tree.xpath('//span[@class]/text()')
+##!                    couplet_text = tree.xpath('//span[@class]/text()')
+                    couplet_text = re.findall(r'<span class="line.+?[\d]">(.+?)</span', sourcecode)
 ##                    print(couplet_text)                    
                 coup_text.append(couplet_text)
-##            print(coup_text) ## coup_text - общий список, в который вложены подсписки по числу строф,
-                    ## элементы каждого подсписка – это отдельные стихи (в виде строк)
+##            print(coup_text) ## coup_text - общий список, в который вложены подсписки
+            ## по числу строф, элементы каждого подсписка – это отдельные стихи (в виде строк)
                            
 ##        собственно текст, если это стихи (все строки стихотворения в виде списка)
-        verse_text = tree.xpath('.//span[@class="line"]/text() | .//span[@class="line1r"]/text()')
+        verse_text = tree.xpath('.//span[@class="line"]/text() | \
+.//span[@class="line1r"]/text()')
 ##        print(verse_text)
         
 ##        текст последней стихотворной строчки перед разрывом страницы
@@ -267,7 +434,9 @@ for file in os.listdir(path_1):
 ##        тип текста - проза
         if paragraph and not letter and not drama:
             genre = 'prose'
-            
+        
+
+           
 
 ## СТРОИМ ФАЙЛ TEI XML               
 
@@ -324,20 +493,31 @@ for file in os.listdir(path_1):
                 lg = etree.SubElement(div2, 'lg', type = '{}'.format(tei_coup_num[i])) \
                      ## название, например, sestet
                 for s in range(len_coup[i]):  ## число строк в строфе
-                    l = etree.SubElement(lg, 'l', n = str(linelist[k])).text = coup_text[i][s] \
-                    ## сам текст: стихи
+                    l = etree.SubElement(lg, 'l', n = str(linelist[k])) \
+                    ## сам текст: стихи                                        
+                    if myth_names:
+                        for p in range(len(myth_names)):
+                            if myth_names[p] in coup_text[i][s]:                                
+                                rs = etree.SubElement(l, 'rs', type = 'myth_index', ref = myth_names1[p])
+                    l.text = coup_text[i][s]
                     k += 1
 ##                    if poemlasttxt:
 ##                        for t in poemlasttxt:
 ##                            if coup_text[i][s]==t:
-##                                pb = etree.SubElement(div2, 'pb').text = page[c] ## номера страниц
+##                                pb = etree.SubElement(div2, 'pb').text = page[c]
+                    ## номера страниц
 ##                            else:
 ##                                continue
 ##                            c += 1                    
         if not poem:
             c = 0
             for m in range(len(paragraph)):
-                p1 = etree.SubElement(div2, 'p').text = paragraph[m] ## проза: текст
+                p1 = etree.SubElement(div2, 'p') ## проза: текст
+                if myth_names:
+                    for p in range(len(myth_names)):
+                        if myth_names[p] in paragraph[m]:                                
+                            rs = etree.SubElement(p1, 'rs', type = 'myth_index', ref = myth_names1[p])
+                p1.text = paragraph[m]
 ##                for z in plasttxt:
 ##                    if paragraph[m] == z:
 ##                        pb = etree.SubElement(div2, 'pb').text = page[c] ## номера страниц
@@ -362,7 +542,5 @@ for file in os.listdir(path_1):
         tree = etree.ElementTree(tei)
         tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, \
                    xml_declaration = True)
-        
-
 
 
