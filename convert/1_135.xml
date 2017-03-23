@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>«О временах простых и грубых...»</title>
+        <author>О.Э. Мандельштам</author>
+      </titleStmt>
+      <publicationStmt>
+        <p>АРТ-БИЗНЕС-ЦЕНТР МОСКВА 1993</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Издание подготовлено Мандельштамовским обществом</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <textDesc n="poem"/>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div1 n="1" type="volume">
+        <div2 n="135" type="part">
+          <head>135.</head>
+          <lg type="quatrain">
+            <l n="1">О временах простых и грубых</l>
+            <l n="2">Копыта конские твердят.</l>
+            <l n="3">И дворники в тяжелых шубах</l>
+            <l n="4">На деревянных лавках спят.</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="5">На стук в железные ворота</l>
+            <l n="6">Привратник, царственно ленив,</l>
+            <l n="7">Встал, и звериная зевота</l>
+            <l n="8">Напомнила твой образ, скиф!</l>
+          </lg>
+          <lg type="quatrain">
+            <l n="9">Когда, с дряхлеющей любовью</l>
+            <l n="10">Мешая в песнях Рим и снег,</l>
+            <l n="11">Овидий пел арбу воловью<rs ref="Овидий" type="person"/></l>
+            <l n="12">В походе варварских телег.</l>
+          </lg>
+          <date when="1914">1914</date>
+        </div2>
+      </div1>
+    </body>
+  </text>
+</TEI>
