@@ -201,84 +201,43 @@ for file in os.listdir(path_1):
 ##        print(vol[-3])  ## ['I', 'II']
 ##        print(pg1[3]) ## [['94', '244'], ['482', '573']]       
                        
-            if len(volumes) > 0:
-                for i in range(len(volumes)):                    
-                    if volumes[i]==volume_n_roman:
-                        if pg:
-                            for f in pg[i]:
-                                if page_n:
-                                    for u in range(len(page_n)):
-                                        if f==page_n[u]:                                       
-                                            for y in range(len(name[0])-3):                                        
-                                                if name[0][:-(y+1)] in sourcecode:                                        
-                                                    tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)
-                                                    if tagged_name:
-                                                        myth_names.append(tagged_name.group())
-                                                        myth_names1.append(name[0])
-                                                        break
-                                        else:
-                                            try:
-                                                if int(f[-3:])==int(page_n_1)+1:                                         
-                                                    for y in range(len(name[0])-3):                                        
-                                                        if name[0][:-(y+1)] in sourcecode:                                        
-                                                            tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)                                            
-                                                            myth_names.append(tagged_name.group())
-                                                            myth_names1.append(name[0])
-                                                            break
-                                            except:
-                                                continue
-                                else:
-                                    try:
-                                        if int(f[-3:])==int(page_n_1)+1:                                         
-                                            for y in range(len(name[0])-3):                                        
-                                                if name[0][:-(y+1)] in sourcecode:                                        
-                                                    tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)                                            
+            for i in range(len(volumes)):                    
+                if volumes[i]==volume_n_roman:
+                    if pg:
+                        for f in pg[i]:
+                            if page_n:
+                                for u in range(len(page_n)):
+                                    if f==page_n[u]:                                       
+                                        for y in range(len(name[0])-3):                                        
+                                            if name[0][:-(y+1)] in sourcecode:                                        
+                                                tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)
+                                                if tagged_name:
                                                     myth_names.append(tagged_name.group())
                                                     myth_names1.append(name[0])
                                                     break
-                                    except:
-                                        continue
+                                    else:
+                                        try:
+                                            if int(f[-3:])==int(page_n_1)+1:                                         
+                                                for y in range(len(name[0])-3):                                        
+                                                    if name[0][:-(y+1)] in sourcecode:                                        
+                                                        tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)                                            
+                                                        myth_names.append(tagged_name.group())
+                                                        myth_names1.append(name[0])
+                                                        break
+                                        except:
+                                            continue
+                            else:
+                                try:
+                                    if int(f[-3:])==int(page_n_1)+1:                                         
+                                        for y in range(len(name[0])-3):                                        
+                                            if name[0][:-(y+1)] in sourcecode:                                        
+                                                tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)                                            
+                                                myth_names.append(tagged_name.group())
+                                                myth_names1.append(name[0])
+                                                break
+                                except:
+                                    continue
             
-##            if len(volumes)==1:
-##                if volumes[0]==volume_n_roman:
-##                    if pg:
-##                        for m in pg:
-##                            for f in m:
-##                                if page_n:                                    
-##                                    for u in range(len(page_n)):
-##                                        if page_n[u]==f:  ## OK
-##                                            for y in range(len(name[0])-3):                                        
-##                                                if name[0][:-(y+1)] in sourcecode:                                        
-##                                                    tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)
-##                                                    if tagged_name:
-##                                                        myth_names.append(tagged_name.group())
-##                                                        myth_names1.append(name[0])
-##                                                        break
-##                                        else:
-##                                            try:
-##                                                if int(f[-3:])==int(page_n_1)+1:
-##                                                    for y in range(len(name[0])-3):
-##                                                        if name[0][:-(y+1)] in sourcecode:                                                        
-##                                                            tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)
-##                                                            myth_names.append(tagged_name.group())
-##                                                            myth_names1.append(name[0])
-##                                                            break
-##                                            except:
-##                                                continue
-##                                else:
-##                                    try:
-##                                        if int(f[-3:])==int(page_n_1)+1:  ## OK
-##                                            for y in range(len(name[0])-3):
-##                                                if name[0][:-(y+1)] in sourcecode:
-##                                                    tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)                                            
-##                                                    myth_names.append(tagged_name.group())
-##                                                    myth_names1.append(name[0])
-##                                                    break
-##                                    except:
-##                                        continue
-                                        
-##        print(myth_names) ## например: ['Гермеса', 'Зевес']
-
 
 ## Указатель географических названий
 
