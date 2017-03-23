@@ -24,6 +24,7 @@
           <head>58.
 К НЕМЕЦКОЙ РЕЧИ</head>
           <div type="dedication">Б.С.Кузину</div>
+          <rs ref="Кузин, Борис Сергеевич" type="person"/>
           <epigraph>
             <quote>Freund! Versäume nicht zu leben:
 Denn die Jahre fliehn,
@@ -32,6 +33,7 @@ Uns nicht lange glühn!
 </quote>
             <bibl>Ewald Christian Kleist</bibl>
           </epigraph>
+          <rs ref="Кузин, Борис Сергеевич" type="person"/>
           <lg type="quatrain">
             <l n="1">Себя губя, себе противореча,</l>
             <l n="2">Как моль летит на огонек полночный,</l>
@@ -52,7 +54,7 @@ Uns nicht lange glühn!
           </lg>
           <lg type="quatrain">
             <l n="13">Еще во Франкфурте отцы зевали,<rs ref="Франкфурт-на-Одере" type="geo_index"/></l>
-            <l n="14">Еще о Гете не было известий,</l>
+            <l n="14">Еще о Гете не было известий,<rs ref="Гете, Иоганн Вольфганг" type="person"/></l>
             <l n="15">Слагались гимны, кони гарцевали</l>
             <l n="16">И, словно буквы, прыгали на месте.</l>
           </lg>
@@ -91,6 +93,7 @@ Uns nicht lange glühn!
 
 * Друг! Не упусти (в суете) самое жизнь. // Ибо годы летят // И сок винограда // Недолго еще будет нас горячить! Эвальд Хpистиан Клейст (нем.).
 </note>
+          <rs ref="Клейст, Эвальд Христиан" type="person"/>
         </div2>
       </div1>
     </body>

@@ -6,12 +6,9 @@ import lxml.html
 import csv
 import signal
 
-class TimeoutError(Exception):
-    pass
+path_1 = '/Users/Alexey/Documents/Python_Projects/Mandelstam_TEI/downloads_all/'
 
-path_1 = '/Users/Alexey/Documents/Python_Projects/Mandelstam_TEI/downloads/'
-
-path_2 = '/Users/Alexey/Documents/Python_Projects/Mandelstam_TEI/convert/'
+path_2 = '/Users/Alexey/Documents/Python_Projects/Mandelstam_TEI/convert_all/'
 
 
 ## ОТКРЫВАЕМ ИСХОДНЫЙ HTML-ФАЙЛ И ПАРСИМ ЕГО ПРИ ПОМОЩИ LXML
@@ -37,8 +34,7 @@ for file in os.listdir(path_1):
 
 ##        авторский текст (только само произведение и теги рядом)
         auth_text = re.search('Версия: конец(.*?)Копирайт: начало', sourcecode, re.DOTALL)
-##        print(auth_text.group())
-
+        auth_text = auth_text.group().split('\n')
         
 ##        номер произведения в томе
         for a in range(9):
@@ -212,8 +208,8 @@ for file in os.listdir(path_1):
                             for f in pg[i]:
                                 if page_n:
                                     for u in range(len(page_n)):
-                                        if f==page_n[u]:                                    ##                                        
-                                            for y in range(len(name[0])-2):                                        
+                                        if f==page_n[u]:                                       
+                                            for y in range(len(name[0])-3):                                        
                                                 if name[0][:-(y+1)] in sourcecode:                                        
                                                     tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)
                                                     if tagged_name:
@@ -223,7 +219,7 @@ for file in os.listdir(path_1):
                                         else:
                                             try:
                                                 if int(f[-3:])==int(page_n_1)+1:                                         
-                                                    for y in range(len(name[0])-2):                                        
+                                                    for y in range(len(name[0])-3):                                        
                                                         if name[0][:-(y+1)] in sourcecode:                                        
                                                             tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)                                            
                                                             myth_names.append(tagged_name.group())
@@ -234,7 +230,7 @@ for file in os.listdir(path_1):
                                 else:
                                     try:
                                         if int(f[-3:])==int(page_n_1)+1:                                         
-                                            for y in range(len(name[0])-2):                                        
+                                            for y in range(len(name[0])-3):                                        
                                                 if name[0][:-(y+1)] in sourcecode:                                        
                                                     tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)                                            
                                                     myth_names.append(tagged_name.group())
@@ -251,7 +247,7 @@ for file in os.listdir(path_1):
                                 if page_n:                                    
                                     for u in range(len(page_n)):
                                         if page_n[u]==f:  ## OK
-                                            for y in range(len(name[0])-2):                                        
+                                            for y in range(len(name[0])-3):                                        
                                                 if name[0][:-(y+1)] in sourcecode:                                        
                                                     tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)
                                                     if tagged_name:
@@ -261,7 +257,7 @@ for file in os.listdir(path_1):
                                         else:
                                             try:
                                                 if int(f[-3:])==int(page_n_1)+1:
-                                                    for y in range(len(name[0])-2):
+                                                    for y in range(len(name[0])-3):
                                                         if name[0][:-(y+1)] in sourcecode:                                                        
                                                             tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)
                                                             myth_names.append(tagged_name.group())
@@ -272,7 +268,7 @@ for file in os.listdir(path_1):
                                 else:
                                     try:
                                         if int(f[-3:])==int(page_n_1)+1:  ## OK
-                                            for y in range(len(name[0])-2):
+                                            for y in range(len(name[0])-3):
                                                 if name[0][:-(y+1)] in sourcecode:
                                                     tagged_name = re.search(name[0][:-(y+1)]+'[а-яА-Я]*', sourcecode)                                            
                                                     myth_names.append(tagged_name.group())
@@ -326,11 +322,8 @@ for file in os.listdir(path_1):
             names.append(name) ## список, внутри списки, в каждом по строке с именем или пусто, 423
             
         ##    названия второго порядка
-            name_2_ = re.findall(r'.*?<br>(.*?) — <b>', a)
-            for z in name_2_:
-                z = z.lstrip()
-                name_2.append(z) ## список, внутри списки, в каждом строки с именами или пусто, 423
-##                print(name_2)
+            name_2 = re.findall(r'.*?<br>\s?(.*?) — <b>', a)
+##            print(len(name_2)) ## список, внутри списки, в каждом строки с именами или пусто, 423
 
         ##    номера томов     
             volumes = re.findall(r'[IV]+', a)
@@ -361,66 +354,70 @@ for file in os.listdir(path_1):
                             if page_n:  ## если в нашем файле есть номер страницы                                    
                                 for u in range(len(page_n)): ## по числу номеров страниц в нашем файле
                                     if f==page_n[u]: ## если номер страницы в указателе совпадает с номером в файле                                             
-                                        for y in range(len(name[0])-3): ## по числу букв названия из указателя минус три                                       
-                                            if name[0][:-(y+1)] in auth_text.group(): ## если это название, уменьшающееся постепенно, есть в тексте пр-ния                                                
-                                                if name[0][:-(y+1)] not in geo_names:                                                    
-                                                    geo_names.append(name[0][:-(y+1)])
-                                                    geo_names1.append(name[0]) ## и сюда целое имя из указателя
+                                        for elem in auth_text:
+                                            for y in range(len(name[0])-3): ## по числу букв названия из указателя минус три                                            
+                                                if name[0][:-(y+1)] in elem: ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
+                                                    if name[0][:-(y+1)] not in geo_names:                                                    
+                                                        geo_names.append(name[0][:-(y+1)])
+                                                        geo_names1.append(name[0]) ## и сюда целое имя из указателя
+                                                        break
                                                     break
-                                                break
                                             
                                         if name_2:  ## если есть названия второго порядка
                                             for j in name_2: ## для каждого из этих названий
-                                                for l in range(len(j)-4): ## по числу букв названия второго порядка минус четыре 
-                                                    if j[:-(l+1)] in auth_text.group(): ## если это название, уменьшающееся постепенно, есть в тексте пр-ния                                                        
-                                                        if j[:-(l+1)] not in geo_names_2:
-                                                            geo_names_2.append(j[:-(l+1)])
-                                                            geo_names1_2.append(name[0]) ## и сюда целое имя из указателя
-                                                            break
-                                                        break                                    
+                                                for elem in auth_text:
+                                                    for l in range(len(j)-4): ## по числу букв названия второго порядка минус четыре                                                    
+                                                        if j[:-(l+1)] in elem: ## если это название, уменьшающееся постепенно, есть в тексте пр-ния                                                        
+                                                            if j[:-(l+1)] not in geo_names_2:
+                                                                geo_names_2.append(j[:-(l+1)])
+                                                                geo_names1_2.append(name[0]) ## и сюда целое имя из указателя
+                                                                break
+                                                            break                                    
                                                                 
                                     else: ## если номер страницы в указателе не совпадает с номером в файле
                                         if int(f[-3:])==int(page_n[-1])+1: ## если номер из геосписка равен посл. номеру нашей страницы плюс единица                                                    
-                                            for y in range(len(name[0])-3): ## по числу букв названия из геосписка минус три                                          
-                                                if name[0][:-(y+1)] in auth_text.group(): ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
+                                            for elem in auth_text:
+                                                for y in range(len(name[0])-3): ## по числу букв названия из геосписка минус три                                                
+                                                    if name[0][:-(y+1)] in elem: ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
+                                                        if name[0][:-(y+1)] not in geo_names:
+                                                            geo_names.append(name[0][:-(y+1)])
+                                                            geo_names1.append(name[0]) ## и сюда целое имя из указателя
+                                                            break
+                                                        break 
+
+                                            if name_2:  ## если есть названия второго порядка
+                                                for j in name_2: ## для этих названий
+                                                    for elem in auth_text:
+                                                        for l in range(len(j)-4): ## по числу букв названия второго порядка минус четыре                                                        
+                                                            if j[:-(l+1)] in elem: ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
+                                                                if j[:-(l+1)] not in geo_names_2:
+                                                                    geo_names_2.append(j[:-(l+1)])
+                                                                    geo_names1_2.append(name[0]) ## и сюда целое имя из указателя
+                                                                    break
+                                                                break                                                             
+
+                            else: ## если у нас нет номера страницы пр-ния
+                                try: ## пробуем
+                                    if int(f[-3:])==int(page_n_1[-1])+1: ## если номер из геосписка равен номеру страницы предыдущего файла плюс единица
+                                        for elem in auth_text:
+                                            for y in range(len(name[0])-3): ## по числу букв названия из геосписка минус три                                            
+                                                if name[0][:-(y+1)] in elem: ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
                                                     if name[0][:-(y+1)] not in geo_names:
                                                         geo_names.append(name[0][:-(y+1)])
                                                         geo_names1.append(name[0]) ## и сюда целое имя из указателя
                                                         break
-                                                    break 
-
-                                            if name_2:  ## если есть названия второго порядка
-                                                for j in name_2: ## для этих названий
-                                                    for l in range(len(j)-4): ## по числу букв названия второго порядка минус четыре 
-                                                        if j[:-(l+1)] in auth_text.group(): ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
+                                                    break
+                                                                                   
+                                        if name_2: ## если есть названия второго порядка
+                                            for j in name_2: ## для этих названий
+                                                for elem in auth_text:
+                                                    for l in range(len(j)-4): ## по числу букв названия второго порядка минус четыре                                                    
+                                                        if j[:-(l+1)] in elem: ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
                                                             if j[:-(l+1)] not in geo_names_2:
                                                                 geo_names_2.append(j[:-(l+1)])
                                                                 geo_names1_2.append(name[0]) ## и сюда целое имя из указателя
                                                                 break
                                                             break 
-                                                                
-
-
-                            else: ## если у нас нет номера страницы пр-ния
-                                try: ## пробуем
-                                    if int(f[-3:])==int(page_n_1[-1])+1: ## если номер из геосписка равен номеру страницы предыдущего файла плюс единица
-                                        for y in range(len(name[0])-3): ## по числу букв названия из геосписка минус три                                       
-                                            if name[0][:-(y+1)] in auth_text.group(): ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
-                                                if name[0][:-(y+1)] not in geo_names:
-                                                    geo_names.append(name[0][:-(y+1)])
-                                                    geo_names1.append(name[0]) ## и сюда целое имя из указателя
-                                                    break
-                                                break
-                                                                                   
-                                        if name_2: ## если есть названия второго порядка
-                                            for j in name_2: ## для этих названий
-                                                for l in range(len(j)-4): ## по числу букв названия второго порядка минус четыре 
-                                                    if j[:-(l+1)] in auth_text.group(): ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
-                                                        if j[:-(l+1)] not in geo_names_2:
-                                                            geo_names_2.append(j[:-(l+1)])
-                                                            geo_names1_2.append(name[0]) ## и сюда целое имя из указателя
-                                                            break
-                                                        break 
                                 except:
                                     continue
 
@@ -479,36 +476,38 @@ for file in os.listdir(path_1):
                     for f in pg[i]: ## по числу номеров страниц в указателе (соответствующих опред. тому)
                         if page_n: ## если в нашем файле есть номер страницы
                             for u in range(len(page_n)): ## по числу номеров страниц в нашем файле
-                                if f==page_n[u]: ## если номер в указателе совпадает с номером в файле                                        
-                                    for y in range(len(name[0])-2): ## по числу букв названия из указателя минус два                                         
-                                        if name[0][:-(y+1)] in auth_text.group(): ## если это имя, уменьшающееся постепенно, есть в тексте пр-ния
-                                            if name[0][:-(y+1)] not in name_names:
-                                                name_names.append(name[0][:-(y+1)])
-                                                name_names1.append(name[0]) ## и сюда целое имя из указателя
-                                                break
-                                            break
-                                                                                    
-                                else:  ## если номер в указателе не совпадает с номером в файле 
-                                    if int(f[-3:])==int(page_n[-1])+1: ## если номер из указателя равен посл. номеру нашей страницы плюс единица                                         
-                                        for y in range(len(name[0])-2): ## по числу букв названия из указателя минус два                                         
-                                            if name[0][:-(y+1)] in auth_text.group(): ## если это имя, уменьшающееся постепенно, есть в тексте пр-ния
+                                if f==page_n[u]: ## если номер в указателе совпадает с номером в файле                                                                            
+                                    for elem in auth_text: ## по абзацам нашего произведения
+                                        for y in range(len(name[0])-3): ## по числу букв названия из указателя минус три
+                                            if name[0][:-(y+1)] in elem: ## если это название, уменьшающееся постепенно, есть в строке пр-ния                                            
                                                 if name[0][:-(y+1)] not in name_names:
                                                     name_names.append(name[0][:-(y+1)])
                                                     name_names1.append(name[0]) ## и сюда целое имя из указателя
                                                     break
                                                 break
-
+                                                                                                                                                           
+                                else:  ## если номер в указателе не совпадает с номером в файле 
+                                    if int(f[-3:])==int(page_n[-1])+1: ## если номер из указателя равен посл. номеру нашей страницы плюс единица                                         
+                                        for elem in auth_text:
+                                            for y in range(len(name[0])-3): ## по числу букв названия из указателя минус три                                            
+                                                if name[0][:-(y+1)] in elem: ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
+                                                    if name[0][:-(y+1)] not in name_names:
+                                                        name_names.append(name[0][:-(y+1)])
+                                                        name_names1.append(name[0]) ## и сюда целое имя из указателя
+                                                        break
+                                                    break
 
                         else: ## если в нашем файле вообще нет номера страницы
                             try:
                                 if int(f[-3:])==int(page_n_1[-1])+1:## если номер из геосписка равен номеру страницы предыдущего файла плюс единица
-                                    for y in range(len(name[0])-2):  ## по числу букв названия из указателя минус два                                         
-                                        if name[0][:-(y+1)] in auth_text.group():  ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
-                                            if name[0][:-(y+1)] not in name_names:
-                                                name_names.append(name[0][:-(y+1)])
-                                                name_names1.append(name[0]) ## и сюда целое имя из указателя
+                                    for elem in auth_text:
+                                        for y in range(len(name[0])-3):  ## по числу букв названия из указателя минус три                                        
+                                            if name[0][:-(y+1)] in elem: ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
+                                                if name[0][:-(y+1)] not in name_names:
+                                                    name_names.append(name[0][:-(y+1)])
+                                                    name_names1.append(name[0]) ## и сюда целое имя из указателя
+                                                    break
                                                 break
-                                            break
 
                             except:
                                 continue
@@ -654,7 +653,7 @@ for file in os.listdir(path_1):
 ##        собственно текст, если это проза или письма (каждый абзац - строка, \
 ##                все вместе в одном списке, если не проза или письма, выдаёт пустой список)
         paragraph = tree.xpath('.//p[@class="text"]/text() | .//p[@class="text-cont"]/text()')
-##        print(paragraph)
+
 ##        тип текста - проза
         if paragraph and not letter and not drama:
             genre = 'prose'
@@ -701,9 +700,11 @@ for file in os.listdir(path_1):
         if dedication: ## посвящение
             dedic = etree.SubElement(div2, 'div', type = 'dedication').text = ''.join(dedication)
             if name_names:
+                
                 for p in range(len(name_names)):
-                    if name_names[p] in ''.join(dedication):                            
-                        rs = etree.SubElement(div2, 'rs', type = 'person', ref = name_names1[p]) 
+                    if name_names[p] in ''.join(dedication):
+                        rs = etree.SubElement(div2, 'rs', type = 'person', ref = name_names1[p])
+                        break
 
         if epigraph: ## эпиграф
             epig = etree.SubElement(div2, 'epigraph')
@@ -713,6 +714,11 @@ for file in os.listdir(path_1):
 
         if epigraph_src: ## эпиграф: автор
             epi_src = etree.SubElement(epig, 'bibl').text = ''.join(epigraph_src)
+            if name_names:
+                for p in range(len(name_names)):
+                        if name_names[p] in ''.join(dedication):
+                            rs = etree.SubElement(div2, 'rs', type = 'person', ref = name_names1[p])
+                            break
             
         if poem:
             k = 0
@@ -755,25 +761,29 @@ for file in os.listdir(path_1):
                             
         if not poem:
             c = 0
-            for m in range(len(paragraph)):
+            for m in range(len(paragraph)): ## число абзацев
                 p1 = etree.SubElement(div2, 'p') ## проза: текст
                 if myth_names:
                     for p in range(len(myth_names)):
                         if myth_names[p] in paragraph[m]:                                
                             rs = etree.SubElement(p1, 'rs', type = 'myth_index', ref = myth_names1[p])
+##                            break
                 if geo_names:
-                        for h in range(len(geo_names)):
-                            if geo_names[h] in paragraph[m]:
-                                rs = etree.SubElement(p1, 'rs', type = 'geo_index', ref = geo_names1[h])
+                    for h in range(len(geo_names)):
+                        if geo_names[h] in paragraph[m]:
+                            rs = etree.SubElement(p1, 'rs', type = 'geo_index', ref = geo_names1[h])
+##                            break
                 if geo_names_2:
                     for d in range(len(geo_names_2)):                               
                         if geo_names_2[d] in paragraph[m]:
                             if 'Петербург' not in geo_names1_2[d]:
                                 rs = etree.SubElement(p1, 'rs', type = 'geo_index', ref = geo_names1_2[d])
+##                                break
                 if name_names:
                     for p in range(len(name_names)):
                         if name_names[p] in paragraph[m]:                            
-                            rs = etree.SubElement(p1, 'rs', type = 'person', ref = name_names1[p])                            
+                            rs = etree.SubElement(p1, 'rs', type = 'person', ref = name_names1[p])
+##                            break
                 p1.text = paragraph[m]
 ##                for z in plasttxt:
 ##                    if paragraph[m] == z:
@@ -785,9 +795,31 @@ for file in os.listdir(path_1):
         
         if full_date_when:
             dateline = etree.SubElement(div2, 'date', when = '#'.join(full_date_when)).text = date[0]
+            if geo_names:
+                for h in range(len(geo_names)):
+                    if geo_names[h] in date[0]:
+                        rs = etree.SubElement(div2, 'rs', type = 'geo_index', ref = geo_names1[h])
+##                            break
+            if geo_names_2:
+                for d in range(len(geo_names_2)):                               
+                    if geo_names_2[d] in date[0]:
+                        rs = etree.SubElement(div2, 'rs', type = 'geo_index', ref = geo_names1_2[d])
+##                                break
+            
         if full_date_from:
             myattr = {'from':'-'.join(full_date_from), 'to': '-'.join(full_date_to)}
             dateline = etree.SubElement(div2, 'date', attrib = myattr).text = date[0]
+            if geo_names:
+                for h in range(len(geo_names)):
+                    if geo_names[h] in date[0]:
+                        rs = etree.SubElement(p1, 'rs', type = 'geo_index', ref = geo_names1[h])
+##                            break
+            if geo_names_2:
+                for d in range(len(geo_names_2)):                               
+                    if geo_names_2[d] in date[0]:
+                        if 'Петербург' not in geo_names1_2[d]:
+                            rs = etree.SubElement(p1, 'rs', type = 'geo_index', ref = geo_names1_2[d])
+##                                break
 ##             if year:
 ##                if full_date:
 ##                    dateline = etree.SubElement(div2, 'date', when = '#'.join(year) \
@@ -795,10 +827,28 @@ for file in os.listdir(path_1):
                                           
         if note:
             nte = etree.SubElement(div2, 'note').text = ''.join(note) ## ссылка
+            if myth_names:
+                for p in range(len(myth_names)):
+                    if myth_names[p] in ''.join(note):                                
+                        rs = etree.SubElement(div2, 'rs', type = 'myth_index', ref = myth_names1[p])
+##                            break
+
+            if geo_names:
+                for h in range(len(geo_names)):
+                    if geo_names[h] in ''.join(note):
+                        rs = etree.SubElement(div2, 'rs', type = 'geo_index', ref = geo_names1[h])
+##                            break
+            if geo_names_2:
+                for d in range(len(geo_names_2)):                               
+                    if geo_names_2[d] in ''.join(note):
+                        rs = etree.SubElement(div2, 'rs', type = 'geo_index', ref = geo_names1_2[d])
+##                                break
+            
             if name_names:
                 for p in range(len(name_names)):
                     if name_names[p] in ''.join(note):                            
-                        rs = etree.SubElement(div2, 'rs', type = 'person', ref = name_names1[p]) 
+                        rs = etree.SubElement(div2, 'rs', type = 'person', ref = name_names1[p])
+                        break
                                                
         tree = etree.ElementTree(tei)
         tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, \

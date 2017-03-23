@@ -23,6 +23,7 @@
         <div2 n="56" type="part">
           <head>56.</head>
           <div type="dedication">С. П. Каблукову</div>
+          <rs ref="Каблуков, Сергей Платонович" type="person"/>
           <lg type="quatrain">
             <l n="1">Убиты медью вечерней</l>
             <l n="2">И сломаны венчики слов.</l>

@@ -23,6 +23,7 @@
         <div2 n="212" type="part">
           <head>212.</head>
           <div type="dedication">Павлу Васильеву</div>
+          <rs ref="Васильев, Павел Николаевич" type="person"/>
           <lg type="couplet">
             <l n="1">Мяукнул конь и кот заржал — </l>
             <l n="2">Казак еврею подражал.</l>

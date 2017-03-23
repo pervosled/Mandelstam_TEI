@@ -22,6 +22,7 @@
       <div1 n="1" type="volume">
         <div2 n="7" type="part">
           <div type="dedication">Ю. Юркуну</div>
+          <rs ref="Юркун, Юрий Иванович" type="person"/>
           <lg type="couplet">
             <l n="1">Двое влюбленных в ночи дивились огромной звездою, —</l>
             <l n="2">Утром постигли они — это сияла луна.</l>

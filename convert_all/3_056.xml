@@ -22,6 +22,7 @@
       <div1 n="3" type="volume">
         <div2 n="" type="part">
           <div type="dedication">С.А.Клычкову</div>
+          <rs ref="Клычков (Лешенков), Сергей Антонович" type="person"/>
           <lg type="quatrain">
             <l n="1">Полюбил я лес прекрасный,</l>
             <l n="2">Смешанный, где козырь — дуб,</l>

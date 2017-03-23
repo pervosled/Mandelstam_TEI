@@ -32,7 +32,7 @@ Polacy!*</head>
           <lg type="quatrain">
             <l n="5">Или снега не будут больше</l>
             <l n="6">Зимою покрывать ковыль?</l>
-            <l n="7">Или о Габсбургов костыль</l>
+            <l n="7">Или о Габсбургов костыль<rs ref="Габсбурги," type="person"/></l>
             <l n="8">Пристало опираться Польше?<rs ref="Польша" type="geo_index"/></l>
           </lg>
           <lg type="quatrain">
@@ -44,6 +44,7 @@ Polacy!*</head>
           <date when="1914-10">‹Октябрь› 1914</date>
           <note>* Поляки! (польск.)
 </note>
+          <rs ref="Польша" type="geo_index"/>
         </div2>
       </div1>
     </body>

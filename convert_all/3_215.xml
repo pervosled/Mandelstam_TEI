@@ -23,6 +23,7 @@
         <div2 n="215" type="part">
           <head>215.</head>
           <div type="dedication">Сулейману Стальскому</div>
+          <rs ref="Сулейман Стальский" type="person"/>
           <lg type="couplet">
             <l n="1">Там, где край был дик,</l>
             <l n="2">Там шумит арык,</l>
