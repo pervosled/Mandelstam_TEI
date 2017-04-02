@@ -57,8 +57,6 @@
           </lg>
           <date when="1918-05">Май 1918, Москва</date>
           <rs ref="Москва" type="geo_index"/>
-          <rs ref="Москва" type="geo_index"/>
-          <rs ref="Петербург (Ленинград, Петрополь)" type="geo_index"/>
         </div2>
       </div1>
     </body>

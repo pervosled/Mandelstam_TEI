@@ -74,51 +74,127 @@ for file in os.listdir(path_1):
                            
 ##        дата (подпись под произведением)
         full_date_when = []
-        full_date_from = []
-        full_date_to = []
-        months = []
+        full_date_from = {}
+        full_date_to = {}
+        full_date = []
         years = []
         days = []
+        worm_mark = []
+
         date = tree.xpath('.//p[@class="date"]/text()')
 ##        print(date)  ## например: ['1912 (1913?), 2 января 1937']
         if date:
-            year_split = re.findall('(.*?19\d{2})', date[0])
-##            print(year_split)
-            ## например: ['‹Январь — февраль› 1913', ', 1915']            
+##            print(date)
+            year_split = re.findall(r'(.*?19\d{2}.*?[,—]?)', date[0])
+##            print(year_split) ## превратили '17—18 марта 1931, конец 1935'
+            ## в ['17—18 марта 1931,', ' конец 1935']           
             for u in year_split:
                 year = re.findall('19\d{2}', u) ## год, например: ['1908']
-                full_d = []
-                full_d.append(year[0])                
+                full_d = {}
+                months = []                
+                full_d['y'] = year
 ##                not_after = re.findall('поздн', u)
 ##                if not_after:
 ##                    for z in not_after:
-##                        full_date.append(not_after)                
+##                        full_d.append(not_after)                
                 month = re.findall \
-('.*?(нва|евр|арт|прел|ма|Ма|июн|Июн|июл|Июл|авг|Авг|ент|окт|Окт|ояб|дек|Дек).*?', u)
+('.*?(нва|евр|арт|прел|мая|май|Ма|июн|Июн|июл|Июл|авг|Авг|ент|окт|Окт|ояб|дек|Дек).*?', u)
                 month_dict = {'нва':'01', 'евр':'02', 'арт':'03', \
-                'прел':'04', 'ма':'05', 'Ма':'05', 'июн':'06', 'Июн':'06', 'июл':'07', \
+                'прел':'04', 'мая':'05', 'май': '05', 'Ма':'05', 'июн':'06', 'Июн':'06', 'июл':'07', \
                 'Июл':'07', 'авг':'08', 'Авг':'08', 'ент':'09', 'окт':'10', 'Окт':'10', \
                               'ояб':'11', 'дек':'12', 'Дек':'12'}
                 if month:
                     for e in month:
-                        full_d.append(month_dict[e]) ## номер месяца
-##                day = re.findall('.[^\d](\d{1,2}).[^\d]', u) ## только числа
-##                for h in day:
-##                    full_d.append(h)
-##                print(full_d)
-            ## например: ['1913', '01', '02'], что означает:  <январь - февраль 1913 года>
-            ## ['1915']                
-                if len(full_d)>2:                               
-                    full_date_from.append(full_d[0])
-                    full_date_from.append(full_d[1])
-                    full_date_to.append(full_d[0])
-                    full_date_to.append(full_d[-1])
-##                    print(full_date_from)  ## например: ['1913', '01'] "с января 1913"
-##                    print(full_date_to) ## например: ['1913', '02'] "по февраль 1913"
-                else:
-                    full_date_when.append('-'.join(full_d))
-##                    print(full_date_when) ## например: ['1912', '1913', '1937-01']
-                                     
+                        months.append(month_dict[e])
+                    full_d['m'] = months ## номера месяцев в отдельном списке внутри списка full_d
+                day = re.sub('\d{4}', '', u) ## удаляем четырёхзначные числа (годы)
+                day = re.findall('\d{1,2}', day) ## ищем только числа (дни)                
+                if day:
+                    for n,i in enumerate(day):
+                        if len(i) == 1:
+                            day[n] = '0'+i
+                    full_d['d'] = day              
+                full_date.append(full_d)
+##            print(full_date) ## [{'d': ['24'], 'y': ['1911'], 'm': ['11']}, {'y': ['1915']}]
+                ## – т.е. 24 ноября 1911, 1915(?)
+            if len(year_split) == 2:
+                for y in year_split:
+                    if 'позднее' in y:
+                        full_date_to['m'] = full_date[0]['m'][0]
+                        full_date_to['d'] = full_date[0]['d'][0]
+                        full_date_to['y'] = full_date[0]['y'][0]
+                    worm_end = re.search(r'[—-]\s?$', y) ## тире в конце y
+                    worm_start = re.search(r'^\s?[—-]', y) ## тире в начале y
+                    if worm_end or worm_start:
+                        worm_mark.append('a')
+                        full_date_from = full_date[0]
+                        full_date_to = full_date[1]
+##                        print(date[0]) ## 8 декабря 1936 — 17 января 1937
+##                        print(full_date_from) ## {'y': ['1936'], 'm': ['12'], 'd': ['8']}
+##                        print(full_date_to) ## {'y': ['1937'], 'm': ['01'], 'd': ['17']}
+                    if not worm_end and not worm_start:
+                        if '—' in y or '-' in y:
+                            try:
+                                if len(full_date[0]['m']) == 2:
+                                    full_date_from['y'] = full_date[0]['y'][0]
+                                    full_date_from['m'] = full_date[0]['m'][0]
+                                    full_date_to['m'] = full_date[0]['m'][1]
+                                    full_date_to['y'] = full_date[0]['y'][0]
+                                if len(full_date[0]['d']) == 2:
+                                    full_date_from['y'] = full_date[0]['y'][0]
+                                    full_date_from['m'] = full_date[0]['m'][0]
+                                    full_date_from['d'] = full_date[0]['d'][0]
+                                    full_date_to['m'] = full_date[0]['m'][0]
+                                    full_date_to['d'] = full_date[0]['d'][1]
+                                    full_date_to['y'] = full_date[0]['y'][0]
+                            except:
+                                continue
+            if len(year_split) == 1:
+                if 'позднее' in year_split[0]:
+                    try:
+                        full_date_to['m'] = full_date[0]['m'][0]
+                        full_date_to['d'] = full_date[0]['d'][0]
+                        full_date_to['y'] = full_date[0]['y'][0]
+                    except:
+                        continue
+                if '—' in year_split[0] or '-' in year_split[0]:
+                    if '-го' not in year_split[0]:
+                        try:
+                            if len(full_date[0]['d']) == 2 and len(full_date[0]['m']) == 2:
+                                full_date_from['d'] = full_date[0]['d'][0]
+                                full_date_from['y'] = full_date[0]['y'][0]
+                                full_date_from['m'] = full_date[0]['m'][0]
+                                full_date_to['d'] = full_date[0]['d'][1]
+                                full_date_to['m'] = full_date[0]['m'][1]
+                                full_date_to['y'] = full_date[0]['y'][0]
+                            if len(full_date[0]['d']) == 2 and len(full_date[0]['m']) == 1:
+                                full_date_from['d'] = full_date[0]['d'][0]
+                                full_date_from['y'] = full_date[0]['y'][0]
+                                full_date_from['m'] = full_date[0]['m'][0]
+                                full_date_to['d'] = full_date[0]['d'][1]
+                                full_date_to['m'] = full_date[0]['m'][0]
+                                full_date_to['y'] = full_date[0]['y'][0]
+                            if len(full_date[0]['d']) == 1 and len(full_date[0]['m']) == 2:
+                                worm_dig = re.search(r'—\s?\d', year_split[0])
+                                if worm_dig:
+                                    full_date_from['y'] = full_date[0]['y'][0]
+                                    full_date_from['m'] = full_date[0]['m'][0]
+                                    full_date_to['d'] = full_date[0]['d'][0]
+                                    full_date_to['m'] = full_date[0]['m'][1]
+                                    full_date_to['y'] = full_date[0]['y'][0]
+                                else:
+                                    full_date_from['d'] = full_date[0]['d'][0]
+                                    full_date_from['y'] = full_date[0]['y'][0]
+                                    full_date_from['m'] = full_date[0]['m'][0]
+                                    full_date_to['m'] = full_date[0]['m'][1]
+                                    full_date_to['y'] = full_date[0]['y'][0]
+                        except:
+                            continue
+##            print(date[0]) ## Февраль — 14 мая 1932
+##            print(full_date)
+##            print(full_date_from) ## {'y': '1932', 'm': '02'}
+##            print(full_date_to) ## {'d': '14', 'm': '05', 'y': '1932'}
+        
 ##        номера страниц
         page_n = tree.xpath('//div[@class="page"]/text()')
         if page_n:
@@ -255,6 +331,9 @@ for file in os.listdir(path_1):
         geo_names1 = []
         geo_names_2 = []
         geo_names1_2 = []
+        f_name = []
+        g_names = []
+        g_names_2 = []
 
 
         with open('geohistory_index.htm', 'r', encoding='cp1251') as page:
@@ -273,12 +352,10 @@ for file in os.listdir(path_1):
         ##    названия
         for a in data:
             name = re.findall(r'name-ind">(.*?) — <b>', a)
-##            print(name)
             if name:
                 if '<br>' in name[-1]:
-                    name = names[-1] ## обработали два исключения (Петербург и Рим)
-##                    print(name)
-            names.append(name) ## список, внутри списки, в каждом по строке с именем или пусто, 423
+                    name = g_names[-1] ## обработали два исключения (Петербург и Рим)
+            g_names.append(name) ## список, внутри списки, в каждом по строке с именем или пусто, 423
             
         ##    названия второго порядка
             name_2 = re.findall(r'.*?<br>\s?(.*?) — <b>', a)
@@ -299,8 +376,8 @@ for file in os.listdir(path_1):
         ## если один том, или больше – по числу томов: [['270'], ['190']]
 
 ##        ##    ИТОГ
-##        print(names[105])  ## ['Царское (Детское) Село (г. Пушкин)']
-##        print(names_2[105])  ## [' Китайская деревня']
+##        print(g_names[105])  ## ['Царское (Детское) Село (г. Пушкин)']
+##        print(g_names_2[105])  ## [' Китайская деревня']
 ##        print(vol[105])  ## ['I', 'II', 'IV', 'IV']
 ##        print(pg1[105]) ## [['76', '239'], ['485'],
 ##        ## ['13', '44', '53', '61', '62', '72', '77', '78', '81', '82', '84-88', '92', '93', '95'],
@@ -314,8 +391,10 @@ for file in os.listdir(path_1):
                                 for u in range(len(page_n)): ## по числу номеров страниц в нашем файле
                                     if f==page_n[u]: ## если номер страницы в указателе совпадает с номером в файле                                             
                                         for elem in auth_text:
-                                            for y in range(len(name[0])-3): ## по числу букв названия из указателя минус три                                            
-                                                if name[0][:-(y+1)] in elem: ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
+                                            for y in range(len(name[0])-3):
+                                                ## по числу букв названия из указателя минус три                                            
+                                                if name[0][:-(y+1)] in elem:
+                                                    ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
                                                     if name[0][:-(y+1)] not in geo_names:                                                    
                                                         geo_names.append(name[0][:-(y+1)])
                                                         geo_names1.append(name[0]) ## и сюда целое имя из указателя
@@ -325,8 +404,10 @@ for file in os.listdir(path_1):
                                         if name_2:  ## если есть названия второго порядка
                                             for j in name_2: ## для каждого из этих названий
                                                 for elem in auth_text:
-                                                    for l in range(len(j)-4): ## по числу букв названия второго порядка минус четыре                                                    
-                                                        if j[:-(l+1)] in elem: ## если это название, уменьшающееся постепенно, есть в тексте пр-ния                                                        
+                                                    for l in range(len(j)-4):
+                                                        ## по числу букв названия второго порядка минус четыре                                                    
+                                                        if j[:-(l+1)] in elem:
+                                                            ## если это название, уменьшающееся постепенно, есть в тексте пр-ния                                                        
                                                             if j[:-(l+1)] not in geo_names_2:
                                                                 geo_names_2.append(j[:-(l+1)])
                                                                 geo_names1_2.append(name[0]) ## и сюда целое имя из указателя
@@ -334,10 +415,12 @@ for file in os.listdir(path_1):
                                                             break                                    
                                                                 
                                     else: ## если номер страницы в указателе не совпадает с номером в файле
-                                        if int(f[-3:])==int(page_n[-1])+1: ## если номер из геосписка равен посл. номеру нашей страницы плюс единица                                                    
+                                        if int(f[-3:])==int(page_n[-1])+1:
+                                            ## если номер из геосписка равен посл. номеру нашей страницы плюс единица                                                    
                                             for elem in auth_text:
                                                 for y in range(len(name[0])-3): ## по числу букв названия из геосписка минус три                                                
-                                                    if name[0][:-(y+1)] in elem: ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
+                                                    if name[0][:-(y+1)] in elem:
+                                                        ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
                                                         if name[0][:-(y+1)] not in geo_names:
                                                             geo_names.append(name[0][:-(y+1)])
                                                             geo_names1.append(name[0]) ## и сюда целое имя из указателя
@@ -347,8 +430,10 @@ for file in os.listdir(path_1):
                                             if name_2:  ## если есть названия второго порядка
                                                 for j in name_2: ## для этих названий
                                                     for elem in auth_text:
-                                                        for l in range(len(j)-4): ## по числу букв названия второго порядка минус четыре                                                        
-                                                            if j[:-(l+1)] in elem: ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
+                                                        for l in range(len(j)-4):
+                                                            ## по числу букв названия второго порядка минус четыре                                                        
+                                                            if j[:-(l+1)] in elem:
+                                                                ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
                                                                 if j[:-(l+1)] not in geo_names_2:
                                                                     geo_names_2.append(j[:-(l+1)])
                                                                     geo_names1_2.append(name[0]) ## и сюда целое имя из указателя
@@ -357,10 +442,12 @@ for file in os.listdir(path_1):
 
                             else: ## если у нас нет номера страницы пр-ния
                                 try: ## пробуем
-                                    if int(f[-3:])==int(page_n_1[-1])+1: ## если номер из геосписка равен номеру страницы предыдущего файла плюс единица
+                                    if int(f[-3:])==int(page_n_1[-1])+1:
+                                        ## если номер из геосписка равен номеру страницы предыдущего файла плюс единица
                                         for elem in auth_text:
                                             for y in range(len(name[0])-3): ## по числу букв названия из геосписка минус три                                            
-                                                if name[0][:-(y+1)] in elem: ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
+                                                if name[0][:-(y+1)] in elem:
+                                                    ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
                                                     if name[0][:-(y+1)] not in geo_names:
                                                         geo_names.append(name[0][:-(y+1)])
                                                         geo_names1.append(name[0]) ## и сюда целое имя из указателя
@@ -371,7 +458,8 @@ for file in os.listdir(path_1):
                                             for j in name_2: ## для этих названий
                                                 for elem in auth_text:
                                                     for l in range(len(j)-4): ## по числу букв названия второго порядка минус четыре                                                    
-                                                        if j[:-(l+1)] in elem: ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
+                                                        if j[:-(l+1)] in elem:
+                                                            ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
                                                             if j[:-(l+1)] not in geo_names_2:
                                                                 geo_names_2.append(j[:-(l+1)])
                                                                 geo_names1_2.append(name[0]) ## и сюда целое имя из указателя
@@ -438,7 +526,8 @@ for file in os.listdir(path_1):
                                 if f==page_n[u]: ## если номер в указателе совпадает с номером в файле                                                                            
                                     for elem in auth_text: ## по абзацам нашего произведения
                                         for y in range(len(name[0])-3): ## по числу букв названия из указателя минус три
-                                            if name[0][:-(y+1)] in elem: ## если это название, уменьшающееся постепенно, есть в строке пр-ния                                            
+                                            if name[0][:-(y+1)] in elem:
+                                                ## если это название, уменьшающееся постепенно, есть в строке пр-ния                                            
                                                 if name[0][:-(y+1)] not in name_names:
                                                     name_names.append(name[0][:-(y+1)])
                                                     name_names1.append(name[0]) ## и сюда целое имя из указателя
@@ -446,10 +535,12 @@ for file in os.listdir(path_1):
                                                 break
                                                                                                                                                            
                                 else:  ## если номер в указателе не совпадает с номером в файле 
-                                    if int(f[-3:])==int(page_n[-1])+1: ## если номер из указателя равен посл. номеру нашей страницы плюс единица                                         
+                                    if int(f[-3:])==int(page_n[-1])+1:
+                                        ## если номер из указателя равен посл. номеру нашей страницы плюс единица                                         
                                         for elem in auth_text:
                                             for y in range(len(name[0])-3): ## по числу букв названия из указателя минус три                                            
-                                                if name[0][:-(y+1)] in elem: ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
+                                                if name[0][:-(y+1)] in elem:
+                                                    ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
                                                     if name[0][:-(y+1)] not in name_names:
                                                         name_names.append(name[0][:-(y+1)])
                                                         name_names1.append(name[0]) ## и сюда целое имя из указателя
@@ -458,10 +549,12 @@ for file in os.listdir(path_1):
 
                         else: ## если в нашем файле вообще нет номера страницы
                             try:
-                                if int(f[-3:])==int(page_n_1[-1])+1:## если номер из геосписка равен номеру страницы предыдущего файла плюс единица
+                                if int(f[-3:])==int(page_n_1[-1])+1:
+                                    ## если номер из геосписка равен номеру страницы предыдущего файла плюс единица
                                     for elem in auth_text:
-                                        for y in range(len(name[0])-3):  ## по числу букв названия из указателя минус три                                        
-                                            if name[0][:-(y+1)] in elem: ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
+                                        for y in range(len(name[0])-3): ## по числу букв названия из указателя минус три                                        
+                                            if name[0][:-(y+1)] in elem:
+                                                ## если это название, уменьшающееся постепенно, есть в тексте пр-ния
                                                 if name[0][:-(y+1)] not in name_names:
                                                     name_names.append(name[0][:-(y+1)])
                                                     name_names1.append(name[0]) ## и сюда целое имя из указателя
@@ -750,40 +843,92 @@ for file in os.listdir(path_1):
 ##                        ## в нужном месте (проза, письма)
 ##                    else:
 ##                        continue
-##                    c += 1
-        
-        if full_date_when:
-            dateline = etree.SubElement(div2, 'date', when = '#'.join(full_date_when)).text = date[0]
-            if geo_names:
-                for h in range(len(geo_names)):
-                    if geo_names[h] in date[0]:
-                        rs = etree.SubElement(div2, 'rs', type = 'geo_index', ref = geo_names1[h])
-##                            break
-            if geo_names_2:
-                for d in range(len(geo_names_2)):                               
-                    if geo_names_2[d] in date[0]:
-                        rs = etree.SubElement(div2, 'rs', type = 'geo_index', ref = geo_names1_2[d])
-##                                break
-            
-        if full_date_from:
-            myattr = {'from':'-'.join(full_date_from), 'to': '-'.join(full_date_to)}
+##                    c += 1        
+
+        if full_date and not full_date_from and not full_date_to:
+            for s in full_date:
+                datelist = []
+                date_join = s.get('y', ''), s.get('m', ''), s.get('d', '') ## (['1911'], ['11'], ['24', '26'])
+                for u in date_join:
+                    if u:
+                        k = ', '.join(u)
+                        datelist.append(k)
+                dateline = etree.SubElement(div2, 'date', when = '-'.join(datelist)).text = date[0]
+
+        if full_date_from and full_date_to:
+            date_from_list = []
+            date_to_list = []
+            date_from_join = full_date_from.get('y', ''), full_date_from.get('m', ''), full_date_from.get('d', '')
+            date_to_join = full_date_to.get('y', ''), full_date_to.get('m', ''), full_date_to.get('d', '')
+            for u in date_from_join:
+                if u:
+                    k = ''.join(u)
+                    date_from_list.append(k)
+            for u in date_to_join:
+                if u:
+                    k = ''.join(u)
+                    date_to_list.append(k)                                        
+            myattr = {'from':'-'.join(date_from_list), 'to': '-'.join(date_to_list)}
             dateline = etree.SubElement(div2, 'date', attrib = myattr).text = date[0]
-            if geo_names:
-                for h in range(len(geo_names)):
-                    if geo_names[h] in date[0]:
-                        rs = etree.SubElement(p1, 'rs', type = 'geo_index', ref = geo_names1[h])
-##                            break
-            if geo_names_2:
-                for d in range(len(geo_names_2)):                               
-                    if geo_names_2[d] in date[0]:
-                        if 'Петербург' not in geo_names1_2[d]:
-                            rs = etree.SubElement(p1, 'rs', type = 'geo_index', ref = geo_names1_2[d])
-##                                break
-##             if year:
-##                if full_date:
-##                    dateline = etree.SubElement(div2, 'date', when = '#'.join(year) \
-##                                            , precision = "circa").text = date[0]
-                                          
+
+        if full_date_to and not full_date_from:
+            date_to_list = []
+            date_to_join = full_date_to.get('y', ''), full_date_to.get('m', ''), full_date_to.get('d', '')
+            for u in date_to_join:
+                if u:
+                    k = ''.join(u)
+                    date_to_list.append(k)                                        
+            myattr = {'to': '-'.join(date_to_list)}
+            dateline = etree.SubElement(div2, 'date', attrib = myattr).text = date[0]
+
+
+        if full_date_to and len(full_date) > 1:
+            if not worm_mark:
+                for s in full_date:
+                    datelist = []
+                    date_join = s.get('y', ''), s.get('m', ''), s.get('d', '') ## (['1911'], ['11'], ['24', '26'])
+                    for u in date_join:
+                        if u:
+                            k = ', '.join(u)
+                            datelist.append(k)
+                dateline = etree.SubElement(div2, 'date', when = '-'.join(datelist)).text = date[0]
+                
+##        if full_date_from:
+##            print(date[0])
+##            print(full_date_from)
+##            print('--------')
+##            myattr = {'from':'-'.join(full_date_from), 'to': '-'.join(full_date_to)}
+##            dateline = etree.SubElement(div2, 'date', attrib = myattr).text = date[0]
+                       
+##            if year:
+##               if full_date:
+##                   dateline = etree.SubElement(div2, 'date', when = '#'.join(year) \
+##                                           , precision = "circa").text = date[0]
+
+            for w in g_names:
+                try:
+                    if w[0][:3] in date[0]:
+                        rs = etree.SubElement(div2, 'rs', type = 'geo_index', ref = w[0])                        
+                except:
+                    continue
+
+##        if full_date_to:
+##            print(date[0])
+##            print(full_date_to)
+##            print('--------')
+
+        if date: ## географические названия в датах
+            for w in g_names:
+                if w:
+                    f_name = re.search(r'(\S+)', w[0])
+                    if f_name.group() in date[0]: ## если это название (первое слово целиком) есть в тексте даты пр-ния
+                        if 'Ганг' not in f_name.group() and 'Луга' not in f_name.group() and 'После' not in date[0]:
+                            rs = etree.SubElement(div2, 'rs', type = 'geo_index', ref = w[0])            
+                            break
+                        
+            if 'Гельсингфорс' in date[0]:
+                rs = etree.SubElement(div2, 'rs', type = 'geo_index', ref = 'Хельсинки (Гельсингфорс)')
+                                                  
         if note:
             nte = etree.SubElement(div2, 'note').text = ''.join(note) ## ссылка
             if myth_names:
@@ -812,8 +957,3 @@ for file in os.listdir(path_1):
         tree = etree.ElementTree(tei)
         tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, \
                    xml_declaration = True)
-
-
-
-
-
