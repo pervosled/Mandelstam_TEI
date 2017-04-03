@@ -80,6 +80,7 @@ for file in os.listdir(path_1):
         years = []
         days = []
         worm_mark = []
+        season_mark = []
 
         date = tree.xpath('.//p[@class="date"]/text()')
 ##        print(date)  ## например: ['1912 (1913?), 2 января 1937']
@@ -117,14 +118,44 @@ for file in os.listdir(path_1):
                 full_date.append(full_d)
 ##            print(full_date) ## [{'d': ['24'], 'y': ['1911'], 'm': ['11']}, {'y': ['1915']}]
                 ## – т.е. 24 ноября 1911, 1915(?)
+                seasons = ['есна', 'ето', 'сень', 'има']
+                for p in seasons:
+                    s_mark = re.findall(p, u)
+                    for t in s_mark:
+                        season_mark.append(t)                      
             if len(year_split) == 2:
-                for y in year_split:
-                    if 'позднее' in y:
-                        full_date_to['m'] = full_date[0]['m'][0]
-                        full_date_to['d'] = full_date[0]['d'][0]
-                        full_date_to['y'] = full_date[0]['y'][0]
-                    worm_end = re.search(r'[—-]\s?$', y) ## тире в конце y
-                    worm_start = re.search(r'^\s?[—-]', y) ## тире в начале y
+                for j in range(len(year_split)):                    
+                    if 'есна' in year_split[j]:
+                        full_date_from['y'] = full_date[j].get('y', '')
+                        full_date_from['m'] = '03'
+                        full_date_to['y'] = full_date[j].get('y', '')
+                        full_date_to['m'] = '05'
+                    if 'ето' in year_split[j]:
+                        full_date_from['y'] = full_date[j].get('y', '')
+                        full_date_from['m'] = '06'
+                        full_date_to['y'] = full_date[j].get('y', '')
+                        full_date_to['m'] = '08'
+                    if 'сень' in year_split[j]:
+                        full_date_from['y'] = full_date[j].get('y', '')
+                        full_date_from['m'] = '09'
+                        full_date_to['y'] = full_date[j].get('y', '')
+                        full_date_to['m'] = '11'
+                    if 'има' in year_split[j]:
+                        full_date_from['y'] = full_date[j].get('y', '')
+                        full_date_from['m'] = '12'
+                        full_date_to['y'] = int(full_date[j].get('y', '')[0])+1
+                        full_date_to['m'] = '02'
+                    if 'есна—лето' in year_split[j]:
+                        full_date_from['y'] = full_date[j].get('y', '')
+                        full_date_from['m'] = '03'
+                        full_date_to['y'] = full_date[j].get('y', '')
+                        full_date_to['m'] = '08'
+                    if 'позднее' in year_split[j]:
+                        full_date_to['y'] = full_date[j].get('y', '')
+                        full_date_to['m'] = full_date[j].get('m', '') 
+                        full_date_to['d'] = full_date[j].get('d', '')                       
+                    worm_end = re.search(r'[—-]\s?$', year_split[j]) ## тире в конце year_split[j]
+                    worm_start = re.search(r'^\s?[—-]', year_split[j]) ## тире в начале year_split[j]
                     if worm_end or worm_start:
                         worm_mark.append('a')
                         full_date_from = full_date[0]
@@ -133,63 +164,84 @@ for file in os.listdir(path_1):
 ##                        print(full_date_from) ## {'y': ['1936'], 'm': ['12'], 'd': ['8']}
 ##                        print(full_date_to) ## {'y': ['1937'], 'm': ['01'], 'd': ['17']}
                     if not worm_end and not worm_start:
-                        if '—' in y or '-' in y:
-                            try:
-                                if len(full_date[0]['m']) == 2:
-                                    full_date_from['y'] = full_date[0]['y'][0]
-                                    full_date_from['m'] = full_date[0]['m'][0]
-                                    full_date_to['m'] = full_date[0]['m'][1]
-                                    full_date_to['y'] = full_date[0]['y'][0]
-                                if len(full_date[0]['d']) == 2:
-                                    full_date_from['y'] = full_date[0]['y'][0]
-                                    full_date_from['m'] = full_date[0]['m'][0]
-                                    full_date_from['d'] = full_date[0]['d'][0]
-                                    full_date_to['m'] = full_date[0]['m'][0]
-                                    full_date_to['d'] = full_date[0]['d'][1]
-                                    full_date_to['y'] = full_date[0]['y'][0]
-                            except:
-                                continue
+                        if '—' in year_split[j] or '-' in year_split[j]:
+                            if len(full_date[0].get('m', '')) == 2:
+                                full_date_from['y'] = full_date[0].get('y', '')
+                                full_date_from['m'] = full_date[0].get('m', '')[0]                                  
+                                full_date_to['y'] = full_date[0].get('y', '')
+                                full_date_to['m'] = full_date[0].get('m', '')[1]
+                            if len(full_date[0].get('d', '')) == 2:
+                                full_date_from['y'] = full_date[0].get('y', '')
+                                full_date_from['m'] = full_date[0].get('m', '')
+                                full_date_from['d'] = full_date[0].get('d', '')[0]
+                                full_date_to['y'] = full_date[0].get('y', '')
+                                full_date_to['m'] = full_date[0].get('m', '')
+                                full_date_to['d'] = full_date[0].get('d', '')[1]                                    
             if len(year_split) == 1:
+                if 'есна' in year_split[0]:
+                    full_date_from['y'] = full_date[0].get('y', '')
+                    full_date_from['m'] = '03'
+                    full_date_to['y'] = full_date[0].get('y', '')
+                    full_date_to['m'] = '05'
+                if 'ето' in year_split[0]:
+                    full_date_from['y'] = full_date[0].get('y', '')
+                    full_date_from['m'] = '06'
+                    full_date_to['y'] = full_date[0].get('y', '')
+                    full_date_to['m'] = '08'
+                if 'сень' in year_split[0]:
+                    full_date_from['y'] = full_date[0].get('y', '')
+                    full_date_from['m'] = '09'
+                    full_date_to['y'] = full_date[0].get('y', '')
+                    full_date_to['m'] = '011'
+                if 'има' in year_split[0]:
+                    full_date_from['y'] = full_date[0].get('y', '')
+                    full_date_from['m'] = '12'
+                    full_date_to['y'] = int(full_date[0].get('y', '')[0])+1
+                    full_date_to['m'] = '02'
+                if 'есна—лето' in year_split[0]:
+                    full_date_from['y'] = full_date[0].get('y', '')
+                    full_date_from['m'] = '03'
+                    full_date_to['y'] = full_date[0].get('y', '')
+                    full_date_to['m'] = '08'
                 if 'позднее' in year_split[0]:
-                    try:
-                        full_date_to['m'] = full_date[0]['m'][0]
-                        full_date_to['d'] = full_date[0]['d'][0]
-                        full_date_to['y'] = full_date[0]['y'][0]
-                    except:
-                        continue
+                    full_date_to['y'] = full_date[0].get('y', '')
+                    full_date_to['m'] = full_date[0].get('m', '')
+                    full_date_to['d'] = full_date[0].get('d', '')                            
                 if '—' in year_split[0] or '-' in year_split[0]:
                     if '-го' not in year_split[0]:
-                        try:
-                            if len(full_date[0]['d']) == 2 and len(full_date[0]['m']) == 2:
-                                full_date_from['d'] = full_date[0]['d'][0]
-                                full_date_from['y'] = full_date[0]['y'][0]
-                                full_date_from['m'] = full_date[0]['m'][0]
-                                full_date_to['d'] = full_date[0]['d'][1]
-                                full_date_to['m'] = full_date[0]['m'][1]
-                                full_date_to['y'] = full_date[0]['y'][0]
-                            if len(full_date[0]['d']) == 2 and len(full_date[0]['m']) == 1:
-                                full_date_from['d'] = full_date[0]['d'][0]
-                                full_date_from['y'] = full_date[0]['y'][0]
-                                full_date_from['m'] = full_date[0]['m'][0]
-                                full_date_to['d'] = full_date[0]['d'][1]
-                                full_date_to['m'] = full_date[0]['m'][0]
-                                full_date_to['y'] = full_date[0]['y'][0]
-                            if len(full_date[0]['d']) == 1 and len(full_date[0]['m']) == 2:
-                                worm_dig = re.search(r'—\s?\d', year_split[0])
-                                if worm_dig:
-                                    full_date_from['y'] = full_date[0]['y'][0]
-                                    full_date_from['m'] = full_date[0]['m'][0]
-                                    full_date_to['d'] = full_date[0]['d'][0]
-                                    full_date_to['m'] = full_date[0]['m'][1]
-                                    full_date_to['y'] = full_date[0]['y'][0]
-                                else:
-                                    full_date_from['d'] = full_date[0]['d'][0]
-                                    full_date_from['y'] = full_date[0]['y'][0]
-                                    full_date_from['m'] = full_date[0]['m'][0]
-                                    full_date_to['m'] = full_date[0]['m'][1]
-                                    full_date_to['y'] = full_date[0]['y'][0]
-                        except:
-                            continue
+                        if len(full_date[0].get('d', '')) == 2 and len(full_date[0].get('m', '')) == 2:                                
+                            full_date_from['y'] = full_date[0].get('y', '')
+                            full_date_from['m'] = full_date[0].get('m', '')[0]
+                            full_date_from['d'] = full_date[0].get('d', '')[0]
+                            full_date_to['y'] = full_date[0].get('y', '')
+                            full_date_to['m'] = full_date[0].get('m', '')[1]                                
+                            full_date_to['d'] = full_date[0].get('d', '') [1]
+                        if len(full_date[0].get('d', '')) == 2 and len(full_date[0].get('m', '')) == 1:                                
+                            full_date_from['y'] = full_date[0].get('y', '')
+                            full_date_from['m'] = full_date[0].get('m', '')
+                            full_date_from['d'] = full_date[0].get('d', '')[0]                                                               
+                            full_date_to['y'] = full_date[0].get('y', '')
+                            full_date_to['m'] = full_date[0].get('m', '')
+                            full_date_to['d'] = full_date[0].get('d', '')[1]
+                        if len(full_date[0].get('d', '')) == 1 and len(full_date[0].get('m', '')) == 2:
+                            worm_dig = re.search(r'—\s?\d', year_split[0])
+                            if worm_dig:
+                                full_date_from['y'] = full_date[0].get('y', '')
+                                full_date_from['m'] = full_date[0].get('m', '')[0]
+                                full_date_to['d'] = full_date[0].get('d', '')                                    
+                                full_date_to['y'] = full_date[0].get('y', '')
+                                full_date_to['m'] = full_date[0].get('m', '')[1]
+                            else:                                    
+                                full_date_from['y'] = full_date[0].get('y', '')
+                                full_date_from['m'] = full_date[0].get('m', '')[0]
+                                full_date_from['d'] = full_date[0].get('d', '')                                    
+                                full_date_to['y'] = full_date[0].get('y', '')
+                                full_date_to['m'] = full_date[0].get('m', '')[1]
+                        if len(full_date[0].get('m', '')) == 2 and full_date[0].get('d', '') == '':
+                            full_date_from['y'] = full_date[0].get('y', '')
+                            full_date_from['m'] = full_date[0].get('m', '')[0]                                   
+                            full_date_to['y'] = full_date[0].get('y', '')
+                            full_date_to['m'] = full_date[0].get('m', '')[1]
 ##            print(date[0]) ## Февраль — 14 мая 1932
 ##            print(full_date)
 ##            print(full_date_from) ## {'y': '1932', 'm': '02'}
@@ -881,7 +933,6 @@ for file in os.listdir(path_1):
             myattr = {'to': '-'.join(date_to_list)}
             dateline = etree.SubElement(div2, 'date', attrib = myattr).text = date[0]
 
-
         if full_date_to and len(full_date) > 1:
             if not worm_mark:
                 for s in full_date:
@@ -892,30 +943,6 @@ for file in os.listdir(path_1):
                             k = ', '.join(u)
                             datelist.append(k)
                 dateline = etree.SubElement(div2, 'date', when = '-'.join(datelist)).text = date[0]
-                
-##        if full_date_from:
-##            print(date[0])
-##            print(full_date_from)
-##            print('--------')
-##            myattr = {'from':'-'.join(full_date_from), 'to': '-'.join(full_date_to)}
-##            dateline = etree.SubElement(div2, 'date', attrib = myattr).text = date[0]
-                       
-##            if year:
-##               if full_date:
-##                   dateline = etree.SubElement(div2, 'date', when = '#'.join(year) \
-##                                           , precision = "circa").text = date[0]
-
-            for w in g_names:
-                try:
-                    if w[0][:3] in date[0]:
-                        rs = etree.SubElement(div2, 'rs', type = 'geo_index', ref = w[0])                        
-                except:
-                    continue
-
-##        if full_date_to:
-##            print(date[0])
-##            print(full_date_to)
-##            print('--------')
 
         if date: ## географические названия в датах
             for w in g_names:
@@ -956,4 +983,4 @@ for file in os.listdir(path_1):
                                                
         tree = etree.ElementTree(tei)
         tree.write(path_2+file[:-4]+'.xml', encoding = 'utf8', pretty_print = True, \
-                   xml_declaration = True)
+xml_declaration = True)
